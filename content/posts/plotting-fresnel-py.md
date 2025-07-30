@@ -1,6 +1,6 @@
 +++
 title = "Plotting Fresnel Equation"
-date = "2025-08-09"
+date = "2023-12-11"
 description = "Plotting Fresnel equation using numpy and matplotlib"
 
 [taxonomies]

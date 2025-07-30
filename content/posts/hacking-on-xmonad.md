@@ -1,6 +1,6 @@
 +++
-title = "Hacking on Xmonad"
-date = "2025-08-09"
+title = "Hacking on $(\\lambda) \\to$ XMonad "
+date = "2024-01-09"
 description = "Nothing special, just XMonad rice"
 
 [taxonomies]
