@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: firman-qs.github.io/sitemap.xml
+Sitemap: https://firman-qs.github.io/sitemap.xml
