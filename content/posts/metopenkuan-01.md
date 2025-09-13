@@ -4,7 +4,7 @@ date = "2025-09-12"
 description = "Pendekatan Positivisme, Postpositivisme, Kuantitatif, Kualitatif"
 
 [taxonomies]
-tags = ["metopenkuan", "kuantitatif", "kuliah"]
+tags = ["PFIS258005", "kuliah"]
 
 [extra]
 comment = true

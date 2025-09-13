@@ -1,5 +1,5 @@
 +++
-title = "My GNU Emacs"
+title = "Msy GNU Emacs"
 date = "2023-11-09"
 description = "Emacs is a great operating system lacking only a great text editor"
 
