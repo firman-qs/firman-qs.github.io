@@ -23,7 +23,7 @@ template = "homepage.html"
 <!-- I write in LaTeX, which is both a lifestyle and a cry for help. It’s like -->
 <!-- assembling IKEA furniture with Greek letters—ugly, painful, but undeniably -->
 <!-- satisfying when it finally compiles. -->
-Physics student. Engaged to Classical Mechanics. Sworn enemy of Thermodynamics.
+Physics student. Engaged to Electrodynamics. Sworn enemy of Thermodynamics.
 Fluent in Rust and C#, occasionally screams at LaTeX until it compiles out of
 fear.
 

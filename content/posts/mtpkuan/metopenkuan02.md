@@ -1,7 +1,7 @@
 +++
-title = "Review Artikel Metode Penelitian Kuantatif 1 dan 2"
-date = "2025-09-12"
-description = "Pendekatan Positivisme, Postpositivisme, Kuantitatif, Kualitatif"
+title = "Review Artikel Metode Penelitian Kuantatif 3"
+date = "2025-09-18"
+description = "Pemilihan masalah penelitian dan pertanyaan penelitian"
 
 [taxonomies]
 tags = ["PFIS258005", "kuliah"]
