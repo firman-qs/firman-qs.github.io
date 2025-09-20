@@ -1,10 +1,10 @@
 +++
 title = "PBuM - Review Artikel Pertemuan 3"
-date = "2025-09-19"
+date = "2025-09-16"
 description = "Teori belajar sains (konstruktivisme, inquiry, stem, pbl)"
 
 [taxonomies]
-tags = ["FMIA258001	", "kuliah"]
+tags = ["FMIA258001", "kuliah"]
 
 [extra]
 comment = true

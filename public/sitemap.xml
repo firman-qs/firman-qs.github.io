@@ -20,6 +20,10 @@
         <lastmod>2023-11-22</lastmod>
     </url>
     <url>
+        <loc>https://firman-qs.github.io/posts/classical-mechanics/constraint/</loc>
+        <lastmod>2023-11-02</lastmod>
+    </url>
+    <url>
         <loc>https://firman-qs.github.io/posts/classical-mechanics/deriving-euler-lagrange/</loc>
         <lastmod>2023-12-11</lastmod>
     </url>
@@ -60,7 +64,11 @@
         <loc>https://firman-qs.github.io/posts/mtpkuan/</loc>
     </url>
     <url>
-        <loc>https://firman-qs.github.io/posts/mtpkuan/metopenkuan02/</loc>
+        <loc>https://firman-qs.github.io/posts/mtpkuan/metopenkuan3-3/</loc>
+        <lastmod>2025-09-18</lastmod>
+    </url>
+    <url>
+        <loc>https://firman-qs.github.io/posts/mtpkuan/metopenkuan3-4/</loc>
         <lastmod>2025-09-18</lastmod>
     </url>
     <url>
@@ -81,6 +89,9 @@
     </url>
     <url>
         <loc>https://firman-qs.github.io/projects/project-1/</loc>
+    </url>
+    <url>
+        <loc>https://firman-qs.github.io/projects/project-2/</loc>
     </url>
     <url>
         <loc>https://firman-qs.github.io/tags/</loc>
