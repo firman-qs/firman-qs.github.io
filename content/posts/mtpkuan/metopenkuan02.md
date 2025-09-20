@@ -1,5 +1,5 @@
 +++
-title = "Review Artikel Metode Penelitian Kuantatif 3"
+title = "Metopen Kuantitatif: Review Artikel Metode Penelitian Kuantatif 3"
 date = "2025-09-18"
 description = "Pemilihan masalah penelitian dan pertanyaan penelitian"
 
@@ -19,8 +19,8 @@ Anda dapat mendownload:
 - Artikel 2: [https://doi.org/10.1007/s10780-021-09447-z](https://drive.google.com/file/d/14o-2hRGaRduSGWVVwa5JAIZRA_1i7jvx/view?usp=sharing)
 - pdf review Artikel 2:  [Drive review artikel 2](https://drive.google.com/file/d/15X5asdWvdL0grU4WVX27fPpd0_RNG2ZK/view?usp=drive_link)
 
-# Artikel 1: Positivisme dan Pospositivisme
-<iframe src="https://drive.google.com/file/d/1RhPmzFOCxzCYNaaR5dTnW71iQljV3rkG/preview" width="100%" height="600" allow="autoplay" frameborder="0"></iframe>
-
-# Artikel 2: Penelitian Kuantitatif dan Kualitatif
-<iframe src="https://drive.google.com/file/d/15X5asdWvdL0grU4WVX27fPpd0_RNG2ZK/preview" width="100%" height="600" allow="autoplay" frameborder="0"></iframe>
+<!-- # Artikel 1: Positivisme dan Pospositivisme -->
+<!-- <iframe src="https://drive.google.com/file/d/1RhPmzFOCxzCYNaaR5dTnW71iQljV3rkG/preview" width="100%" height="600" allow="autoplay" frameborder="0"></iframe> -->
+<!---->
+<!-- # Artikel 2: Penelitian Kuantitatif dan Kualitatif -->
+<!-- <iframe src="https://drive.google.com/file/d/15X5asdWvdL0grU4WVX27fPpd0_RNG2ZK/preview" width="100%" height="600" allow="autoplay" frameborder="0"></iframe> -->

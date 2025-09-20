@@ -1,5 +1,5 @@
 +++
-title = "Review Artikel Metode Penelitian Kuantatif 1 dan 2"
+title = "Metopen Kuantitatif: Review Artikel Metode Penelitian Kuantatif 1 dan 2"
 date = "2025-09-12"
 description = "Pendekatan Positivisme, Postpositivisme, Kuantitatif, Kualitatif"
 
