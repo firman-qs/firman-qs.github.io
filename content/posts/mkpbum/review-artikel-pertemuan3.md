@@ -1,5 +1,5 @@
 +++
-title = "PBuM: Review Artikel Pertemuan 3"
+title = "PBuM - Review Artikel Pertemuan 3"
 date = "2025-09-19"
 description = "Teori belajar sains (konstruktivisme, inquiry, stem, pbl)"
 

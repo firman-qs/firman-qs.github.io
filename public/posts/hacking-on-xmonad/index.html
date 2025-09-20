@@ -287,33 +287,33 @@
 
             <section class="body">
                 <h1 id="about"><a class="zola-anchor" href="#about" aria-label="Anchor link for: about">ABOUT</a></h1>
-<p>Originally, this was my old archlinux <a href="https://distro.tube/dtos/">DTOS</a>
-configuration, but now i am on fedora (update: i am back <a href="https://archlinux.org/">home</a>). I have tested on my fedora and it
+<p>Originally, this was my old archlinux <a rel="noopener" target="_blank" href="https://distro.tube/dtos/">DTOS</a>
+configuration, but now i am on fedora (update: i am back <a rel="noopener" target="_blank" href="https://archlinux.org/">home</a>). I have tested on my fedora and it
 works fine. For other distributions it should be the same, just complete
 the necessary packages. I'll try to give a little guidance.</p>
 <p><code>Note</code> Before you go and copy my config, read the section below for the
 dependencies and short tutorial to get started. if I didn't miss
 anything, this should be enough to get your linux to use this xmonad
 configuration.</p>
-<p>Credit: <a href="https://xmonad.org/"><a href="https://xmonad.org">https://xmonad.org</a></a>,
-<a href="https://gitlab.com/dtos"><a href="https://gitlab.com/dtos">https://gitlab.com/dtos</a></a></p>
+<p>Credit: <a rel="noopener" target="_blank" href="https://xmonad.org/"><a rel="noopener" target="_blank" href="https://xmonad.org">https://xmonad.org</a></a>,
+<a rel="noopener" target="_blank" href="https://gitlab.com/dtos"><a rel="noopener" target="_blank" href="https://gitlab.com/dtos">https://gitlab.com/dtos</a></a></p>
 <h1 id="documentation"><a class="zola-anchor" href="#documentation" aria-label="Anchor link for: documentation">Documentation</a></h1>
 <blockquote>
-<p><a href="https://xmonad.org/documentation.html">https://xmonad.org/documentation.html</a> What I will tell you next, all
+<p><a rel="noopener" target="_blank" href="https://xmonad.org/documentation.html">https://xmonad.org/documentation.html</a> What I will tell you next, all
 come from the documentation. Documentation is the most important thing
 when you learn something, whether it's a window manager, programming
 language, etc. Here are some links to the xmonad documentation:</p>
 <ul>
-<li><a href="https://xmonad.org/documentation.html"><a href="https://xmonad.org/documentation.html">https://xmonad.org/documentation.html</a></a>
+<li><a rel="noopener" target="_blank" href="https://xmonad.org/documentation.html"><a rel="noopener" target="_blank" href="https://xmonad.org/documentation.html">https://xmonad.org/documentation.html</a></a>
 Documentation home page.</li>
-<li><a href="https://xmonad.org/INSTALL.html"><a href="https://xmonad.org/INSTALL.html">https://xmonad.org/INSTALL.html</a></a>
+<li><a rel="noopener" target="_blank" href="https://xmonad.org/INSTALL.html"><a rel="noopener" target="_blank" href="https://xmonad.org/INSTALL.html">https://xmonad.org/INSTALL.html</a></a>
 On how to install xmonad.</li>
 <li>Hackage Documentation, It contains further documentation, like what
 libraries you can use, how to use them, more like how to use haskell
 for xmonad.
 <ul>
-<li><a href="https://hackage.haskell.org/package/xmonad"><a href="https://hackage.haskell.org/package/xmonad">https://hackage.haskell.org/package/xmonad</a></a></li>
-<li><a href="https://hackage.haskell.org/package/xmonad-contrib"><a href="https://hackage.haskell.org/package/xmonad-contrib">https://hackage.haskell.org/package/xmonad-contrib</a></a></li>
+<li><a rel="noopener" target="_blank" href="https://hackage.haskell.org/package/xmonad"><a rel="noopener" target="_blank" href="https://hackage.haskell.org/package/xmonad">https://hackage.haskell.org/package/xmonad</a></a></li>
+<li><a rel="noopener" target="_blank" href="https://hackage.haskell.org/package/xmonad-contrib"><a rel="noopener" target="_blank" href="https://hackage.haskell.org/package/xmonad-contrib">https://hackage.haskell.org/package/xmonad-contrib</a></a></li>
 </ul>
 </li>
 </ul>
@@ -329,7 +329,7 @@ more deeply, using stack or cabal is great.</p>
 <p>Installing dependencies</p>
 <p>The dependencies are the same, but the names may differ in different
 package managers. I will give an example for Fedora, for other
-distros, you can open the <a href="https://xmonad.org/INSTALL.html">install xmonad documentation
+distros, you can open the <a rel="noopener" target="_blank" href="https://xmonad.org/INSTALL.html">install xmonad documentation
 link</a> that I provided before. Run
 in terminal</p>
 <pre data-lang="bash" style="background-color:#0f1419;color:#bfbab0;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb454;">sudo</span><span> dnf update </span><span style="color:#f29668;">&amp;&amp;
@@ -357,7 +357,7 @@ later. To make configuration directory:</p>
 (Community-maintained tiling algorithms and extension modules for
 xmonad), and the bar (unless you don't want bar 😁). The bar that is
 commonly used in conjunction with xmonad is xmobar and
-<a href="https://youtube.com/playlist?list=PL5--8gKSku144jIsizdhdxq_fKTmBBGBA">distrotube</a>
+<a rel="noopener" target="_blank" href="https://youtube.com/playlist?list=PL5--8gKSku144jIsizdhdxq_fKTmBBGBA">distrotube</a>
 has a great tutorial on this. The other bar, which I'll be using in
 this configuration is polybar, so we'll be installing that as well.
 On fedora:</p>
@@ -379,9 +379,9 @@ distro you can do:</p>
 <li>
 <p>Dmenu</p>
 <p>Xmonad uses dmenu by default, you can copy my patched dmenu (see
-<a href="https://github.com/firman-qs/.dotfiles">my dmenu build</a>) and
+<a rel="noopener" target="_blank" href="https://github.com/firman-qs/.dotfiles">my dmenu build</a>) and
 install it or install the plain version
-(<a href="https://tools.suckless.org/dmenu">https://tools.suckless.org/dmenu</a>) and patch it yourself. Of
+(<a rel="noopener" target="_blank" href="https://tools.suckless.org/dmenu">https://tools.suckless.org/dmenu</a>) and patch it yourself. Of
 course you can use rofi or another launcher, just set it in
 keybinding later.</p>
 </li>
@@ -389,13 +389,13 @@ keybinding later.</p>
 <p>Dbus</p>
 <p>To easily display XMonad status in polybar we need DBus
 monitoring and i use
-<a href="https://github.com/xintron/xmonad-log">xintron/xmonad-log</a> for
+<a rel="noopener" target="_blank" href="https://github.com/xintron/xmonad-log">xintron/xmonad-log</a> for
 that. Xmonad-log allows us to send status over DBus using
 XMonad's DynamicLog to any application that support executing
 custom scripts such as polybar.</p>
 <ol>
 <li>First we need to install
-<a href="https://hackage.haskell.org/package/dbus">dbus</a>. Again, i'm
+<a rel="noopener" target="_blank" href="https://hackage.haskell.org/package/dbus">dbus</a>. Again, i'm
 using fedora here:</li>
 </ol>
 <pre data-lang="bash" style="background-color:#0f1419;color:#bfbab0;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb454;">sudo</span><span> dnf install ghc-dbus ghc-dbus-devel
@@ -407,7 +407,7 @@ using fedora here:</li>
 </span></code></pre>
 </li>
 <li>
-<p>Then we clone the xmonad-log repository. On <a href="https://github.com/xintron/xmonad-log">its
+<p>Then we clone the xmonad-log repository. On <a rel="noopener" target="_blank" href="https://github.com/xintron/xmonad-log">its
 github</a> it says we
 need to clone it to
 <code>$GOPATH/src/github.com/xintron/xmonad-log</code>. <code>$GOPATH</code> is a
@@ -775,7 +775,7 @@ of the program. Use xprop to get this info.</p>
 </span></code></pre>
 <h1 id="system-sounds"><a class="zola-anchor" href="#system-sounds" aria-label="Anchor link for: system-sounds">SYSTEM SOUNDS</a></h1>
 <p>Available sounds that are part of the default
-<a href="https://gitlab.com/dtos/dtos-sounds">dtos-sounds</a> package include:</p>
+<a rel="noopener" target="_blank" href="https://gitlab.com/dtos/dtos-sounds">dtos-sounds</a> package include:</p>
 <ul>
 <li>menu-01.mp3</li>
 <li>menu-02.mp3</li>
@@ -817,11 +817,11 @@ as 'yad' or 'zenity'.</p>
 </span></code></pre>
 <h1 id="keybindings"><a class="zola-anchor" href="#keybindings" aria-label="Anchor link for: keybindings">KEYBINDINGS</a></h1>
 <p>This config use the
-<a href="https://hackage.haskell.org/package/xmonad-contrib-0.17.1/docs/XMonad-Util-EZConfig.html">Xmonad.Util.EZConfig</a>
+<a rel="noopener" target="_blank" href="https://hackage.haskell.org/package/xmonad-contrib-0.17.1/docs/XMonad-Util-EZConfig.html">Xmonad.Util.EZConfig</a>
 module, that make keybindings to be written in simpler form. The
 Super/Windows key is 'M' (the modkey), the ALT key is 'M1'. Shift is 'S'
 and CTRL is 'C'. If you dont know what is the name of key actually is,
-always refer to <a href="https://hackage.haskell.org/package/xmonad-contrib-0.17.1/docs/XMonad-Util-EZConfig.html#v:additionalKeysP">EZConfig
+always refer to <a rel="noopener" target="_blank" href="https://hackage.haskell.org/package/xmonad-contrib-0.17.1/docs/XMonad-Util-EZConfig.html#v:additionalKeysP">EZConfig
 documentation</a>
 (for example, the backspace key is written as &lt;Backspace&gt;, note it is
 enclosed in &lt;…&gt; and the initial letter is capitalized). Each group of
@@ -1030,8 +1030,8 @@ current window title and workspaces in polybar. To make xmonad and
 polybar talk we only need to add [module/xmonad] in our polybar config
 and polybar ready to talk. Now, for xmonad to talk, we need to configure
 it to send log events information via
-<a href="https://hackage.haskell.org/package/dbus">dbus</a> using XMonad's
-DynamicLog with the help of xmonad-log. The <a href="https://hackage.haskell.org/package/xmonad-contrib-0.17.1/docs/XMonad-Hooks-DynamicLog.html#t:PP">pretty printing
+<a rel="noopener" target="_blank" href="https://hackage.haskell.org/package/dbus">dbus</a> using XMonad's
+DynamicLog with the help of xmonad-log. The <a rel="noopener" target="_blank" href="https://hackage.haskell.org/package/xmonad-contrib-0.17.1/docs/XMonad-Hooks-DynamicLog.html#t:PP">pretty printing
 (PP)</a>
 options, allows us to customize the formatting of status information.</p>
 <pre data-lang="haskell" style="background-color:#0f1419;color:#bfbab0;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span>bg1 </span><span style="color:#f29668;">= </span><span style="color:#c2d94c;">&quot;#3c3836&quot;
