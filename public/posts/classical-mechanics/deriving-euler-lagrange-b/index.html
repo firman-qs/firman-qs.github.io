@@ -12,23 +12,27 @@
     
     
     
-        <title>fqsss</title>
+        <title>
+            
+                Menurunkan Persamaan Euler-Lagrange Melalui Prinsip D&#x27;Alembert
+            
+        </title>
+
         
             <meta property="og:title"
-                  content="fqsss" />
-        
-
-    
-
-    
-        
-            <meta property="og:description" content="fqss is fqss" />
+                  content="Menurunkan Persamaan Euler-Lagrange Melalui Prinsip D&#x27;Alembert" />
         
     
 
     
         
-            <meta name="description" content="fqss is fqss" />
+            <meta property="og:description" content="We will derive the Euler-Lagrange Equation in non-mathematician way, of course." />
+        
+    
+
+    
+        
+            <meta name="description" content="We will derive the Euler-Lagrange Equation in non-mathematician way, of course." />
         
     
 
@@ -229,21 +233,139 @@
 
             
             
-    <main class="not-found-header">
-        
+    
+<div class="visible-element-observer-root" data-selector="main article p">
+    <main>
+        <article>
+            <div class="title">
+                
+                
     
     <div class="page-header">
-        404
+        Menurunkan Persamaan Euler-Lagrange Melalui Prinsip D&#x27;Alembert
     </div>
     
 
-        <span>Page not found :(</span>
+
+                <div class="meta">
+                    
+                        Posted on <time>2023-12-11</time>
+                    
+
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+
+                    
+                    
+
+                    
+                    
+                        <span class="tags-label"> :: </span>
+                        <span class="tags">
+                                <a href="https://firman-qs.github.io/tags/classicalmechanics101/"
+                                   class="post-tag">classicalmechanics101</a>
+                            
+                        </span>
+                    
+
+                    
+
+                </div>
+            </div>
+
+            
+
+            <section class="body">
+                <p>Kita akan memulai dengan $S$ sebagai integral dari fungsional $f[...]$</p>
+<script type="math/tex;mode=display">S = \int_{x_1}^{x_2} \mathrm{d}x~f[y(x), y'(x), x] \tag{1}</script>
+<p>di mana $y(x)$ adalah kurva yang belum diketahui, yang menghubungkan ($x_1, y_1$) dan ($x_2, y_2$), sehingga
+<script type="math/tex;mode=display">y(x_1) = y_1 ~~~\text{and}~~~ y(x_2) = y_2\tag{2}</script>
+</p>
+<p>Di antara semua kemungkinan kurva yang memenuhi Persamaan (2), kita harus
+mencari satu kurva yang meminimumkan (atau memaksimumkan, atau setidaknya
+stasionar) integral $S$. Perhatikan bahwa fungsional $f[...]$ pada Persamaan
+(1) adalah fungsi dari tiga variabel (variabel dalam konteks fungsional bisa
+berupa fungsi). Namun, karena integral mengikuti lintasan $y=y(x)$, integrand
+$f[y(x),y'(x), x]$ adalah fungsi dari satu variabel $x$.</p>
+<p>Jika kita menuliskan solusi yang kita inginkan (yaitu kurva yang membuat $S$ minimum)
+sebagai $y = y(x)$ maka integral $S$ dalam Persamaan (1) pada $y=y(x)$ nilainya
+kurang dari sembarang kurva $y=Y(x)$ di mana
+<script type="math/tex;mode=display">Y(x)=y(x) + \eta(x)\tag{3}</script>
+
+dengan $\eta(x)$ adalah <em>bump</em> atau simpangan antara kurva $y(x)$ dengan $Y(x)$.
+Karena $Y(x)$ harus melewati titik awal/$x_1$ dan akhir/$x_2$ maka $\eta(x)$ harus
+memenuhi
+<script type="math/tex;mode=display">\eta(x_1)=\eta(x_2)=0\tag{4}</script>
+
+Tentu ada banyak (tak-hingga) pilihan untuk $\eta(x)$, misalnya, kita bisa memilih
+$\eta = (x-x_1)(x_2-x)$ atau $\eta(x)=\sin[\pi(x-x_1)/(x_2-x_1)]$</p>
+<p>Integral $S$ yang dilakukan disepanjang kurva $Y(x)$ harus lebih besar dibandingkan
+ketika diambil pada kurva $y(x)$. Untuk menyatakan perysaratan ini, saya akan
+memperkenalkan parameter $\alpha$ dan mendifinisikan ulang $Y(x)$  sebagai
+<script type="math/tex;mode=display">Y(x)=y(x)+\alpha \eta(x)\tag{5}</script>
+
+Sekarang, integral $S$ yang diambil pada kurva $Y(x)$ bergantung pada parameter $\alpha$,
+sehingga saya dapat menyebutnya $S(\alpha)$. Kurva target kita, yaitu $y(x)$ didapatkan
+melalui Persamaan (5) dengan men-set $\alpha =0$. Untuk melakukan ini, kita hanya perlu
+memeriksa $\mathrm{d}S/\mathrm{d}a = 0$ ketika $\alpha=0$.</p>
+<p>Secara detail, integral $S(\alpha)$ adalah sebagai berikut:
+<script type="math/tex;mode=display">\begin{aligned}
+S(\alpha) &= \int_{x_1}^{x_2}\mathrm{d}x\ f(Y, Y', x) \\
+          &= \int_{x_1}^{x_2}\mathrm{d}x\ f(y+\alpha \eta, y'+\alpha \eta', x)\tag{5}
+\end{aligned}</script>
+</p>
+<p>Untuk mendiferensialkan Persamaan (5) terhadap $\alpha$, kita harus melakukan
+$\partial f/\partial \alpha$. Karena $\alpha$ muncul pada dua argumen dari $f$,
+maka $\partial f/\partial \alpha$ akan memberikan dua suku:
+<script type="math/tex;mode=display">\frac{\partial}{\partial \alpha} f(y+\alpha \eta, y'+\alpha\eta', x) = \eta \frac{\partial f}{\partial y} + \eta'\frac{\partial f}{\partial y'},</script>
+
+dan untuk $\mathrm{d}S/\mathrm{d}a$ yang harus sama dengan nol, maka
+<script type="math/tex;mode=display">\frac{\mathrm{d}S}{\mathrm{d}a} = \int_{x_1}^{x_2}\mathrm{d}x\ \frac{\partial f}{\partial \alpha} = \int_{x_1}^{x_2}\mathrm{d}x\ \left(
+\eta \frac{\partial f}{\partial y}+\eta'\frac{\partial f}{\partial y'}\tag{6}
+\right) = 0.</script>
+
+Kondisi ini harus benar, untuk sembarang $\eta(x)$ yang memenuhi Persamaan (4).</p>
+<p>Jika kita menuliskan suku kedua pada ruas kanan dengan integal parsial maka,
+<script type="math/tex;mode=display">\int_{x_1}^{x_2}\mathrm{d}x\ \eta'(x)\frac{\partial f}{\partial y'} = \left[
+\eta(x)\frac{\partial f}{\partial y'}
+\right]_{x_1}^{x^2} - \int_{x_1}^{x_2}\mathrm{d}x\ \eta(x)\frac{\mathrm{d}}{\mathrm{d}x}\left(\frac{\partial f}{\partial y'}\right).</script>
+</p>
+<p>Karena kondisi Persamaan (4), suku pertama pada ruas kanan sama dengan nol, sehingga
+<script type="math/tex;mode=display">\int_{x_1}^{x_2}\mathrm{d}x\ \eta'(x)\frac{\partial f}{\partial y'} = -
+\int_{x_1}^{x_2}\mathrm{d}x\ \eta(x)\frac{\mathrm{d}}{\mathrm{d}x}
+\left(\frac{\partial f}{\partial y'}\right).\tag{7}</script>
+</p>
+<p>Dengan mensubtitusi Persamaan (7) ke (6), didapatkan
+<script type="math/tex;mode=display">\int_{x_1}^{x_2}\mathrm{d}x\ \eta(x) \left(
+\frac{\partial f}{\partial y}-\frac{\mathrm{d}}{\mathrm{d}x}\frac{\partial f}{\partial y'}
+\right)=0.</script>
+</p>
+<p>Kondisi di atas harus dipenuhi untuk sembarang fungsi $\eta(x)$. Sehingga,
+faktor di dalam suku di dalam tanda kurung besar harus sama dengan nol.</p>
+<script type="math/tex;mode=display">\frac{\partial f}{\partial y}-\frac{\mathrm{d}}{\mathrm{d}x}\frac{\partial f}{\partial y'} = 0.\tag{Persamaan Euler-Lagrange}</script>
+
+            </section>
+        </article>
     </main>
+</div>
+
 
 
             
                 
             
+
+            
+                <div class="giscus"></div>
+                <script src="https://utteranc.es/client.js" repo="YOUR_NAME/YOUR_REPO" issue-term="pathname" theme="github-light" crossorigin="anonymous" async>
+</script>
 
             
         </div>
