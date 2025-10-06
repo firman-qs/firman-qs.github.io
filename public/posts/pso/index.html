@@ -14,25 +14,25 @@
     
         <title>
             
-                Metopen Kuantitatif - Review Artikel 1 dan 2
+                Particle Swarm Optimization
             
         </title>
 
         
             <meta property="og:title"
-                  content="Metopen Kuantitatif - Review Artikel 1 dan 2" />
+                  content="Particle Swarm Optimization" />
         
     
 
     
         
-            <meta property="og:description" content="Pendekatan Positivisme, Postpositivisme, Kuantitatif, Kualitatif" />
+            <meta property="og:description" content="An interesting non Gradient Descent Particle Swarm Optimization" />
         
     
 
     
         
-            <meta name="description" content="Pendekatan Positivisme, Postpositivisme, Kuantitatif, Kualitatif" />
+            <meta name="description" content="An interesting non Gradient Descent Particle Swarm Optimization" />
         
     
 
@@ -219,14 +219,14 @@
                 
     
     <div class="page-header">
-        Metopen Kuantitatif - Review Artikel 1 dan 2
+        Particle Swarm Optimization
     </div>
     
 
 
                 <div class="meta">
                     
-                        Posted on <time>2025-09-12</time>
+                        Posted on <time>2025-10-06</time>
                     
 
 
@@ -246,11 +246,14 @@
                     
                         <span class="tags-label"> :: </span>
                         <span class="tags">
-                                <a href="https://firman-qs.github.io/tags/pfis258005/"
-                                   class="post-tag">PFIS258005</a>
+                                <a href="https://firman-qs.github.io/tags/physics/"
+                                   class="post-tag">physics</a>
                             
-                                <a href="https://firman-qs.github.io/tags/kuliah/"
-                                   class="post-tag">kuliah</a>
+                                <a href="https://firman-qs.github.io/tags/python/"
+                                   class="post-tag">python</a>
+                            
+                                <a href="https://firman-qs.github.io/tags/example/"
+                                   class="post-tag">example</a>
                             
                         </span>
                     
@@ -263,19 +266,100 @@
             
 
             <section class="body">
-                <p>Nama: Firman Qashdus Sabil<br />
-NIM: 250321830676</p>
-<p>Anda dapat mendownload:</p>
+                <p>Optimization problems are everywhere—from training machine learning models, designing efficient circuits, to solving complex engineering challenges. Among the many techniques developed to tackle such problems, <strong>Particle Swarm Optimization (PSO)</strong> stands out as a simple yet powerful nature-inspired algorithm.</p>
+<p>In this blog, we’ll dive deep into what PSO is, how it works, its mathematical foundation, applications, advantages, and limitations.</p>
+<hr />
+<h2 id="what-is-particle-swarm-optimization"><a class="zola-anchor" href="#what-is-particle-swarm-optimization" aria-label="Anchor link for: what-is-particle-swarm-optimization">What is Particle Swarm Optimization?</a></h2>
+<p><strong>Particle Swarm Optimization (PSO)</strong> is a population-based stochastic optimization technique inspired by the social behavior of birds flocking or fish schooling. It was introduced by James Kennedy and Russell Eberhart in 1995.</p>
+<p>The idea is simple: each "particle" in the swarm represents a potential solution. These particles "fly" through the solution space, adjusting their position based on their own experience and the experience of neighboring particles. Over time, the swarm tends to converge towards the best solution.</p>
+<hr />
+<h2 id="core-concepts"><a class="zola-anchor" href="#core-concepts" aria-label="Anchor link for: core-concepts">Core Concepts</a></h2>
+<p>In the PSO, there is a concept about particle. A particle is a candidate solution. It has:</p>
 <ul>
-<li>Artikel 1: <a rel="noopener" target="_blank" href="https://drive.google.com/file/d/15artRAhsypcDA67rMmIXH03nKqb5j4bX/view?usp=sharing">https://doi.org/10.34105/j.kmel.2021.13.012</a></li>
-<li>pdf review Artikel 1: <a rel="noopener" target="_blank" href="https://drive.google.com/file/d/1RhPmzFOCxzCYNaaR5dTnW71iQljV3rkG/view?usp=drive_link">Drive review artikel 1</a></li>
-<li>Artikel 2: <a rel="noopener" target="_blank" href="https://drive.google.com/file/d/14o-2hRGaRduSGWVVwa5JAIZRA_1i7jvx/view?usp=sharing">https://doi.org/10.1007/s10780-021-09447-z</a></li>
-<li>pdf review Artikel 2:  <a rel="noopener" target="_blank" href="https://drive.google.com/file/d/15X5asdWvdL0grU4WVX27fPpd0_RNG2ZK/view?usp=drive_link">Drive review artikel 2</a></li>
+<li><strong>Position (<code>x</code>)</strong>: Represents the current solution.</li>
+<li><strong>Velocity (<code>v</code>)</strong>: Determines how the particle moves in the search space.</li>
+<li><strong>Personal Best (<code>pbest</code>)</strong>: The best position found by the particle itself.</li>
+<li><strong>Global Best (<code>gbest</code>)</strong>: The best position found by the entire swarm.</li>
 </ul>
-<h1 id="artikel-1-positivisme-dan-pospositivisme"><a class="zola-anchor" href="#artikel-1-positivisme-dan-pospositivisme" aria-label="Anchor link for: artikel-1-positivisme-dan-pospositivisme">Artikel 1: Positivisme dan Pospositivisme</a></h1>
-<iframe src="https://drive.google.com/file/d/1RhPmzFOCxzCYNaaR5dTnW71iQljV3rkG/preview" width="100%" height="600" allow="autoplay" frameborder="0"></iframe>
-<h1 id="artikel-2-penelitian-kuantitatif-dan-kualitatif"><a class="zola-anchor" href="#artikel-2-penelitian-kuantitatif-dan-kualitatif" aria-label="Anchor link for: artikel-2-penelitian-kuantitatif-dan-kualitatif">Artikel 2: Penelitian Kuantitatif dan Kualitatif</a></h1>
-<iframe src="https://drive.google.com/file/d/15X5asdWvdL0grU4WVX27fPpd0_RNG2ZK/preview" width="100%" height="600" allow="autoplay" frameborder="0"></iframe>
+<p>The second thing is, The swarm. Swam is a collection of particles that interact with one another. Their collective intelligence drives the optimization process.</p>
+<hr />
+<h2 id="the-pso-algorithm"><a class="zola-anchor" href="#the-pso-algorithm" aria-label="Anchor link for: the-pso-algorithm">The PSO Algorithm</a></h2>
+<p>At a high level, the PSO algorithm follows these steps:</p>
+<ol>
+<li>
+<p><strong>Initialization</strong></p>
+<ul>
+<li>Randomly initialize particles’ positions and velocities in the search space.</li>
+<li>Evaluate the fitness of each particle.</li>
+</ul>
+</li>
+<li>
+<p><strong>Update Personal Bests</strong></p>
+<ul>
+<li>Compare each particle’s fitness with its previous best (<code>pbest</code>). Update if improved.</li>
+</ul>
+</li>
+<li>
+<p><strong>Update Global Best</strong></p>
+<ul>
+<li>Identify the best solution among all particles and update the global best (<code>gbest</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Velocity and Position Update</strong></p>
+<ul>
+<li>Each particle adjusts its velocity and position using the formulas:</li>
+</ul>
+<p>$$
+v_{i}(t+1) = w \cdot v_{i}(t) + c_1 \cdot r_1 \cdot (pbest_i - x_i(t)) + c_2 \cdot r_2 \cdot (gbest - x_i(t))
+$$</p>
+<p>$$
+x_{i}(t+1) = x_{i}(t) + v_{i}(t+1)
+$$</p>
+<p>where:</p>
+<ul>
+<li>( $w$ ) = inertia weight (balances exploration and exploitation)</li>
+<li>( $c_1$, $c_2$ ) = acceleration coefficients</li>
+<li>( $r_1$, $r_2$ ) = random numbers in $[0, 1]$</li>
+</ul>
+</li>
+<li>
+<p><strong>Repeat</strong></p>
+<ul>
+<li>Continue updating until convergence or maximum iterations are reached.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="example-pseudocode"><a class="zola-anchor" href="#example-pseudocode" aria-label="Anchor link for: example-pseudocode">Example Pseudocode</a></h2>
+<pre data-lang="text" style="background-color:#0f1419;color:#bfbab0;" class="language-text "><code class="language-text" data-lang="text"><span>Initialize swarm of particles with random positions and velocities
+</span><span>For each particle:
+</span><span>    Evaluate fitness
+</span><span>    Set pbest = position
+</span><span>Set gbest = best of all pbest
+</span><span>
+</span><span>While not stopping condition:
+</span><span>    For each particle:
+</span><span>        Update velocity
+</span><span>        Update position
+</span><span>        Evaluate fitness
+</span><span>        If fitness better than pbest:
+</span><span>            Update pbest
+</span><span>        If pbest better than gbest:
+</span><span>            Update gbest
+</span><span>Return gbest
+</span></code></pre>
+<hr />
+<h2 id="visual-intuition"><a class="zola-anchor" href="#visual-intuition" aria-label="Anchor link for: visual-intuition">Visual Intuition</a></h2>
+<p>Imagine a flock of birds searching for food in a large field. Each bird explores the area randomly at first. Birds remember where they found food before (<code>pbest</code>). Birds also notice where others found food (<code>gbest</code>). Over time, the flock clusters around the best food source (optimal solution).</p>
+<p>Particle Swarm Optimization is a powerful metaheuristic algorithm inspired by natural swarming behavior. With its balance of simplicity and effectiveness, it has become a go-to tool for solving a wide range of optimization problems. However, like any algorithm, it is not a one-size-fits-all solution and requires careful tuning and adaptation to specific problems.</p>
+<hr />
+<h2 id="further-reading"><a class="zola-anchor" href="#further-reading" aria-label="Anchor link for: further-reading">Further Reading</a></h2>
+<ul>
+<li>Kennedy, J., &amp; Eberhart, R. (1995). <em>Particle swarm optimization</em>. Proceedings of ICNN'95.</li>
+<li>Clerc, M., &amp; Kennedy, J. (2002). <em>The particle swarm – explosion, stability, and convergence in a multidimensional complex space</em>.</li>
+<li>Engelbrecht, A. (2005). <em>Fundamentals of Computational Swarm Intelligence</em>.</li>
+</ul>
 
             </section>
         </article>
@@ -306,14 +390,42 @@ NIM: 250321830676</p>
         
             <li class="parent">
                 
-                <a href="https://firman-qs.github.io/posts/metopenkuan-01/#artikel-1-positivisme-dan-pospositivisme">Artikel 1: Positivisme dan Pospositivisme</a>
+                <a href="https://firman-qs.github.io/posts/pso/#what-is-particle-swarm-optimization">What is Particle Swarm Optimization?</a>
 
                 
             </li>
         
             <li class="parent">
                 
-                <a href="https://firman-qs.github.io/posts/metopenkuan-01/#artikel-2-penelitian-kuantitatif-dan-kualitatif">Artikel 2: Penelitian Kuantitatif dan Kualitatif</a>
+                <a href="https://firman-qs.github.io/posts/pso/#core-concepts">Core Concepts</a>
+
+                
+            </li>
+        
+            <li class="parent">
+                
+                <a href="https://firman-qs.github.io/posts/pso/#the-pso-algorithm">The PSO Algorithm</a>
+
+                
+            </li>
+        
+            <li class="parent">
+                
+                <a href="https://firman-qs.github.io/posts/pso/#example-pseudocode">Example Pseudocode</a>
+
+                
+            </li>
+        
+            <li class="parent">
+                
+                <a href="https://firman-qs.github.io/posts/pso/#visual-intuition">Visual Intuition</a>
+
+                
+            </li>
+        
+            <li class="parent">
+                
+                <a href="https://firman-qs.github.io/posts/pso/#further-reading">Further Reading</a>
 
                 
             </li>
