@@ -1,7 +1,7 @@
 +++
-title = "Metopen Kuantitatif - Usulan Novelty Artikel Pertemuan 4"
-date = "2025-10-03"
-description = "Tugas kuliah metopen kuantitatif, usulan Novelty Artikel Pertemuan 4"
+title = "Metopen Kuantitatif - Usulan Novelty Artikel Pertemuan 5"
+date = "2025-10-05"
+description = "Tugas kuliah metopen kuantitatif, usulan Novelty Artikel Pertemuan 5"
 
 [taxonomies]
 tags = ["PFIS258005", "kuliah"]
