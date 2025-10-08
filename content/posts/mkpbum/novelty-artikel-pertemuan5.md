@@ -13,8 +13,6 @@ comment = true
 Nama: Firman Qashdus Sabil\
 NIM: 250321830676
 
-Coming soon
-
 Anda dapat mendownload:
 - pdf usulan novelty Artikel: [disini $\rightarrow$ drive usulan novelty artikel pertemuan 5](https://drive.google.com/file/d/10fhO94zuMFTE4rtgbYztvNNBDfIo-vTZ/view?usp=sharing)
 
