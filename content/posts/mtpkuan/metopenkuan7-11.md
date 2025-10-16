@@ -14,11 +14,11 @@ Nama: Firman Qashdus Sabil\
 NIM: 250321830676
 
 # Identitas Artikel
-Judul: Generative Artificial Intelligence Acceptance Scale: A Validity and Reliability Study\
-Penulis: Fatma Gizem Karaoglan Yilmaz, Ramazan Yilmaz, & Mehmet Ceylan\
-Institusi: Bartin University, Turkey\
-Jurnal: International Journal of Human–Computer Interaction, Vol. 40(24), 8703–8715\
-DOI: [https://doi.org/10.1080/10447318.2023.2288730](https://doi.org/10.1080/10447318.2023.2288730)
+**Judul:** Generative Artificial Intelligence Acceptance Scale: A Validity and Reliability Study\
+**Penulis:** Fatma Gizem Karaoglan Yilmaz, Ramazan Yilmaz, & Mehmet Ceylan\
+**Institusi:** Bartin University, Turkey\
+**Jurnal:** International Journal of Human–Computer Interaction, Vol. 40(24), 8703–8715\
+**DOI:** [https://doi.org/10.1080/10447318.2023.2288730](https://doi.org/10.1080/10447318.2023.2288730)
 
 # Tujuan Penelitian
 Penelitian ini bertujuan untuk:
