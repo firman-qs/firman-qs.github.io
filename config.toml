@@ -2,13 +2,10 @@
 base_url = "https://firman-qs.github.io/"
 title = "fqsss"
 description = "fqss is fqss"
-
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
-
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
-
 theme = "apollo"
 taxonomies = [{ name = "tags" }]
 
@@ -29,7 +26,7 @@ external_links_target_blank = true
 [extra]
 # Put all your custom variables here
 toc = true
-theme = "toggle"
+theme = "dark"
 mathjax = true
 mathjax_dollar_inline_enable = true
 katex_enable = true
@@ -48,7 +45,6 @@ menu = [
   { name = "/projects", url = "/projects", weight = 2 },
   { name = "/tags", url = "/tags", weight = 2 },
 ]
-
 stylesheets = [
   "style.css",
   "syntax-theme-dark.css",
@@ -57,6 +53,5 @@ stylesheets = [
 # See this for more options: https://github.com/not-matthias/apollo/blob/main/config.toml#L14
 
 [extra.taxonomies]
-sort_by = "page_count"         # e.g. name, page_count
+sort_by = "page_count"  # e.g. name, page_count
 reverse = true
-

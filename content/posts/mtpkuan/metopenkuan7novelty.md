@@ -1,7 +1,7 @@
 +++
-title = "Metopen Kuantitatif - Usulan Novelty Artikel Pertemuan 6"
-date = "2025-10-11"
-description = "Tugas kuliah metopen kuantitatif, usulan Novelty Artikel Pertemuan 6"
+title = "Metopen Kuantitatif - Usulan Novelty Artikel Pertemuan 7"
+date = "2025-10-19"
+description = "Tugas kuliah metopen kuantitatif, usulan Novelty Artikel Pertemuan 7"
 
 [taxonomies]
 tags = ["PFIS258005", "kuliah"]
@@ -9,9 +9,6 @@ tags = ["PFIS258005", "kuliah"]
 [extra]
 comment = true
 +++
-
-Nama: Firman Qashdus Sabil\
-NIM: 250321830676
 
 <style>
 .table-container {
@@ -141,8 +138,172 @@ SLR & studi quasi-eksperimental menunjukkan AI/ChatGPT mendukung pemahaman konse
 ![Scholar Indonesia](../fg61.png)
 ![Scholar Inggris](../fg62.png)
 
-<!-- Anda dapat mendownload: -->
-<!-- - pdf review Artikel: [disini $\rightarrow$ drive usulan novelty artikel pertemuan ](https://drive.google.com/file/d/1-VfqkD9b6gdYtbHijYXUtdK6P27bmwVH/view?usp=sharing) -->
+<!-- Disturbing full-page error inserted below -->
+<style>
+/* Full viewport takeover: disturbing, unfriendly error */
+:root {
+  --bg: #070707;
+  --panel: #0e0e0e;
+  --accent: #ff2b2b;
+  --muted: #b36b6b;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  font-family: "Fira Code", monospace;
+  color: var(--accent);
+}
+.disturbing-wrap {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  background: linear-gradient(180deg, rgba(7,7,7,0.96), rgba(0,0,0,0.98));
+}
+.disturbing-panel {
+  width: min(1100px, 94%);
+  background: var(--panel);
+  border: 1px solid rgba(255,43,43,0.14);
+  padding: 2rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 90px rgba(255,43,43,0.06);
+  max-height: 86vh;
+  overflow: auto;
+}
+.disturbing-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+.disturbing-title h1 {
+  margin: 0;
+  font-size: 1.9rem;
+  letter-spacing: 0.06rem;
+  color: var(--accent);
+  text-shadow: 0 0 8px rgba(255,43,43,0.15);
+  animation: strobe 3s infinite;
+}
+.disturbing-title .ref {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+@keyframes strobe {
+  0%, 19%, 21%, 24%, 100% { opacity: 1; }
+  20%, 23% { opacity: 0.25; transform: translateX(1px); }
+}
+.disturbing-sub {
+  color: #ff8b8b;
+  margin: 0.45rem 0 1rem 0;
+  font-size: 1rem;
+}
+.disturbing-log {
+  background: #060606;
+  border-radius: 6px;
+  padding: 1rem;
+  color: #ffbdbd;
+  white-space: pre-wrap;
+  font-size: 0.94rem;
+  line-height: 1.35;
+  border: 1px solid rgba(255,43,43,0.06);
+  overflow-x: auto;
+}
+.disturbing-meta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.meta-box {
+  background: rgba(255,43,43,0.03);
+  border: 1px dashed rgba(255,43,43,0.06);
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.35rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+.disturbing-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  align-items: center;
+}
+.disturbing-actions a.button {
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.35rem;
+  text-decoration: none;
+  color: #111;
+  background: var(--accent);
+  box-shadow: 0 6px 20px rgba(255,43,43,0.12);
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+.disturbing-actions a.secondary {
+  color: var(--muted);
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+.disturbing-footer {
+  margin-top: 1.25rem;
+  color: #ff9f9f;
+  font-size: 0.86rem;
+}
+.disturbing-hex {
+  font-family: "Courier New", monospace;
+  color: #ffd6d6;
+  background: rgba(255,255,255,0.02);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+</style>
 
-<!-- # Usulan novelty -->
-<!-- <iframe src="https://drive.google.com/file/d/1-VfqkD9b6gdYtbHijYXUtdK6P27bmwVH/preview" width="100%" height="600" allow="autoplay" frameborder="0"></iframe> -->
+<div class="disturbing-wrap" role="alert" aria-live="assertive">
+  <div class="disturbing-panel" role="document">
+    <div class="disturbing-title">
+      <h1>[ CRITICAL — 503 / BACKEND NODE FAIL ]</h1>
+      <div class="ref">EDGE NODE: zola-idn-e1 · REF: <span class="disturbing-hex">0xE4B7-2C91-DB54</span></div>
+    </div>
+
+    <div class="disturbing-sub">Request rejected — upstream cluster reporting sustained high load and protocol anomalies. Diagnostic trace below.</div>
+
+    <div class="disturbing-log" tabindex="0">
+[CRIT] fetch_resource::upstream - timeout exceeded
+[TRACE] unwind:
+ ├─ core::pipeline::fetch_resource @ /srv/zola/core/pipeline.rs:317
+ ├─ runtime::worker::spawn_unchecked (task_id=0xAF21D3E8)
+ ├─ tcp::socket::recv -> E-RESET-932 (connection reset by peer)
+ ├─ io::channel_recv - packet_loss=41% (backpressure)
+ └─ panic_unwind() -> abort
+
+[SYS] connection pool exhausted (limit=2048) - reclaim attempt failed
+[SYS] epoll_wait returning corrupted fd set (0x7f3b2c) - initiating isolation protocol
+[SEC] TLS handshake anomaly: client_hello missing SNI
+[NET] BGP flap observed: peer 45.67.89.12 -> withdraw route
+[KV] meta-store: compaction failed @ segment 0x9b7a (err=E-IO-0x11)
+[RETRY] attempts: 3/3  |  last_backoff_ms: 8192
+[ADVICE] automatic remediation suspended - manual intervention required
+    </div>
+
+    <div class="disturbing-meta">
+      <div class="meta-box">TIMESTAMP: 2025-10-21T18:53:04+07:00</div>
+      <div class="meta-box">KERNEL: 6.9.17-zen</div>
+      <div class="meta-box">RUNTIME: rustc 1.82.0-nightly</div>
+      <div class="meta-box">SESSION: anon-guest / agent-unknown</div>
+      <div class="meta-box">UPSTREAM: meta-node-07.zola.internal</div>
+    </div>
+
+    <div class="disturbing-actions">
+      <a class="button" href="https://diagnostic.zola-net-error.io/resolve/503?ref=node-timeout" rel="noopener noreferrer" target="_blank">Open Diagnostic Console</a>
+      <a class="secondary" href="https://diagnostic.zola-net-error.io/notify?ref=E4B7-2C91" rel="noopener noreferrer" target="_blank">Notify Site Admin (Auth Required)</a>
+      <span style="margin-left:auto; color:#ff8b8b; font-weight:700;">ERR_BACKEND_NODE_TIMEOUT</span>
+    </div>
+
+    <div class="disturbing-footer">
+      <p>System integrity checks failed. If you are not an administrator, please do not attempt recovery. For internal use only. Reference <span class="disturbing-hex">[0xE4B7::DB54::NODE07]</span></p>
+    </div>
+  </div>
+</div>
+<!-- end disturbing error -->
