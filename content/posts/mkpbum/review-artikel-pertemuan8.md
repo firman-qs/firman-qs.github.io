@@ -38,7 +38,7 @@ hubungan antara penelitian ilmiah, inovasi teknologi, dan tujuan pembangunan
 berkelanjutan.
 
 # Metode Penelitian
-Penelitian ini menggunakan metode kuantitatif berbasis text mining dan machine learning. Langkah-langkahnya meliputi:
+Penelitian ini menggunakan metode kuantitatif berbasis _text mining_ dan _machine learning_. Langkah-langkahnya meliputi:
 1. Menyusun taksonomi dan kata kunci SDG berdasarkan basis data Scopus/SciVal dan dokumen resmi PBB (2015–2020).
 2. Menggunakan data publikasi ilmiah yang telah diberi label SDG sebagai data latih (training data).
 3. Menguji beberapa algoritma klasifikasi teks seperti Naive Bayes, Support Vector Machine, dan Logistic Regression dengan berbagai model representasi teks (TF-IDF, Word2Vec, Doc2Vec).
@@ -78,10 +78,6 @@ perusahaan dalam mengarahkan inovasi yang berkontribusi pada SDGs.
 # Novelty yang Dapat Diajukan untuk Penelitian Selanjutnya
 - Menggunakan deep learning (misalnya BERT, GPT-based models) untuk menangkap konteks semantik yang lebih dalam dan meningkatkan akurasi klasifikasi.
 - Mengintegrasikan analisis multibahasa untuk memetakan paten non-Inggris atau publikasi regional.
-- Mengembangkan model dinamis yang dapat melacak evolusi kontribusi SDG dari waktu ke waktu.
 - Mengaitkan hasil klasifikasi dengan indikator dampak sosial-ekonomi untuk menilai efektivitas inovasi terhadap pencapaian SDG.
-- Menggabungkan data open access, laporan industri, dan kebijakan publik untuk menciptakan ekosistem pemetaan SDG yang lebih komprehensif.
-
-
 
 <!-- <iframe src="https://drive.google.com/file/d/1-bB_VblQ0trslAnH-QY8gS-qE475NpdK/preview" width="100%" height="600" allow="autoplay" frameborder="0"></iframe> -->
