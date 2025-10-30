@@ -14,7 +14,7 @@ Nama: Firman Qashdus Sabil\
 NIM: 250321830676
 
 # Identitas Artikel
-**Judul**: Using Hierarchical Multiple Regression to Model the Impact of AI-Powered Adaptive Testing on Student\ **Academic** Fortunes and Test Anxiety in the Ghanaian Context\
+**Judul**: Using Hierarchical Multiple Regression to Model the Impact of AI-Powered Adaptive Testing on Student Academic Fortunes and Test Anxiety in the Ghanaian Context\
 **Penulis**: Simon Ntumi\
 **Jurnal**: Discover Education (2025), Volume 4:141\
 **DOI**: [https://doi.org/10.1007/s44217-025-00524-4](https://doi.org/10.1007/s44217-025-00524-4)
