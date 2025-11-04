@@ -7,7 +7,7 @@ description = "We will derive the Euler-Lagrange Equation in non-mathematician w
 tags=["classicalmechanics101"]
 
 [extra]
-comment = true
+featured = true
 +++
 
 Kita akan memulai dengan $S$ sebagai integral dari fungsional $f[...]$

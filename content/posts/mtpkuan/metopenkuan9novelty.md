@@ -17,14 +17,16 @@ NIM: 250321830676
 .table-container {
   margin: 2rem auto;
   overflow-x: auto;
-   width: 90vw;
-  margin-left: calc(-43vw + 50%);
+  width: 90vw;
+  margin-left: calc(-44.5vw + 50%);
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   padding: 1rem 0;
 }
 
 .table-container table {
   width: 100%;
+  min-width: 800px;
   border-collapse: collapse;
   table-layout: fixed;
   border: 1px solid #444444; /* outer border black */
@@ -42,7 +44,7 @@ NIM: 250321830676
 
 <div class="table-container">
   <table>
-    <thead style="background-color: #0D0D0D;">
+    <thead>
       <tr>
         <th >Judul & Reviewer</th>
         <th >Metode Penelitian</th>
