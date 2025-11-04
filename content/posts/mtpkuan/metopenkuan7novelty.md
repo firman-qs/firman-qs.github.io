@@ -129,11 +129,11 @@ Terdapat beberapa hasil menarik dari artikel-artikel di atas:
 
 Usulan Judul: 
 
-{{ note(header="Usulan Judul", body="
+{% alert(note=true) %}
 **Integrasi AI sebagai Pendamping Virtual Lab untuk Meningkatkan Pemahaman Konseptual: Sebuah Quasi-Eksperimen dengan Analisis Retensi dan Validitas Menggunakan DAG**
 
 **AI Integration as a Virtual Lab Companion to Enhance Conceptual Understanding: A Quasi-Experiment with Retention and Validity Analysis Using DAG**
-") }}
+{% end %}
 
 
 SLR & studi quasi-eksperimental menunjukkan AI/ChatGPT mendukung pemahaman konsep abstrak (termodinamika, fisika) tetapi ada gap pada topik lain dan retensi; menggabungkan virtual lab (visualisasi) + ChatGPT (explanations, prompting) menargetkan kelemahan pemahaman medan/konsep abstrak di fisika. Dapat digunakan DAG untuk memformalkan asumsi kausal dan CLOSER/CIDER + praktik validitas untuk pelaporan.

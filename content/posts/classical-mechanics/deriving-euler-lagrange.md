@@ -12,14 +12,14 @@ comment = true
 
 Kita akan memulai dengan $S$ sebagai integral dari fungsional $f[...]$
 
-{% katex(block=true) %}
+$$
 S = \int_{x_1}^{x_2} \mathrm{d}x~f[y(x), y'(x), x] \tag{1}
-{% end %}
+$$
 
 di mana $y(x)$ adalah kurva yang belum diketahui, yang menghubungkan ($x_1, y_1$) dan ($x_2, y_2$), sehingga 
-{% katex(block=true) %}
+$$
 y(x_1) = y_1 ~~~\text{and}~~~ y(x_2) = y_2\tag{2}
-{% end %}
+$$
 
 Di antara semua kemungkinan kurva yang memenuhi Persamaan (2), kita harus
 mencari satu kurva yang meminimumkan (atau memaksimumkan, atau setidaknya
@@ -31,78 +31,78 @@ $f[y(x),y'(x), x]$ adalah fungsi dari satu variabel $x$.
 Jika kita menuliskan solusi yang kita inginkan (yaitu kurva yang membuat $S$ minimum) 
 sebagai $y = y(x)$ maka integral $S$ dalam Persamaan (1) pada $y=y(x)$ nilainya
 kurang dari sembarang kurva $y=Y(x)$ di mana
-{% katex(block=true) %}
+$$
 Y(x)=y(x) + \eta(x)\tag{3}
-{% end %}
+$$
 dengan $\eta(x)$ adalah _bump_ atau simpangan antara kurva $y(x)$ dengan $Y(x)$.
 Karena $Y(x)$ harus melewati titik awal/$x_1$ dan akhir/$x_2$ maka $\eta(x)$ harus
 memenuhi 
-{% katex(block=true) %}
+$$
 \eta(x_1)=\eta(x_2)=0\tag{4}
-{% end %}
+$$
 Tentu ada banyak (tak-hingga) pilihan untuk $\eta(x)$, misalnya, kita bisa memilih
 $\eta = (x-x_1)(x_2-x)$ atau $\eta(x)=\sin[\pi(x-x_1)/(x_2-x_1)]$
 
 Integral $S$ yang dilakukan disepanjang kurva $Y(x)$ harus lebih besar dibandingkan
 ketika diambil pada kurva $y(x)$. Untuk menyatakan perysaratan ini, saya akan 
 memperkenalkan parameter $\alpha$ dan mendifinisikan ulang $Y(x)$  sebagai
-{% katex(block=true) %}
+$$
 Y(x)=y(x)+\alpha \eta(x)\tag{5}
-{% end %}
+$$
 Sekarang, integral $S$ yang diambil pada kurva $Y(x)$ bergantung pada parameter $\alpha$,
 sehingga saya dapat menyebutnya $S(\alpha)$. Kurva target kita, yaitu $y(x)$ didapatkan 
 melalui Persamaan (5) dengan men-set $\alpha =0$. Untuk melakukan ini, kita hanya perlu
 memeriksa $\mathrm{d}S/\mathrm{d}a = 0$ ketika $\alpha=0$.
 
 Secara detail, integral $S(\alpha)$ adalah sebagai berikut:
-{% katex(block=true) %}
+$$
 \begin{aligned}
 S(\alpha) &= \int_{x_1}^{x_2}\mathrm{d}x\ f(Y, Y', x) \\
           &= \int_{x_1}^{x_2}\mathrm{d}x\ f(y+\alpha \eta, y'+\alpha \eta', x)\tag{5}
 \end{aligned}
-{% end %}
+$$
 
 Untuk mendiferensialkan Persamaan (5) terhadap $\alpha$, kita harus melakukan
 $\partial f/\partial \alpha$. Karena $\alpha$ muncul pada dua argumen dari $f$, 
 maka $\partial f/\partial \alpha$ akan memberikan dua suku:
-{% katex(block=true) %}
+$$
 \frac{\partial}{\partial \alpha} f(y+\alpha \eta, y'+\alpha\eta', x) = \eta \frac{\partial f}{\partial y} + \eta'\frac{\partial f}{\partial y'},
-{% end %}
+$$
 dan untuk $\mathrm{d}S/\mathrm{d}a$ yang harus sama dengan nol, maka
-{% katex(block=true) %}
+$$
 \frac{\mathrm{d}S}{\mathrm{d}a} = \int_{x_1}^{x_2}\mathrm{d}x\ \frac{\partial f}{\partial \alpha} = \int_{x_1}^{x_2}\mathrm{d}x\ \left(
 \eta \frac{\partial f}{\partial y}+\eta'\frac{\partial f}{\partial y'}\tag{6}
 \right) = 0.
-{% end %}
+$$
 Kondisi ini harus benar, untuk sembarang $\eta(x)$ yang memenuhi Persamaan (4).
 
 Jika kita menuliskan suku kedua pada ruas kanan dengan integal parsial maka,
-{% katex(block=true) %}
+$$
 \int_{x_1}^{x_2}\mathrm{d}x\ \eta'(x)\frac{\partial f}{\partial y'} = \left[
 \eta(x)\frac{\partial f}{\partial y'}
 \right]_{x_1}^{x^2} - \int_{x_1}^{x_2}\mathrm{d}x\ \eta(x)\frac{\mathrm{d}}{\mathrm{d}x}\left(\frac{\partial f}{\partial y'}\right).
-{% end %}
+$$
 
 Karena kondisi Persamaan (4), suku pertama pada ruas kanan sama dengan nol, sehingga
-{% katex(block=true) %}
+$$
 \int_{x_1}^{x_2}\mathrm{d}x\ \eta'(x)\frac{\partial f}{\partial y'} = -
 \int_{x_1}^{x_2}\mathrm{d}x\ \eta(x)\frac{\mathrm{d}}{\mathrm{d}x}
 \left(\frac{\partial f}{\partial y'}\right).\tag{7}
-{% end %}
+$$
 
 Dengan mensubtitusi Persamaan (7) ke (6), didapatkan
-{% katex(block=true) %}
+$$
 \int_{x_1}^{x_2}\mathrm{d}x\ \eta(x) \left(
 \frac{\partial f}{\partial y}-\frac{\mathrm{d}}{\mathrm{d}x}\frac{\partial f}{\partial y'}
 \right)=0.
-{% end %}
+$$
 
 Kondisi di atas harus dipenuhi untuk sembarang fungsi $\eta(x)$. Sehingga,
 faktor di dalam suku di dalam tanda kurung besar harus sama dengan nol.
 
-{% katex(block=true) %}
+$$
 \frac{\partial f}{\partial y}-\frac{\mathrm{d}}{\mathrm{d}x}\frac{\partial f}{\partial y'} = 0.\tag{Persamaan Euler-Lagrange}
-{% end %}
+$$
 
 
 

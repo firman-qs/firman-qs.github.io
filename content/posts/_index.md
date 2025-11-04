@@ -1,10 +1,9 @@
 +++
-paginate_by = 7
-title = "Posts"
+title = "High entropy writing"
 sort_by = "date"
-insert_anchor_links = "heading"
-transparent = true
-
-[extra]
-comment = true
+template = "article_list.html"
+page_template = "article.html"
+paginate_by = 5
 +++
+
+Quarks, quirks, and questionable constants.

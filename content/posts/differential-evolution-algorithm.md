@@ -34,20 +34,20 @@ At its core, DE consists of 4 steps:
 
 We start by initializing a population of $ N_p $ individuals:
 
-{% katex(block=true) %}
+$$
 \mathbf{x}_{i,0} \sim \mathcal{U}(\mathbf{l}, \mathbf{u}) \quad \text{for } i = 1, 2, \dots, N_p
-{% end %}
+$$
 
 where $\mathbf{l}$ and $\mathbf{u}$ are the lower and upper bounds of the search space.
 
 ### 2. Mutation
 
 For each individual $\mathbf{x}_{i,G}$ in generation $ G $, we generate a
-_donor vector_  {{ katex(body="\mathbf{v}_{i,G+1}") }} using the DE/rand/1 strategy:
+_donor vector_  $\mathbf{v}_{i,G+1}$ using the DE/rand/1 strategy:
 
-{% katex(block=true) %}
+$$
 \mathbf{v}_{i,G+1} = \mathbf{x}_{r_1,G} + F \cdot (\mathbf{x}_{r_2,G} - \mathbf{x}_{r_3,G})
-{% end %}
+$$
 
 Where:
 
@@ -60,13 +60,13 @@ Other strategies include DE/best/1, DE/current-to-best/1, etc.
 
 To increase diversity, DE uses **binomial crossover** to create a **trial vector** $ \mathbf{u}_{i,G+1} $:
 
-{% katex(block=true) %}
+$$
 u_{i,G+1}^{(j)} =
 \begin{cases}
 v_{i,G+1}^{(j)} & \text{if } \text{rand}(0,1) < C_r \text{ or } j = j_{\text{rand}} \\
 x_{i,G}^{(j)} & \text{otherwise}
 \end{cases}
-{% end %}
+$$
 
 Where:
 
@@ -77,13 +77,13 @@ Where:
 
 Finally, apply a **greedy selection**:
 
-{% katex(block=true) %}
+$$
 \mathbf{x}_{i,G+1} =
 \begin{cases}
 \mathbf{u}_{i,G+1} & \text{if } f(\mathbf{u}_{i,G+1}) \leq f(\mathbf{x}_{i,G}) \\
 \mathbf{x}_{i,G} & \text{otherwise}
 \end{cases}
-{% end %}
+$$
 
 Where $ f(\cdot) $ is the objective function being minimized.
 
