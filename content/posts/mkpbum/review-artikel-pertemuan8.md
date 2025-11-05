@@ -1,5 +1,5 @@
 +++
-title = "PBuM - Review Artikel Pertemuan 8"
+title = "PBuM - Review Artikel Pertemuan 9"
 date = "2025-10-25"
 description = "Sains & Pembangunan: SDG 3, 4, 6, 7, 12, 13"
 
@@ -17,7 +17,7 @@ Anda dapat mendownload:
 - artikel: [disini $\rightarrow$ https://doi.org/10.1007/s11192-022-04358-x](https://drive.google.com/file/d/14OKJMF99-sjxEjgZd43dspyU4olaFvqg/view?usp=sharing)
 <!-- - pdf review Artikel: [disini $\rightarrow$ Drive review artikel](https://drive.google.com/file/d/1-bB_VblQ0trslAnH-QY8gS-qE475NpdK/view?usp=sharing) -->
  
-> Review Artikel Pertemuan 8: Sains & Pembangunan: SDG 3, 4, 6, 7, 12, 13
+> Review Artikel Pertemuan 9: Sains & Pembangunan: SDG 3, 4, 6, 7, 12, 13
 
 # Identitas Artikel
 

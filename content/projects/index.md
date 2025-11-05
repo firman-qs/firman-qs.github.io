@@ -25,3 +25,6 @@ Here are some screenshots from Elm.
 
 ### Creating Circuit
 ![Home](project-1d.png)
+
+## LAMBDA
+> Yet Antoher AI for E Coming Soon... LAMBDA stand for [L]ambda [A]int [M]ade [b]y [D]umb [A]lgorithm
