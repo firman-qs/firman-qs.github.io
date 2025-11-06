@@ -13,20 +13,20 @@ comment = true
 Nama: Firman Qashdus Sabil\
 NIM: 250321830676
 
-# Identitas Artikel
+## Identitas Artikel
 **Judul:** Generative Artificial Intelligence Acceptance Scale: A Validity and Reliability Study\
 **Penulis:** Fatma Gizem Karaoglan Yilmaz, Ramazan Yilmaz, & Mehmet Ceylan\
 **Institusi:** Bartin University, Turkey\
 **Jurnal:** International Journal of Human–Computer Interaction, Vol. 40(24), 8703–8715\
-**DOI:** [https://doi.org/10.1080/10447318.2023.2288730](https://doi.org/10.1080/10447318.2023.2288730)
+**DOI:** [https://doi.org/10.1080/10447318.2023.2288730](https://drive.google.com/file/d/1Y1iPNFtdzETjl3LUehVnNldB36MWR5Bx/view?usp=sharing)
 
-# Tujuan Penelitian
+## Tujuan Penelitian
 Penelitian ini bertujuan untuk:
 - Mengembangkan skala penerimaan Generative AI (GAI) bagi mahasiswa, berdasarkan model Unified Theory of Acceptance and Use of Technology (UTAUT).
 - Mengukur tingkat penerimaan mahasiswa terhadap aplikasi GAI (seperti ChatGPT, DALL-E, Midjourney, dll.) dalam konteks pendidikan.
 - Menyediakan alat ukur yang valid dan reliabel untuk menilai kesiapan dan persepsi pengguna terhadap penerapan GAI di bidang pendidikan tinggi.
 
-# Metode Penelitian
+## Metode Penelitian
 Jenis penelitian: Penelitian pengembangan instrumen (scale development study).
 Pendekatan teori: Model UTAUT dengan empat konstruk utama:
 2. Performance Expectancy
@@ -48,7 +48,7 @@ Tahapan utama:
 
 Alat analisis: SPSS 24.0 dan AMOS 22.0.
 
-# Hasil/Temuan Utama
+## Hasil/Temuan Utama
 - Skala akhir terdiri dari 20 butir pernyataan dalam empat faktor utama:
     - Performance Expectancy (7 item)
     - Effort Expectancy (5 item)
@@ -59,13 +59,13 @@ Alat analisis: SPSS 24.0 dan AMOS 22.0.
 - Konsistensi internal tinggi: Cronbach’s α = 0.97.
 - Skala ini terbukti valid, reliabel, dan stabil dari waktu ke waktu, serta efektif membedakan tingkat penerimaan mahasiswa terhadap GAI.
 
-# Kesimpulan
+## Kesimpulan
 Penelitian ini berhasil:
 - Mengembangkan instrumen baru yang valid dan reliabel untuk mengukur penerimaan GAI berdasarkan model UTAUT.
 - Menunjukkan bahwa mahasiswa memiliki tingkat penerimaan tinggi terhadap GAI, terutama jika aplikasi dianggap mudah digunakan dan bermanfaat dalam pembelajaran.
 - Memberikan kontribusi orisinal terhadap literatur pendidikan dengan menambahkan generative AI acceptance scale berbasis teori.
 
-# Kelebihan (termasuk gap penelitian yang diteliti artikel ini)
+## Kelebihan (termasuk gap penelitian yang diteliti artikel ini)
 Kelebihan:
 - Mengisi kekosongan riset: belum ada instrumen teoretis berbasis UTAUT untuk mengukur penerimaan generative AI di konteks pendidikan.
 - Desain metodologis kuat: tiga tahap analisis (EFA, CFA, reliabilitas).
@@ -76,7 +76,7 @@ Gap yang diteliti:
 - Sebelum studi ini, riset seputar AI di pendidikan umumnya masih bersifat tinjauan (review) atau berfokus pada ChatGPT secara spesifik, bukan generative AI secara umum.
 - Belum ada model penerimaan berbasis teori (UTAUT) yang digunakan untuk GAI acceptance di lingkungan pendidikan.
 
-# Kekurangan
+## Kekurangan
 - Keterbatasan generalisasi: hanya dilakukan di satu universitas di Turki.
 - Tidak mempertimbangkan variabel tambahan seperti ethical concerns, privacy issues, atau cultural factors.
 - Skala dikembangkan dalam bahasa Turki, dan belum diuji dalam bahasa Inggris atau konteks lintas budaya.
