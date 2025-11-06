@@ -12,7 +12,10 @@ title = "Home"
                                ↓      ↓
                              γ          γ
                          (two gamma photons)
-
+                         
+      ...:::::::----====++++***####%%%@@
+    ..:::---===+++***####%%%%@@@@@@
+  ..::--===+++***####%%%%@@@@@@@
 ```
 {% end %}
 
@@ -20,10 +23,10 @@ title = "Home"
 Physics student. Engaged to Electrodynamics. Sworn enemy of Thermodynamics.
 Fluent in Rust and C#, occasionally screams at LaTeX until it compiles out of
 fear.
-
+<!-- 
 $$
 \frac{d}{dt} \left( m \dot{x} + q \mathbf{A} \right) = -q \nabla \phi + q \dot{x} \times (\nabla \times \mathbf{A})
-$$
+$$ -->
 
 Once tried to simulate the universe, accidentally made a physics simulation
 [ELM](/projects/project-1/).
