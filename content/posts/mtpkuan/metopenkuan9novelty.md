@@ -13,6 +13,7 @@ comment = true
 Nama: Firman Qashdus Sabil\
 NIM: 250321830676
 
+## 5 Artikel Pilihan
 <style>
 .table-container {
   margin: 2rem auto;
@@ -56,90 +57,171 @@ NIM: 250321830676
     <tbody>
       <tr>
         <td>
-          A Graphical Catalog of Threats to Validity Linking Social Science with Epidemiology 
-          <a href="https://muhammadfikrul.blogspot.com/2025/10/metodologi-penelitian-kuantitatif_52.html">Muhammad Fikrul Akbar Suwahyu</a>
+          Exploring the Effects of Omitted Variable Bias in Physics Education Research — Walsh et al. (2021, Physical Review Physics Education Research)
+          <a href="https://jeneregretterienn00.blogspot.com/2025/10/metopenstatistik-2-korelasi-dan-regresi.html">Aurelia Apriliyani</a>
         </td>
         <td>
-          Katalog 37 ancaman kevalidan (Campbell tradition) dan pemetaan ke DAG untuk menganalisis bias.
+          <ul>
+            <li>Kuantitatif, berbasis simulation modeling dan analisis regresi linear untuk menjelaskan bagaimana bias variabel terlewat (omitted variable bias, OVB) memengaruhi hasil penelitian pendidikan fisika.</li>
+            <li>Menggunakan data nyata dan model analitik hipotesis (simulasi) untuk menggambarkan efek bias.</li>
+          </ul>
         </td>
-        <td>Representasi DAG untuk setiap ancaman; pembahasan ancaman internal/construct/external/statistical.
+        <td>
+          <ul>
+            <li>Dataset performa mahasiswa pada survei sikap terhadap eksperimen fisika.</li>
+            <li>Analisis regresi linear dengan variabel kontrol yang disusun secara hipotetis.</li>
+          </ul>
         </td>
-        <td>Menghubungkan ancaman metodologis klasik ke struktur kausal (DAG) sehingga memudahkan mitigasi lewat desain dan analisis.
+        <td>
+          <ul>
+            <li>Mengabaikan variabel pengganggu (confounding variable) yang berkorelasi dengan variabel independen menyebabkan estimasi efek menjadi bias.</li>
+            <li>Menunjukkan pentingnya pemilihan variabel berdasarkan teori, bukan hanya signifikansi statistik.</li>
+          </ul>
         </td>
-        <td>Meskipun komprehensif, masih perlu contoh penerapan praktisnya di studi pendidikan-AI (mis. menilai collider bias dari self-selection pengguna AI dalam kelas).
+        <td>
+          <ul>
+            <li>Banyak penelitian pendidikan fisika masih menggunakan desain kuasi-eksperimental tanpa pengendalian variabel pengganggu.</li>
+            <li>Perlu pendekatan analitik yang menggabungkan teori kausal dan machine learning (misalnya AI-based variable selection) untuk mengurangi OVB dalam data pendidikan.</li>
+          </ul>
         </td>
       </tr>
       <tr>
         <td>
-          A systematic literature review of artificial
-          intelligence (AI) in secondary school physics:
-          applications, benefits, and challenges
-          <a href="https://firman-qs.github.io/posts/mtpkuan/metopenkuan6-10/">Firman Qashdus Sabil</a>
+          Mixed Results from a Multiple Regression Analysis of Supplemental Instruction Courses in Introductory Physics; Burkholder, Salehi, & Wieman (2021, PLOS ONE)
+          <a href="https://journalriviewbyallysa.blogspot.com/2025/10/metodologi-penelitian-kuantitatif_30.html">Allysa Hafsah Hafidhah</a>
         </td>
-        <td>Systematic Literature Review (PRISMA) pada artikel 2020–2024, screening ganda, ekstraksi data ke spreadsheet terbuka.
+        <td>
+          <ul>
+            <li>Desain kuasi-eksperimental dengan analisis regresi linear berganda.</li>
+            <li>Membandingkan hasil akhir ujian mahasiswa yang mengikuti kursus tambahan (supplemental instruction, SI) dengan yang tidak.</li>
+          </ul>
         </td>
-        <td>Basis data bibliografis (Scopus, WoS), coding sheet untuk: aplikasi AI, manfaat, tantangan; alat penilaian kualitas studi (critical appraisal tools).</td>
-        <td>AI menjanjikan personalisasi (adaptive systems, ITS), virtual labs, dan tutoring (LLM) untuk fisika menengah; manfaat: peningkatan keterlibatan dan diferensiasi; tantangan: kesiapan guru, privasi data, dan risiko ketergantungan AI (mengurangi berpikir kritis).</td>
-        <td>Sedikit bukti jangka panjang tentang dampak AI terhadap kemampuan berpikir kritis dan pemecahan masalah di fisika; juga kurang studi yang menguji integrasi AI + virtual labs di konteks sekolah menengah dengan desain eksperimental jangka panjang.</td>
+        <td>
+          <ul>
+            <li>Nilai ujian akhir mahasiswa pada mata kuliah Fisika 1 dan Fisika 2 (Mekanika & E&M).</li>
+            <li>Data latar belakang (nilai SAT/ACT, pengalaman SMA, kesiapan matematika).</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Kursus SI efektif untuk mata kuliah E&M tetapi tidak signifikan untuk Mekanika.</li>
+            <li>Hasil yang berbeda menunjukkan kompleksitas desain dan pelaksanaan SI.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Kurangnya pemahaman faktor penyebab ketidakkonsistenan hasil (faktor motivasi, self-selection, strategi belajar).</li>
+            <li>Perlu model AI atau learning analytics untuk memprediksi keberhasilan intervensi SI berdasarkan profil siswa.</li>
+          </ul>
+        </td>
       </tr>
       <tr>
-        <td>Quantitative Research Excellence: Study Design and Reliable and Valid Measurement of Variables
-          <a href="https://medium.com/@nafilana.amalia/penelitian-kuantitatif-eksperimental-sejarah-karakteristik-ancaman-validitas-dan-tahapan-15346dc02449">Nafila Lana Amalia</a>
+        <td>Linear Regression Model to Predict the Use of Artificial Intelligence in Experimental Science Students — Flores Hinostroza et al. (2025, International Electronic Journal of Mathematics Education)
+          <a href="https://metopenkuanti.blogspot.com/2025/10/statistik-2-korelasi-dan-regresi.html">Dhinar Asri Intantri</a>
         </td>
-        <td >Artikel pedagogis/metodologis yang merangkum desain kuantitatif (P-exp, Q-exp, EXP) dan validitas/ reliabilitas instrumen.</td>
-        <td >Diskusi tentang power calculation, ancaman bias, validitas pengukuran, reliability testing, dan praktek pelaporan.</td>
-        <td >Panduan praktis untuk merancang studi kuantitatif berkualitas: hitung sampel (power), atasi ancaman bias, laporkan prosedur dan validasi instrumen.</td>
-        <td >Aplikasi khusus ke konteks pendidikan fisika + AI memerlukan adaptasi instrumen (mis. validasi rubrik penilaian interaksi AI, log data).</td>
+        <td>
+          <ul>
+            <li>Pendekatan kuantitatif dengan survei dan analisis regresi linear berganda.</li>
+            <li>Mengadopsi Technology Acceptance Model (TAM) sebagai kerangka teori.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Kuesioner terstruktur kepada 459 mahasiswa sains eksperimental di Universitas Chimborazo, Ekuador.</li>
+            <li>Variabel: kompetensi AI, sumber daya digital, dan tingkat penggunaan AI.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Kompetensi AI dan ketersediaan sumber daya digital adalah prediktor signifikan terhadap penggunaan AI.</li>
+            <li>Menunjukkan perlunya integrasi pelatihan AI dalam kurikulum pendidikan sains.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Belum ada penelitian intervensi untuk menguji bagaimana pelatihan berbasis AI memengaruhi pemahaman konsep sains eksperimen.</li>
+            <li>Perlu studi penerapan AI dalam praktik pengajaran nyata (termasuk simulasi fisika).</li>
+          </ul>
+        </td>
       </tr>
       <tr>
         <td>
-        Experimental research on enhancing effectiveness in teaching the nature of seasons
-          <a href="https://drive.google.com/file/d/1anXoWQoVbfCKFJ_oyYXX8MtcW50xJOVD/view">Alfi Mufidah</a>
+          Impact of Road Geometry on School-Area Traffic Congestion Using Regression and Machine Learning Analysis: Lessons from Six Saudi Cities — Shokry et al. (2025, Transportation Research Interdisciplinary Perspectives)
+          <a href="https://metodologipenelitiankuantitatifcindy.blogspot.com/2025/10/analisis-atau-review-kritis-artikel.html">Cindy Tyas Harvina</a>
         </td>
-        <td >Eksperimen dengan kelompok kontrol & eksperimen (pre/post/retensi), analisis ANOVA berulang; peserta: siswa kelas 8 (n ≈ 148). Model pengajaran berbasis physical model (CAEFUS).</td>
-        <td >tes pilihan berganda untuk pencapaian (SEMAT), analisis gambar/drawing (EFA pada gambar siswa), lembar retensi, rubrik coding hasil gambar.</td>
-        <td >Efek besar untuk kelompok eksperimen (peningkatan pre→post→retensi; ANOVA signifikan, η² besar), menunjukkan physical models efektif untuk konsep abstrak (seasons).</td>
-        <td >Fokus pada model fisik; kurang penelitian yang menguji kombinasi model fisik + teknologi (VR atau AI tutor) untuk transfer konsep yang lebih kompleks atau pada topik fisika lain (mis. elektromagnetisme).</td>
+          <td>
+            <ul>
+              <li>Analisis kuantitatif menggunakan Multiple Regression dan Machine Learning (XGBoost).</li>
+              <li>Membandingkan performa model regresi vs ML dalam memprediksi kemacetan berdasarkan geometri jalan.</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>242 segmen jalan di 6 kota, data waktu tempuh dari Google Maps API.</li>
+              <li>Variabel: kategori jalan, jumlah lajur, arah lalu lintas, median, parkir di pinggir jalan.</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Model XGBoost lebih akurat daripada regresi linear (R² = 0,71).</li>
+              <li>Faktor paling berpengaruh: kategori jalan dan jumlah lajur.</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Belum diterapkan untuk konteks pendidikan (mis. mobilitas siswa, efisiensi jalur sekolah, atau pembelajaran data-driven).</li>
+              <li>Dapat diadaptasi untuk pendidikan fisika: penerapan machine learning regression dalam menganalisis data eksperimen siswa (mis. gaya, percepatan, waktu tempuh).</li>
+            </ul>
+          </td>
       </tr>
       <tr>
         <td>
-          Discovering Internal Validity Threats and Operational Concerns in Single‐Case Experimental Designs Through Directed Acyclic Graphs
-          <a href="https://mellyyua.blogspot.com/2025/10/review-artikel-topik-9.html">Melly Yuni Anjani</a>
+          Using Hierarchical Multiple Regression to Model the Impact of AI-Powered Adaptive Testing on Student Academic Fortunes and Test Anxiety in the Ghanaian Context — Ntumi (2025, Discover Education)
+          <a href="https://firman-qs.github.io/posts/mtpkuan/metopenkuan9-12/">Firman Qashdus Sabil</a>
         </td>
-        <td >Tinjauan teori-metodologis; aplikasi Directed Acyclic Graphs (DAGs) untuk mengidentifikasi ancaman validitas internal dan masalah operasional pada SCED (single-case experimental designs).</td>
-        <td >Representasi DAG, diskusi desain SCED (replikasi, randomisasi), contoh-contoh masalah operasional (trend baseline, outliers, attrition).</td>
-        <td >DAG membantu menjelaskan mengapa replikasi dan randomisasi memperbaiki inferensi kausal dan juga menyorot bahwa SCED tetap rentan pada isu operasional; DAG berguna untuk merencanakan mitigasi bias.</td>
-        <td >Penerapan DAG pada studi pendidikan eksperimental (termasuk fisika) masih relatif baru — ada peluang menggabungkan DAG untuk perencanaan dan analisis studi pendidikan berbasis AI/virtual labs.</td>
-      </tr>
-      <tr>
         <td>
-          Improving reporting standards in quantitative educational intervention research: introducing the CLOSER and CIDER checklists
-          <a href="https://drive.google.com/file/d/1e5WSw4f2Msb0c9QN0FB4LRm6wg5rmyW0/view">Alfi Mufidah</a>
+          <ul>
+            <li>Kuantitatif dengan hierarchical multiple regression.</li>
+            <li>Membandingkan hasil AI-powered adaptive testing dan tes tradisional.</li>
+          </ul>
         </td>
-        <td >Pengembangan checklist (Delphi + adaptasi), CLOSER (34 item) untuk pelaporan studi pendidikan kuantitatif dan CIDER (17 item) untuk deskripsi intervensi.</td>
-        <td >Checklists (CLOSER, CIDER) — dipakai untuk menilai dan memperbaiki laporan intervensi pendidikan.</td>
-        <td >Checklist ini mengisi celah pelaporan di penelitian pendidikan (sering buruk bila memakai CONSORT/TIDieR yang bukan untuk konteks pendidikan). Merekomendasikan penggunaan checklist agar studi mudah direplikasi.</td>
-        <td >Belum secara luas diadopsi — penelitian eksperimental di pendidikan (termasuk yang memanfaatkan AI) sebaiknya mengikuti CLOSER/CIDER untuk meningkatkan transparansi.</td>
+        <td>
+          <ul>
+            <li>250 siswa SMA di Ghana; stratified random sampling.</li>
+            <li>Instrumen: tes adaptif berbasis AI, tes tradisional, kuesioner kecemasan ujian, dan data prestasi akademik.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>AI adaptive testing meningkatkan skor rata-rata sebesar 7,3 poin dan menurunkan kecemasan ujian 3,8 poin.</li>
+            <li>Menjelaskan 20% variasi tambahan dalam prestasi akademik.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Masih terbatas pada konteks Afrika; perlu replikasi di bidang lain seperti fisika atau pembelajaran eksperimen.</li>
+            <li>Belum diuji hubungan antara adaptive testing dan conceptual understanding.</li>
+          </ul>
+        </td>
       </tr>
     </tbody>
   </table>
 </div>
 
-Terdapat beberapa hasil menarik dari artikel-artikel di atas:
-- AI, virtual labs, dan adaptive ITS punya potensi nyata untuk meningkatkan pemahaman konseptual di topik fisika yang abstrak (SLR & studi terapan).
-- Peluang penggabungan desain kuantitatif (pre/post/retensi) dengan prosedur kualitas (validasi instrumen, CLOSER/CIDER) + menggunakan DAG/kerangka ancaman validitas untuk merencanakan mitigasi bias dan jika sampel kecil, misalnya SCED dengan DAG.
+## Sintesis Gap Antar Artikel
+Berdasarkan kelima artikel:
+- AI telah banyak digunakan untuk analisis prediktif dan adaptive testing, namun belum banyak diterapkan sebagai mekanisme umpan balik formatif adaptif dalam pembelajaran fisika.
+- Physics education research (Walsh & Burkholder) menekankan pentingnya desain eksperimen dan kontrol variabel, tetapi jarang menggabungkan real-time feedback.
+- AI adoption research (Flores Hinostroza, Ntumi) menunjukkan kesiapan dan manfaat AI, namun lebih fokus pada teknologi dan psikologi daripada pemahaman konsep fisika.
+- Machine learning studies (Shokry et al.) membuka peluang teknis untuk membangun sistem prediktif berbasis data — dasar untuk AI feedback adaptif.
 
 Usulan Judul: 
 
-{% alert(note=true) %}
-**Integrasi AI sebagai Pendamping Virtual Lab untuk Meningkatkan Pemahaman Konseptual: Sebuah Quasi-Eksperimen dengan Analisis Retensi dan Validitas Menggunakan DAG**
+**AI-Mediated Adaptive Formative Feedback for Deep Conceptual Learning in Physics**
 
-**AI Integration as a Virtual Lab Companion to Enhance Conceptual Understanding: A Quasi-Experiment with Retention and Validity Analysis Using DAG**
-{% end %}
+**Feedback Formatif Adaptif Berbantuan AI untuk Pembelajaran Konseptual Mendalam dalam Fisika**
 
 
-SLR & studi quasi-eksperimental menunjukkan AI/ChatGPT mendukung pemahaman konsep abstrak (termodinamika, fisika) tetapi ada gap pada topik lain dan retensi; menggabungkan virtual lab (visualisasi) + ChatGPT (explanations, prompting) menargetkan kelemahan pemahaman medan/konsep abstrak di fisika. Dapat digunakan DAG untuk memformalkan asumsi kausal dan CLOSER/CIDER + praktik validitas untuk pelaporan.
-
-![Scholar Indonesia](../fg61.png)
-![Scholar Inggris](../fg62.png)
+![Scholar Indonesia](../fig91.png)
+![Scholar Inggris](../fig92.png)
 
