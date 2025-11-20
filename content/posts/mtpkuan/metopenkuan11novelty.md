@@ -1,6 +1,6 @@
 +++
 title = "Metopen Kuantitatif - Usulan Novelty Artikel Pertemuan 11"
-date = "2025-11-19"
+date = "2025-11-12"
 description = "Tugas kuliah metopen kuantitatif, usulan Novelty Artikel Pertemuan 11"
 
 [taxonomies]
