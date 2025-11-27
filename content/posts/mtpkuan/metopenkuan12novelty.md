@@ -24,7 +24,7 @@ NIM: 250321830676
 }
 
 .table-container table {
-  width: 100%;
+  width: 150%;
   border-collapse: collapse;
   table-layout: fixed;
   border: 1px solid #444444; /* outer border black */
@@ -38,17 +38,19 @@ NIM: 250321830676
   vertical-align: top;
   word-wrap: break-word;
 }
-* {
+/* * {
 color: black; opacity=0.0; background-color: black;
-}
+} */
 </style>
-
+> Geser untuk melihat kolom yang di kanan
 <div class="table-container">
   <table>
     <thead>
       <tr>
-        <th>Judul & Reviewer</th>
-        <th>Metode Penelitian</th>
+        <th>Judul & _Link_ Review</th>
+        <th>Tujuan</th>
+        <th>Metode</th>
+        <th>Variabel</th>
         <th>Instrumen/ Data Penelitian</th>
         <th>Hasil</th>
         <th>Gap</th>
@@ -57,115 +59,226 @@ color: black; opacity=0.0; background-color: black;
     <tbody>
       <tr>
         <td>
-          Generative Artiﬁcial Intelligence Acceptance Scale: A Validity and Reliability Study
-          <a href="https://firman-qs.github.io/posts/mtpkuan/metopenkuan7-11/">Firman Qashdus Sabil</a>
+           Post-Hoc Tests in One-Way ANOVA: The Case for Normal Distribution
+           <a href="https://atikanur38.blogspot.com/2025/11/statistik-5-analisis-varian-uji.html">Atika Nur Fadhilah</a>
         </td>
         <td>
-          studi pengembangan skala, tiga fase: (1) penyusunan item & validasi isi oleh ahli; (2) EFA pada sampel awal (n ≈ 338); (3) CFA pada sampel konfirmasi (n ≈ 250). Analisis reliabilitas (Cronbach’s alpha, test–retest)
+         Membandingkan tingkat kesalahan Tipe-I (α) dari 10 uji post-hoc pada satu-way ANOVA di empat kondisi (homoscedastic/heteroscedastic × balanced/unbalanced) dan berbagai ukuran sampel.
         </td>
         <td>
-          kuesioner self-report akhir: 20 item yang terbagi ke dalam 4 faktor (performance expectancy, effort expectancy, facilitating conditions, social influence), dalam skala Likert.
+          <b>Metode:</b> Monte-Carlo simulation: 28 dataset, tiap kondisi 10.000 resamples. Dimanipulasi: varians antar-grup dan keseimbangan ukuran grup; ukuran sampel N = {30,90,150,300,750,1500,3000}. Analisis: one-way ANOVA diikuti 10 post-hoc tests (7 untuk equal variances, 3 untuk unequal variances). Pengolahan di R / SPSS. 
         </td>
         <td>
-          Struktur 4-faktor terkonfirmasi; varian total ~78%; Cronbach’s α tinggi (~0.97) dan test–retest reliabel (~0.95). Skala dinyatakan valid & reliabel untuk mengukur penerimaan generative AI pada mahasiswa.
+          <ul>
+          <li><p>Independen (dimanipulasi dalam simulasi): kondisi varians (homoscedastic/heteroscedastic), keseimbangan ukuran grup (balanced/unbalanced), ukuran sampel total N.</p>
+          </li>
+          <li><p>Terikat: Type-I error rate (persentase penolakan H0 saat H0 benar).</p>
+          </li>
+          </ul>
         </td>
         <td>
-          Perlu studi lintas-konteks (konteks lab/kelas Fisika), belum banyak dieksplorasi hubungan skala penerimaan dengan outcome pembelajaran/engagement/pemanfaatan feedback AI.
+          R (Rcmdr), IBM SPSS untuk perhitungan ANOVA dan uji-uji post-hoc. Implementasi algoritma simulasi Monte-Carlo.
+        </td>
+        <td>
+        Tidak ada satu uji post-hoc tunggal yang konsisten paling akurat di semua kondisi; beberapa uji (Bonferroni, Šidák, Tamhane’s T2, Dunnett’s T3, Games-Howell dll.) tampil lebih baik pada kondisi tertentu. Variasi besar tergantung kondisi (terutama heteroscedastic/unbalanced). Rekomendasi: pilih post-hoc sesuai kondisi data, bukan asumsi tunggal.
+        </td>
+        <td>
+          <ul>
+          <li><p>Bagaimana pedoman pemilihan post-hoc dapat diotomasi/diintegrasi dalam pipeline analitik pendidikan (mis. toolkit R/GUI) sehingga peneliti pendidikan memilih uji yang sesuai secara otomatis?</p>
+          </li>
+          <li><p>Evaluasi perilaku post-hoc pada data non-normal praktis (bukan simulasi normal) dan untuk desain eksperimen pendidikan.</p>
+          </li>
+          </ul>
         </td>
       </tr>
       <tr>
         <td>
-          Digital literacy scale: Validity and reliability study
-with the rasch model
-          <a href="https://medium.com/@nafilana.amalia/statistik-1-cek-data-validitas-reliabilitas-dan-asumsi-96659a7667dd">
-Nafila Lana Amalia</a>
+          Working together or alone, near, or far: Social connections and communities of practice in in-person and remote physics laboratories
+          <a href="https://jeneregretterienn00.blogspot.com/2025/11/metopen-review-artikel-ke-15.html">
+          Aurelia Apriliyani</a>
         </td>
         <td>
-          pengembangan item pool $\Rightarrow$ expert content validity $\Rightarrow$ EFA/CFA $\Rightarrow$ analisis Rasch (WINSTEPS) dan berbagai uji reliabilitas (Cronbach’s alpha, Spearman–Brown, split-half). Sampel: ratusan siswa menengah.
+          Menelaah pembentukan koneksi sosial dan komunitas praktik di laboratorium fisika tatap muka vs. remote selama pandemi, dan hubungan koneksi sosial dengan physics laboratory self-efficacy.
         </td>
         <td>
-         20 item, 4-point Likert (setelah penyempurnaan), dan hasil analisis menyokong unidimensionalitas/fit model Rasch (dokumentasi fit, item difficulty, category functioning).
+         Quasi-experimental, nonequivalent group design; survei kuantitatif pada mahasiswa laboratorium pengantar (N ≈ 697). Analisis: factor analysis (untuk subskala), ANOVA untuk perbandingan mean, korelasi (termasuk partial correlations).
         </td>
         <td>
-          DLS 20-item menunjukkan bukti validitas isi & struktur, reliabilitas tinggi; tidak ditemukan masalah local dependence besar; kategori respons dioptimalkan (4-point).
+          <ul>
+          <li><p>Independen: jenis lingkungan lab (in-person vs remote), tingkat koneksi sosial (student-student, student-instructor).</p>
+          </li>
+          <li><p>Terikat: physics laboratory self-efficacy; ukuran engagement sosial (subfaktor dari survei).</p>
+          </li>
+          </ul>
         </td>
         <td>
-          Hubungan kausal antara digital literacy dan efektivitas pemanfaatan AI/feedback belum diuji khususnya di konteks pembelajaran subjek (mis. laboratorium Fisika). Perlu studi yang menghubungkan skala DLS dengan outcome pembelajaran spesifik.
+          Survei yang dirancang penulis: item untuk student-student social learning perspectives, student-instructor perspectives, dan self-efficacy. Faktor diekstraksi via factor analysis; data demografis dan konteks lab dikumpulkan.
+        </td>
+        <td>
+          <ul>
+          <li><p>Remote students melaporkan level engagement sosial lebih lemah dibanding in-person.</p>
+          </li>
+          <li><p>Remote students yang terhubung dengan sesama remote students menunjukkan engagement lebih tinggi, tetapi self-efficacy mereka tetap lebih rendah dibandingkan in-person peers. Interaksi instruktur paling berkorelasi dengan pembentukan self-efficacy.</p>
+          </li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+          <li><p>Intervensi konkret yang efektif membangun komunitas praktik remote (design eksperimen/intervensi).</p>
+          </li>
+          <li><p>Dampak jangka panjang (persistence / karir) dari decreased self-efficacy akibat remote lab.</p>
+          </li>
+          <li><p>Peran AI/alat generatif untuk mediasi hubungan sosial atau feedback yang membangun self-efficacy (kaitan ke editorial AI).</p>
+          </li>
+          </ul>
         </td>
       </tr>
       <tr>
-        <td>Students’ feedback literacy in higher education: an initial
-scale validation study
-          <a href="https://journalriviewbyallysa.blogspot.com/2025/10/metodologi-penelitian-kuantitatif_12.html">Allysa Hafsah Hafidhah</a>
+        <td>
+        How do physics students evaluate artificial intelligence responses on comprehension questions? A study on the perceived scientific accuracy and linguistic quality of ChatGPT
+          <a href="https://firman-qs.github.io/posts/mtpkuan/metopenkuan12-15/">Firman Qashdus Sabil</a>
         </td>
         <td>
-         pengembangan item overinclusive $\Rightarrow$ EFA $\Rightarrow$ Rasch $\Rightarrow$ CFA; N awal ≈ 221; juga uji validitas kriterial. Fokus: menangkap baik disposisi (attitudes) maupun enactment/praktik (practices).
+         Menilai bagaimana mahasiswa fisika menilai kualitas linguistik dan akurasi ilmiah jawaban ChatGPT pada tiga soal mekanika berjenjang. Juga menguji pengaruh self-estimated expertise terhadap penilaian.
         </td>
         <td>
-         self-report 21 item, dua dimensi (attitudes & practices). Analisis menunjukkan struktur dua-dimensi parsimonious dan bukti psychometric yang memadai.
+         Survei eksperimental: N = 102 mahasiswa tahun 1–2. Setiap pertanyaan (3 tingkat kesulitan) disajikan 4 jawaban (3 dari ChatGPT, 1 sample solution yang disamarkan sebagai ChatGPT). Responden menilai kualitas linguistik dan akurasi ilmiah, serta self-rated expected performance. Analisis statistik pada perbedaan rating dan pengaruh self-assessed knowledge. Instrumen online (LimeSurvey).
         </td>
         <td>
-          instrumen dapat membedakan antara “talking the talk” (attitude) dan “walking the walk” (practices). Rekomendasi: intervensi peningkatan literasi feedback harus menyasar kedua aspek.
+          <ul>
+          <li><p>Independen: tipe jawaban (ChatGPT vs sample solution yang dimasking), tingkat soal (mudah→sulit), self-estimated expertise.</p>
+          </li>
+          <li><p>Terikat: rating scientific accuracy (skor), rating linguistic quality, self-assessed exam points.</p>
+          </li>
+          </ul>
         </td>
         <td>
-         studi lebih lanjut diperlukan untuk melihat hubungan antara literasi feedback (attitude/practice) dengan learning gains konkret di mata kuliah Fisika, serta bagaimana AI-mediated feedback mempengaruhi kedua dimensi itu.
+         Kuesioner online (LimeSurvey) termasuk: demografi, sikap terhadap AI, tiga set soal + empat alternatif jawaban, skala Likert untuk penilaian. Lampiran instrumen tersedia dalam Appendix.
+        </td>
+        <td>
+          <ul>
+          <li><p>Semua respons ChatGPT yang diuji mengandung kesalahan/imprecision; namun student ratings untuk linguistic quality tidak jauh berbeda antara ChatGPT dan sample solution.</p>
+          </li>
+          <li><p>Untuk scientific accuracy, sample solution dinilai lebih baik pada soal mudah/menengah; pada soal paling sulit (yang kebanyakan siswa tidak tahu) ChatGPT dinilai setara.</p>
+          </li>
+          <li><p>Self-assessed knowledge memoderasi kemampuan menilai akurasi. → Risiko illusion of understanding.</p>
+          </li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+          <li><p>Uji intervensi (mis. spot-the-bot training) untuk meningkatkan kemampuan evaluasi kritis siswa terhadap jawaban AI.</p>
+          </li>
+          <li><p>Pengaruh kegiatan kolaboratif (PBL) yang menggabungkan analisis jawaban AI pada prestasi belajar dan pemikiran kritis.</p>
+          </li>
+          </ul>
         </td>
       </tr>
       <tr>
         <td>
-          Developing critical thinking test for adolescents: A validity and
-reliability study from the Czech Republic
-          <a href="https://metodologipenelitiankuantitatifcindy.blogspot.com/2025/10/analisis-atau-review-kritis-substansi_12.html">Cindy Tyas Harvina</a>
+           The Impact of Problem‑Based Learning on Students’ Achievement in Mechanical Waves in Secondary Schools
+          <a href="https://muhammadfikrul.blogspot.com/2025/11/metodologi-penelitian-kuantitatif_21.html">Fikrul</a>
         </td>
           <td>
-           desain berbasis teori (analisis pustaka) $\Rightarrow$ item development $\Rightarrow$ IRT (2PL vs 3PL), CFA, analisis reliabilitas; ukuran sampel besar memungkinkan validasi kuat.
+           Menguji pengaruh Problem-Based Learning (PBL) terhadap prestasi siswa pada topik gelombang mekanik di sekolah menengah atas (Southwestern Uganda).
           </td>
           <td>
-            versi singkat 33-item yang mengukur tiga aspek: analysis, evaluation, inference. Dibangun agar dapat diselesaikan dalam satu jam pelajaran.
+            Kuasi-eksperimental menggunakan Solomon four-group design (mengatasi sensitization dari pre-test). Sampel: 419 siswa dari 19 sekolah; randomisasi sekolah ke experimental (PBL) vs control (Traditional Instructional Methods, TIM). Durasi intervensi ≈ 3.5 bulan. Analisis: repeated-measures ANOVA, ANCOVA, post-hoc Bonferroni, Wilks’ lambda untuk multivariate.
           </td>
           <td>
-            instrumen andal & valid; tiga subskor berkorelasi tapi dapat dibedakan; memungkinkan monitoring perkembangan critical thinking.
+            <ul>
+            <li><p>Independen: metode pengajaran (PBL vs TIM).</p>
+            </li>
+            <li><p>Terikat: skor pada Mechanical Wave Conceptual Survey (MWCS) pre/post.</p>
+            </li>
+            <li><p>Kontrol/analisis tambahan: gender, usia, subject combination, status/ownership sekolah.</p>
+            </li>
+            </ul>
           </td>
           <td>
-           aplikasi langsung dalam konteks pembelajaran Fisika (mis. keterkaitan dengan keterampilan laboratorium & penggunaan feedback) belum diuji; juga ada ruang untuk memasukkan dimensi etika.
+          Mechanical Wave Conceptual Survey (MWCS) (Tongchai et al., 2008) — dipakai sebagai pre/post test; reliabilitas Cronbach’s α ≈ 0.707 pada pilot. Observasi kelas dan pelatihan guru untuk PBL.
+          </td>
+          <td>
+          PBL meningkatkan pencapaian siswa pada gelombang dibanding TIM (efek besar, learning gains tinggi). Hasil signifikan pada analisis post-test; faktor-faktor seperti gender, usia, subject combination tidak menunjukkan pengaruh signifikan.
+          </td>
+          <td>
+            <ul>
+            <li><p>Investigasi mengapa PBL efektif (proses kognitif/metakognitif) melalui analisis kualitatif/observasi mikro.</p>
+            </li>
+            <li><p>Gabungkan PBL dengan kegiatan-kegiatan yang melatih evaluasi kritis terhadap jawaban AI.</p>
+            </li>
+            </ul>
           </td>
       </tr>
       <tr>
         <td>
-          Evidence for validity and reliability of a research-based assessment instrument
-on measurement uncertainty
-          <a href="https://metopenkuanti.blogspot.com/2025/10/statistik-1-cek-data-validitas.html">Dhinar Asri Intantri</a>
+          Permutation Tests Are a Useful Alternative Approach for Statistical Hypothesis Testing in Small Sample Sizes
+          <a href="https://mellyyua.blogspot.com/2025/11/minggu-12-kuantitatif.html">Mellly Yuni Anjani</a>
         </td>
         <td>
-         evidence-centered design, item development, student interviews untuk membangun reasoning codes; validasi memakai Classical Test Theory (CTT) pada couplet scores, analisis diskriminasi, reliabilitas, test–retest, dll. Sampel besar (36 mata kuliah di 22 institusi selama tiga semester (Fall 2022–Fall 2023); 2.596 respon mahasiswa dan 36 respon ahli (instructor/peneliti).
+        Mengevaluasi kinerja permutation tests sebagai alternatif non-parametrik untuk uji tradisional (t-test, ANOVA, log-rank, dsb.) pada kasus small sample (preclinical animal studies), fokus pada Type-I error, power, dan runtime.
         </td>
         <td>
-         SPRUCE, online, ~15 menit, berbagai format (MC, multiple response, numeric open, coupled items). Skor dianalisis pada tingkat couplet & AO (assessment objectives).
+         Aplikasi permutation test pada empat masalah analisis umum (two-sample, k-sample, contingency table, time-to-event) menggunakan real-world datasets + simulasi power dari distribusi normal, log-normal, eksponensial; perangkat: R (coin package), MCMC approximations bila perlu; juga simulasi power untuk n = 5 dan n = 10 per grup.
         </td>
         <td>
-         bukti kuat validitas & reliabilitas untuk mengukur konsep measurement uncertainty; average score ~50% menandakan kesesuaian tingkat kesulitan; couplet scoring efektif untuk menilai beberapa AO dalam satu item.
+          <ul>
+          <li><p>Situasi analisis (two-sample, k-sample, contingency, survival).</p>
+          </li>
+          <li><p>Outcome terikat: p-value, runtime, simulated statistical power, Type-I error rate.</p>
+          </li>
+          </ul>
         </td>
         <td>
-          bagaimana intervensi feedback (manual atau AI-mediated) memodifikasi jawaban penalaran siswa pada tingkat reasoning elements couplets masih sedikit dieksplorasi. Integrasi formative assessment berkelanjutan (mis. feedback otomatis saat lab berlangsung) dengan SPRUCE-like items juga belum diuji.
+          R (coin package) untuk permutation tests; R default packages untuk metode klasik; simulasi Monte-Carlo.
+        </td>
+        <td>
+        Permutation tests umumnya menghasilkan p-value dan power yang sebanding dengan uji klasik; unggul terutama ketika asumsi distribusi dilanggar; runtime praktis (cepat) pada kasus yang diuji. Untuk time-to-event, log-rank masih menunjukkan advantage. Rekomendasi hati-hati: permutation tests berguna, terutama untuk small samples dan bila asumsi distribusi tidak dapat dicek.
+        </td>
+        <td>
+          <ul>
+          <li><p>Integrasi permutation tests ke pipeline analisis eksperimen pendidikan (ketika sample kecil atau distribusi meragukan).</p>
+          </li>
+          <li><p>Rekomendasi praktis untuk peneliti pendidikan: kapan harus pakai permutation vs parametric, dan bagaimana melaporkannya.</p>
+          </li>
+          </ul>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
 
-Terdapat beberapa hasil menarik dari artikel-artikel di atas:
-- Keempat artikel skala/tes (AI acceptance, DLS, feedback literacy, CTT) menekankan prosedur pengembangan instrumen: item pool $\Rightarrow$ expert review $\Rightarrow$ EFA/CFA $\Rightarrow$ Rasch/IRT atau CTT $\Rightarrow$ reliabilitas. Ini menunjukkan pola metodologis umum yang bisa Anda tiru.
-- SPRUCE berbeda karena fokus pada assessment spesifik Fisika (measurement uncertainty) dan menggunakan couplet scoring + evidence-centered design — sangat cocok sebagai model untuk tugas master Anda jika mau fokus pada lab Fisika. 
-- Feedback literacy (artikel C) memberi instrumen yang tepat untuk menangkap kesiapan siswa menggunakan feedback, penting bila Anda ingin melihat bukan hanya apakah feedback diberikan, tapi apakah siswa memanfaatkan feedback itu.
-
+Berdasarkan lima artikel di atas, terdapat tema menarik berkaitan dengan: metode pembelajaran (PBL), interaksi sosial/komunitas praktik (remote vs in-person), kemampuan siswa mengevaluasi respons AI, serta isu metodologis statistik (pemilihan post-hoc / penggunaan permutation tests (lihat Artikel 3 untuk instrumen penilaian jawaban AI; Artikel 4 untuk desain pengajaran PBL; Artikel 2 untuk pentingnya komunitas sosial; Artikel 1 dan 5 untuk pedoman analisis statistik).
 
 ## Usulan Judul: 
 
-**Pengaruh Formative Feedback Berbasis AI terhadap Literasi Feedback dan Pemahaman Ketidakpastian Pengukuran Mahasiswa Laboratorium Fisika**
+**Pengaruh Spot-the-Bot Berbasis Problem-Based Learning terhadap Kemampuan Evaluasi Kritis Jawaban AI dan pemahaman konsep Gelombang Mekanik**
 
-**The Effect of AI-Based Formative Feedback on Feedback Literacy and Understanding of Measurement Uncertainty of Physics Laboratory Students**
+**The Effect of Spot-the-Bot Based on Problem-Based Learning on the Critical Evaluation Ability of AI Answers and Conceptual Understanding of the Mechanical Wave**
+
+### Metode
+Quasi-eksperimental dengan Solomon four-group design (menghindari efek sensitization pre-test seperti pada Kanyesigye). Alokasi kelas ke 4 grup:
+- G1: Intervensi (PBL + Spot-the-Bot) — pre & post
+- G2: Control (TIM) — pre & post
+- G3: Intervensi (PBL + Spot-the-Bot) — post only
+- G4: Control (TIM) — post only.
+
+### sampel
+- Subjek: siswa atau mahasiswa awal.
+- Sampling: cluster sampling berdasarkan kelas/sekolah; randomisasi pada cluster.
+- Ukuran sampel: (setelah menghitung power) jika grup kecil, dapat memakai permutation tests untuk uji hipotesis.
+
+### Treatment
+- *PBL*
+- *Spot-the-Bot:* setiap kelompok diberi aktivitas terstruktur tiap minggu: (a) diberikan beberapa jawaban (ChatGPT + sample solutions yang dimasking) untuk soal konseptual gelombang; (b) siswa bekerja kelompok menganalisis, menandai kesalahan, menulis argumen perbaikan; (c) refleksi kelas dan feed-forward dari guru. Instruksi dan rubrik penilaian dapat diadaptasi dari instrumen Artikel 3 (rating scientific accuracy & linguistic quality).
+
+### Variabel yang diukur
+1. Pemahaman konsep gelombang mekanik dengan skor MWCS (Mechanical Wave Conceptual Survey) pre & post.
+2. Kemampuan evaluasi kritis jawaban AI yang diukur dengan skala/rubrik
+3. Kontrol: self-estimated content knowledge, demografi (gender, usia, subject combination).
 
 
-![Scholar Indonesia](../fig71.png)
-![Scholar Inggris](../fig72.png)
+
+![Scholar Indonesia](../16-1.png)
+![Scholar Inggris](../16-2.png)
 
