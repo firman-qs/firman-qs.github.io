@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="id">
+    <title>fqsss - classicalmechanics101</title>
+    <subtitle>Opinionated, modern, pretty, and clean Zola theme.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://firman-qs.github.io/tags/classicalmechanics101/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://firman-qs.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-12-11T00:00:00+00:00</updated>
+    <id>https://firman-qs.github.io/tags/classicalmechanics101/atom.xml</id>
+    <entry xml:lang="id">
+        <title>Menurunkan Persamaan Euler-Lagrange Melalui Prinsip D&#x27;Alembert</title>
+        <published>2023-12-11T00:00:00+00:00</published>
+        <updated>2023-12-11T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              firman-qs
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://firman-qs.github.io/posts/classical-mechanics/deriving-euler-lagrange-b/"/>
+        <id>https://firman-qs.github.io/posts/classical-mechanics/deriving-euler-lagrange-b/</id>
+        
+        <content type="html" xml:base="https://firman-qs.github.io/posts/classical-mechanics/deriving-euler-lagrange-b/">&lt;p&gt;Kita akan memulai dengan $S$ sebagai integral dari fungsional $f[…]$&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+S = \int_{x_1}^{x_2} \mathrm{d}x~f[y(x), y’(x), x] \tag{1}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;di mana $y(x)$ adalah kurva yang belum diketahui, yang menghubungkan ($x_1, y_1$) dan ($x_2, y_2$), sehingga
+$$
+y(x_1) = y_1 ~~~\text{and}~~~ y(x_2) = y_2\tag{2}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Di antara semua kemungkinan kurva yang memenuhi Persamaan (2), kita harus
+mencari satu kurva yang meminimumkan (atau memaksimumkan, atau setidaknya
+stasionar) integral $S$. Perhatikan bahwa fungsional $f[…]$ pada Persamaan
+(1) adalah fungsi dari tiga variabel (variabel dalam konteks fungsional bisa
+berupa fungsi). Namun, karena integral mengikuti lintasan $y=y(x)$, integrand
+$f[y(x),y’(x), x]$ adalah fungsi dari satu variabel $x$.&lt;&#x2F;p&gt;
+&lt;p&gt;Jika kita menuliskan solusi yang kita inginkan (yaitu kurva yang membuat $S$ minimum)
+sebagai $y = y(x)$ maka integral $S$ dalam Persamaan (1) pada $y=y(x)$ nilainya
+kurang dari sembarang kurva $y=Y(x)$ di mana
+$$
+Y(x)=y(x) + \eta(x)\tag{3}
+$$
+dengan $\eta(x)$ adalah &lt;em&gt;bump&lt;&#x2F;em&gt; atau simpangan antara kurva $y(x)$ dengan $Y(x)$.
+Karena $Y(x)$ harus melewati titik awal&#x2F;$x_1$ dan akhir&#x2F;$x_2$ maka $\eta(x)$ harus
+memenuhi
+$$
+\eta(x_1)=\eta(x_2)=0\tag{4}
+$$
+Tentu ada banyak (tak-hingga) pilihan untuk $\eta(x)$, misalnya, kita bisa memilih
+$\eta = (x-x_1)(x_2-x)$ atau $\eta(x)=\sin[\pi(x-x_1)&#x2F;(x_2-x_1)]$&lt;&#x2F;p&gt;
+&lt;p&gt;Integral $S$ yang dilakukan disepanjang kurva $Y(x)$ harus lebih besar dibandingkan
+ketika diambil pada kurva $y(x)$. Untuk menyatakan perysaratan ini, saya akan
+memperkenalkan parameter $\alpha$ dan mendifinisikan ulang $Y(x)$  sebagai
+$$
+Y(x)=y(x)+\alpha \eta(x)\tag{5}
+$$
+Sekarang, integral $S$ yang diambil pada kurva $Y(x)$ bergantung pada parameter $\alpha$,
+sehingga saya dapat menyebutnya $S(\alpha)$. Kurva target kita, yaitu $y(x)$ didapatkan
+melalui Persamaan (5) dengan men-set $\alpha =0$. Untuk melakukan ini, kita hanya perlu
+memeriksa $\mathrm{d}S&#x2F;\mathrm{d}a = 0$ ketika $\alpha=0$.&lt;&#x2F;p&gt;
+&lt;p&gt;Secara detail, integral $S(\alpha)$ adalah sebagai berikut:
+$$
+\begin{aligned}
+S(\alpha) &amp;amp;= \int_{x_1}^{x_2}\mathrm{d}x\ f(Y, Y’, x) \
+&amp;amp;= \int_{x_1}^{x_2}\mathrm{d}x\ f(y+\alpha \eta, y’+\alpha \eta’, x)\tag{5}
+\end{aligned}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Untuk mendiferensialkan Persamaan (5) terhadap $\alpha$, kita harus melakukan
+$\partial f&#x2F;\partial \alpha$. Karena $\alpha$ muncul pada dua argumen dari $f$,
+maka $\partial f&#x2F;\partial \alpha$ akan memberikan dua suku:
+$$
+\frac{\partial}{\partial \alpha} f(y+\alpha \eta, y’+\alpha\eta’, x) = \eta \frac{\partial f}{\partial y} + \eta’\frac{\partial f}{\partial y’},
+$$
+dan untuk $\mathrm{d}S&#x2F;\mathrm{d}a$ yang harus sama dengan nol, maka
+$$
+\frac{\mathrm{d}S}{\mathrm{d}a} = \int_{x_1}^{x_2}\mathrm{d}x\ \frac{\partial f}{\partial \alpha} = \int_{x_1}^{x_2}\mathrm{d}x\ \left(
+\eta \frac{\partial f}{\partial y}+\eta’\frac{\partial f}{\partial y’}\tag{6}
+\right) = 0.
+$$
+Kondisi ini harus benar, untuk sembarang $\eta(x)$ yang memenuhi Persamaan (4).&lt;&#x2F;p&gt;
+&lt;p&gt;Jika kita menuliskan suku kedua pada ruas kanan dengan integal parsial maka,
+$$
+\int_{x_1}^{x_2}\mathrm{d}x\ \eta’(x)\frac{\partial f}{\partial y’} = \left[
+\eta(x)\frac{\partial f}{\partial y’}
+\right]&lt;em&gt;{x_1}^{x^2} - \int&lt;&#x2F;em&gt;{x_1}^{x_2}\mathrm{d}x\ \eta(x)\frac{\mathrm{d}}{\mathrm{d}x}\left(\frac{\partial f}{\partial y’}\right).
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Karena kondisi Persamaan (4), suku pertama pada ruas kanan sama dengan nol, sehingga
+$$
+\int_{x_1}^{x_2}\mathrm{d}x\ \eta’(x)\frac{\partial f}{\partial y’} = -
+\int_{x_1}^{x_2}\mathrm{d}x\ \eta(x)\frac{\mathrm{d}}{\mathrm{d}x}
+\left(\frac{\partial f}{\partial y’}\right).\tag{7}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Dengan mensubtitusi Persamaan (7) ke (6), didapatkan
+$$
+\int_{x_1}^{x_2}\mathrm{d}x\ \eta(x) \left(
+\frac{\partial f}{\partial y}-\frac{\mathrm{d}}{\mathrm{d}x}\frac{\partial f}{\partial y’}
+\right)=0.
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Kondisi di atas harus dipenuhi untuk sembarang fungsi $\eta(x)$. Sehingga,
+faktor di dalam suku di dalam tanda kurung besar harus sama dengan nol.&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+\frac{\partial f}{\partial y}-\frac{\mathrm{d}}{\mathrm{d}x}\frac{\partial f}{\partial y’} = 0.\tag{Persamaan Euler-Lagrange}
+$$&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="id">
+        <title>Menurunkan Persamaan Euler-Lagrange</title>
+        <published>2023-12-11T00:00:00+00:00</published>
+        <updated>2023-12-11T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              firman-qs
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://firman-qs.github.io/posts/classical-mechanics/deriving-euler-lagrange/"/>
+        <id>https://firman-qs.github.io/posts/classical-mechanics/deriving-euler-lagrange/</id>
+        
+        <content type="html" xml:base="https://firman-qs.github.io/posts/classical-mechanics/deriving-euler-lagrange/">&lt;p&gt;Kita akan memulai dengan $S$ sebagai integral dari fungsional $f[…]$&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+S = \int_{x_1}^{x_2} \mathrm{d}x~f[y(x), y’(x), x] \tag{1}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;di mana $y(x)$ adalah kurva yang belum diketahui, yang menghubungkan ($x_1, y_1$) dan ($x_2, y_2$), sehingga
+$$
+y(x_1) = y_1 ~~~\text{and}~~~ y(x_2) = y_2\tag{2}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Di antara semua kemungkinan kurva yang memenuhi Persamaan (2), kita harus
+mencari satu kurva yang meminimumkan (atau memaksimumkan, atau setidaknya
+stasionar) integral $S$. Perhatikan bahwa fungsional $f[…]$ pada Persamaan
+(1) adalah fungsi dari tiga variabel (variabel dalam konteks fungsional bisa
+berupa fungsi). Namun, karena integral mengikuti lintasan $y=y(x)$, integrand
+$f[y(x),y’(x), x]$ adalah fungsi dari satu variabel $x$.&lt;&#x2F;p&gt;
+&lt;p&gt;Jika kita menuliskan solusi yang kita inginkan (yaitu kurva yang membuat $S$ minimum)
+sebagai $y = y(x)$ maka integral $S$ dalam Persamaan (1) pada $y=y(x)$ nilainya
+kurang dari sembarang kurva $y=Y(x)$ di mana
+$$
+Y(x)=y(x) + \eta(x)\tag{3}
+$$
+dengan $\eta(x)$ adalah &lt;em&gt;bump&lt;&#x2F;em&gt; atau simpangan antara kurva $y(x)$ dengan $Y(x)$.
+Karena $Y(x)$ harus melewati titik awal&#x2F;$x_1$ dan akhir&#x2F;$x_2$ maka $\eta(x)$ harus
+memenuhi
+$$
+\eta(x_1)=\eta(x_2)=0\tag{4}
+$$
+Tentu ada banyak (tak-hingga) pilihan untuk $\eta(x)$, misalnya, kita bisa memilih
+$\eta = (x-x_1)(x_2-x)$ atau $\eta(x)=\sin[\pi(x-x_1)&#x2F;(x_2-x_1)]$&lt;&#x2F;p&gt;
+&lt;p&gt;Integral $S$ yang dilakukan disepanjang kurva $Y(x)$ harus lebih besar dibandingkan
+ketika diambil pada kurva $y(x)$. Untuk menyatakan perysaratan ini, saya akan
+memperkenalkan parameter $\alpha$ dan mendifinisikan ulang $Y(x)$  sebagai
+$$
+Y(x)=y(x)+\alpha \eta(x)\tag{5}
+$$
+Sekarang, integral $S$ yang diambil pada kurva $Y(x)$ bergantung pada parameter $\alpha$,
+sehingga saya dapat menyebutnya $S(\alpha)$. Kurva target kita, yaitu $y(x)$ didapatkan
+melalui Persamaan (5) dengan men-set $\alpha =0$. Untuk melakukan ini, kita hanya perlu
+memeriksa $\mathrm{d}S&#x2F;\mathrm{d}a = 0$ ketika $\alpha=0$.&lt;&#x2F;p&gt;
+&lt;p&gt;Secara detail, integral $S(\alpha)$ adalah sebagai berikut:
+$$
+\begin{aligned}
+S(\alpha) &amp;amp;= \int_{x_1}^{x_2}\mathrm{d}x\ f(Y, Y’, x) \
+&amp;amp;= \int_{x_1}^{x_2}\mathrm{d}x\ f(y+\alpha \eta, y’+\alpha \eta’, x)\tag{5}
+\end{aligned}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Untuk mendiferensialkan Persamaan (5) terhadap $\alpha$, kita harus melakukan
+$\partial f&#x2F;\partial \alpha$. Karena $\alpha$ muncul pada dua argumen dari $f$,
+maka $\partial f&#x2F;\partial \alpha$ akan memberikan dua suku:
+$$
+\frac{\partial}{\partial \alpha} f(y+\alpha \eta, y’+\alpha\eta’, x) = \eta \frac{\partial f}{\partial y} + \eta’\frac{\partial f}{\partial y’},
+$$
+dan untuk $\mathrm{d}S&#x2F;\mathrm{d}a$ yang harus sama dengan nol, maka
+$$
+\frac{\mathrm{d}S}{\mathrm{d}a} = \int_{x_1}^{x_2}\mathrm{d}x\ \frac{\partial f}{\partial \alpha} = \int_{x_1}^{x_2}\mathrm{d}x\ \left(
+\eta \frac{\partial f}{\partial y}+\eta’\frac{\partial f}{\partial y’}\tag{6}
+\right) = 0.
+$$
+Kondisi ini harus benar, untuk sembarang $\eta(x)$ yang memenuhi Persamaan (4).&lt;&#x2F;p&gt;
+&lt;p&gt;Jika kita menuliskan suku kedua pada ruas kanan dengan integal parsial maka,
+$$
+\int_{x_1}^{x_2}\mathrm{d}x\ \eta’(x)\frac{\partial f}{\partial y’} = \left[
+\eta(x)\frac{\partial f}{\partial y’}
+\right]&lt;em&gt;{x_1}^{x^2} - \int&lt;&#x2F;em&gt;{x_1}^{x_2}\mathrm{d}x\ \eta(x)\frac{\mathrm{d}}{\mathrm{d}x}\left(\frac{\partial f}{\partial y’}\right).
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Karena kondisi Persamaan (4), suku pertama pada ruas kanan sama dengan nol, sehingga
+$$
+\int_{x_1}^{x_2}\mathrm{d}x\ \eta’(x)\frac{\partial f}{\partial y’} = -
+\int_{x_1}^{x_2}\mathrm{d}x\ \eta(x)\frac{\mathrm{d}}{\mathrm{d}x}
+\left(\frac{\partial f}{\partial y’}\right).\tag{7}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Dengan mensubtitusi Persamaan (7) ke (6), didapatkan
+$$
+\int_{x_1}^{x_2}\mathrm{d}x\ \eta(x) \left(
+\frac{\partial f}{\partial y}-\frac{\mathrm{d}}{\mathrm{d}x}\frac{\partial f}{\partial y’}
+\right)=0.
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Kondisi di atas harus dipenuhi untuk sembarang fungsi $\eta(x)$. Sehingga,
+faktor di dalam suku di dalam tanda kurung besar harus sama dengan nol.&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+\frac{\partial f}{\partial y}-\frac{\mathrm{d}}{\mathrm{d}x}\frac{\partial f}{\partial y’} = 0.\tag{Persamaan Euler-Lagrange}
+$$&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="id">
+        <title>Kalulus Variasi</title>
+        <published>2023-11-22T00:00:00+00:00</published>
+        <updated>2023-11-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              firman-qs
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://firman-qs.github.io/posts/classical-mechanics/calculus-of-variations/"/>
+        <id>https://firman-qs.github.io/posts/classical-mechanics/calculus-of-variations/</id>
+        
+        <content type="html" xml:base="https://firman-qs.github.io/posts/classical-mechanics/calculus-of-variations/"></content>
+        
+    </entry>
+    <entry xml:lang="id">
+        <title>Konstrain dan Gaya Konstrain</title>
+        <published>2023-11-02T00:00:00+00:00</published>
+        <updated>2023-11-02T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              firman-qs
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://firman-qs.github.io/posts/classical-mechanics/constraint/"/>
+        <id>https://firman-qs.github.io/posts/classical-mechanics/constraint/</id>
+        
+        <content type="html" xml:base="https://firman-qs.github.io/posts/classical-mechanics/constraint/">&lt;h1 id=&quot;sistem-terkonstrain&quot;&gt;Sistem Terkonstrain&lt;&#x2F;h1&gt;
+&lt;p&gt;Tinjau suatu sistem mekanik $\mathcal{S}$ yang terdiri dari sejumlah $N$ partikal
+$P_1, P_2, \dots, P_N$. Partikel di dalam $\mathcal{S}$ dapat berinteraksi melalui berbagai cara
+(Gaya gravitasi, gaya coulomb, pegas penghubung, dsb.). Partikel-partikel ini juga dapat
+berkaitan dengan gaya-gaya eksternal dan konstrain-konstrain.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;sistem-bebas-konstrain&quot;&gt;Sistem bebas konstrain.&lt;&#x2F;h2&gt;
+&lt;p&gt;Jika partikel di dalam $\mathcal{S}$ dapat bergerak bebas di dalam ruang yang
+independen satu sama lain, maka sistem $\mathcal{S}$ adalah sistem bebas konstrain.
+Di dalam kasus ini, maka persamaan gerak sistem adalah persamaan-persamaan Newtonian
+untuk masing-masing dari $N$ partikel tersebut. Misalnya, jika partikel ke-$i$
+bermassa $m_i$, pada posisi $\vec{r}_i$, bergerak dengan kelajuan $\vec{v}_i$, maka
+persamaan gerak dari sistem $S$ adalah
+$$
+m_i\dot{\vec{v}}_i = \vec{F}_i
+$$
+di mana $\vec{F}_i$ adalah gaya yang bekerja pada partikel $P_i$.&lt;&#x2F;p&gt;
+&lt;blockquote class=&quot;note&quot;&gt;
+	&lt;p class=&quot;alert-title&quot;&gt;
+		&lt;i class=&quot;icon&quot;&gt;&lt;&#x2F;i&gt;Note&lt;&#x2F;p&gt;
+	&lt;p&gt;Sebagai contoh: dua partikel bermassa $m_1$ dan $m_2$ yang terletak pada
+$r_1$ dan $r_2$ akan saling berinteraksi melalui gaya gravitasi. Keduanya
+akan bergerak saling mendekat dengan persamaan gerak:&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+m_1 \vec{a}_1 = m_1 m_2 G\frac{\hat{r}_2-\hat{r_1}}{|\vec{r}_2 - \vec{r_1}|^2}&lt;&#x2F;p&gt;
+&lt;pre class=&quot;z-code&quot;&gt;&lt;code&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;m_2 \vec{a}_2 = m_2 m_1 G\frac{\hat{r}_1-\hat{r_2}}{|\vec{r}_1 - \vec{r_2}|^2}
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;$$&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Under construction………..&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</content>
+        
+    </entry>
+</feed>

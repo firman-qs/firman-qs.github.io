@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="id">
+    <title>fqsss - Honorificabilitudinitatibus</title>
+    <subtitle>Opinionated, modern, pretty, and clean Zola theme.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://firman-qs.github.io/tags/honorificabilitudinitatibus/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://firman-qs.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2017-01-01T00:00:00+00:00</updated>
+    <id>https://firman-qs.github.io/tags/honorificabilitudinitatibus/atom.xml</id>
+    <entry xml:lang="id">
+        <title>Loooooong Loooooong Loooooong Loooooong Loooooong Man</title>
+        <published>2017-01-01T00:00:00+00:00</published>
+        <updated>2017-01-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Looong Looong Man
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Alexander Maximilian Jonathan
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://firman-qs.github.io/posts/long-long-man/"/>
+        <id>https://firman-qs.github.io/posts/long-long-man/</id>
+        
+        <content type="html" xml:base="https://firman-qs.github.io/posts/long-long-man/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;e&#x2F;ed&#x2F;Long_Long_Man.jpeg#end#spoiler&quot; alt=&quot;Long Long Man&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. Quod idem licet transferre in voluptatem, ut postea.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;Ullus investigandi veri, nisi inveneris, et quaerendi defatigatio turpis est, cum esset accusata et vituperata ab Hortensio. Qui liber cum et mortem contemnit, qua qui est imbutus quietus esse numquam potest. Praeterea bona praeterita grata recordatione renovata delectant. Est.&lt;&#x2F;p&gt;
+&lt;p&gt;Ullus investigandi veri, nisi inveneris, et quaerendi defatigatio turpis est, cum esset accusata et vituperata ab Hortensio. Qui liber cum et mortem contemnit, qua qui est imbutus quietus esse numquam potest. Praeterea.&lt;&#x2F;p&gt;
+&lt;style&gt;
+.table-container {
+  margin: 2rem auto;
+  overflow-x: auto;
+   width: 90vw;
+  margin-left: calc(-43vw + 50%);
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 1px solid #444444; &#x2F;* outer border black *&#x2F;
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid #444444; &#x2F;* black borders for all cells *&#x2F;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+&lt;&#x2F;style&gt;
+&lt;div class=&quot;table-container&quot;&gt;
+  &lt;table&gt;
+    &lt;thead &gt;
+      &lt;tr&gt;
+        &lt;th &gt;Judul &amp; Reviewer&lt;&#x2F;th&gt;
+        &lt;th &gt;Metode Penelitian&lt;&#x2F;th&gt;
+        &lt;th &gt;Instrumen&#x2F; Data Penelitian&lt;&#x2F;th&gt;
+        &lt;th &gt;Hasil&lt;&#x2F;th&gt;
+        &lt;th &gt;Gap&lt;&#x2F;th&gt;
+      &lt;&#x2F;tr&gt;
+    &lt;&#x2F;thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          A Graphical Catalog of Threats to Validity Linking Social Science with Epidemiology 
+          &lt;a href=&quot;https:&#x2F;&#x2F;muhammadfikrul.blogspot.com&#x2F;2025&#x2F;10&#x2F;metodologi-penelitian-kuantitatif_52.html&quot;&gt;Muhammad Fikrul Akbar Suwahyu&lt;&#x2F;a&gt;
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;
+          Katalog 37 ancaman kevalidan (Campbell tradition) dan pemetaan ke DAG untuk menganalisis bias.
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;Representasi DAG untuk setiap ancaman; pembahasan ancaman internal&#x2F;construct&#x2F;external&#x2F;statistical.
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;Menghubungkan ancaman metodologis klasik ke struktur kausal (DAG) sehingga memudahkan mitigasi lewat desain dan analisis.
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;Meskipun komprehensif, masih perlu contoh penerapan praktisnya di studi pendidikan-AI (mis. menilai collider bias dari self-selection pengguna AI dalam kelas).
+        &lt;&#x2F;td&gt;
+      &lt;&#x2F;tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          A systematic literature review of artificial
+          intelligence (AI) in secondary school physics:
+          applications, benefits, and challenges
+          &lt;a href=&quot;https:&#x2F;&#x2F;firman-qs.github.io&#x2F;posts&#x2F;mtpkuan&#x2F;metopenkuan6-10&#x2F;&quot;&gt;Firman Qashdus Sabil&lt;&#x2F;a&gt;
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;Systematic Literature Review (PRISMA) pada artikel 2020–2024, screening ganda, ekstraksi data ke spreadsheet terbuka.
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;Basis data bibliografis (Scopus, WoS), coding sheet untuk: aplikasi AI, manfaat, tantangan; alat penilaian kualitas studi (critical appraisal tools).&lt;&#x2F;td&gt;
+        &lt;td&gt;AI menjanjikan personalisasi (adaptive systems, ITS), virtual labs, dan tutoring (LLM) untuk fisika menengah; manfaat: peningkatan keterlibatan dan diferensiasi; tantangan: kesiapan guru, privasi data, dan risiko ketergantungan AI (mengurangi berpikir kritis).&lt;&#x2F;td&gt;
+        &lt;td&gt;Sedikit bukti jangka panjang tentang dampak AI terhadap kemampuan berpikir kritis dan pemecahan masalah di fisika; juga kurang studi yang menguji integrasi AI + virtual labs di konteks sekolah menengah dengan desain eksperimental jangka panjang.&lt;&#x2F;td&gt;
+      &lt;&#x2F;tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Quantitative Research Excellence: Study Design and Reliable and Valid Measurement of Variables
+          &lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;@nafilana.amalia&#x2F;penelitian-kuantitatif-eksperimental-sejarah-karakteristik-ancaman-validitas-dan-tahapan-15346dc02449&quot;&gt;Nafila Lana Amalia&lt;&#x2F;a&gt;
+        &lt;&#x2F;td&gt;
+        &lt;td &gt;Artikel pedagogis&#x2F;metodologis yang merangkum desain kuantitatif (P-exp, Q-exp, EXP) dan validitas&#x2F; reliabilitas instrumen.&lt;&#x2F;td&gt;
+        &lt;td &gt;Diskusi tentang power calculation, ancaman bias, validitas pengukuran, reliability testing, dan praktek pelaporan.&lt;&#x2F;td&gt;
+        &lt;td &gt;Panduan praktis untuk merancang studi kuantitatif berkualitas: hitung sampel (power), atasi ancaman bias, laporkan prosedur dan validasi instrumen.&lt;&#x2F;td&gt;
+        &lt;td &gt;Aplikasi khusus ke konteks pendidikan fisika + AI memerlukan adaptasi instrumen (mis. validasi rubrik penilaian interaksi AI, log data).&lt;&#x2F;td&gt;
+      &lt;&#x2F;tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+        Experimental research on enhancing effectiveness in teaching the nature of seasons
+          &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1anXoWQoVbfCKFJ_oyYXX8MtcW50xJOVD&#x2F;view&quot;&gt;Alfi Mufidah&lt;&#x2F;a&gt;
+        &lt;&#x2F;td&gt;
+        &lt;td &gt;Eksperimen dengan kelompok kontrol &amp; eksperimen (pre&#x2F;post&#x2F;retensi), analisis ANOVA berulang; peserta: siswa kelas 8 (n ≈ 148). Model pengajaran berbasis physical model (CAEFUS).&lt;&#x2F;td&gt;
+        &lt;td &gt;tes pilihan berganda untuk pencapaian (SEMAT), analisis gambar&#x2F;drawing (EFA pada gambar siswa), lembar retensi, rubrik coding hasil gambar.&lt;&#x2F;td&gt;
+        &lt;td &gt;Efek besar untuk kelompok eksperimen (peningkatan pre→post→retensi; ANOVA signifikan, η² besar), menunjukkan physical models efektif untuk konsep abstrak (seasons).&lt;&#x2F;td&gt;
+        &lt;td &gt;Fokus pada model fisik; kurang penelitian yang menguji kombinasi model fisik + teknologi (VR atau AI tutor) untuk transfer konsep yang lebih kompleks atau pada topik fisika lain (mis. elektromagnetisme).&lt;&#x2F;td&gt;
+      &lt;&#x2F;tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          Discovering Internal Validity Threats and Operational Concerns in Single‐Case Experimental Designs Through Directed Acyclic Graphs
+          &lt;a href=&quot;https:&#x2F;&#x2F;mellyyua.blogspot.com&#x2F;2025&#x2F;10&#x2F;review-artikel-topik-9.html&quot;&gt;Melly Yuni Anjani&lt;&#x2F;a&gt;
+        &lt;&#x2F;td&gt;
+        &lt;td &gt;Tinjauan teori-metodologis; aplikasi Directed Acyclic Graphs (DAGs) untuk mengidentifikasi ancaman validitas internal dan masalah operasional pada SCED (single-case experimental designs).&lt;&#x2F;td&gt;
+        &lt;td &gt;Representasi DAG, diskusi desain SCED (replikasi, randomisasi), contoh-contoh masalah operasional (trend baseline, outliers, attrition).&lt;&#x2F;td&gt;
+        &lt;td &gt;DAG membantu menjelaskan mengapa replikasi dan randomisasi memperbaiki inferensi kausal dan juga menyorot bahwa SCED tetap rentan pada isu operasional; DAG berguna untuk merencanakan mitigasi bias.&lt;&#x2F;td&gt;
+        &lt;td &gt;Penerapan DAG pada studi pendidikan eksperimental (termasuk fisika) masih relatif baru — ada peluang menggabungkan DAG untuk perencanaan dan analisis studi pendidikan berbasis AI&#x2F;virtual labs.&lt;&#x2F;td&gt;
+      &lt;&#x2F;tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          Improving reporting standards in quantitative educational intervention research: introducing the CLOSER and CIDER checklists
+          &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1e5WSw4f2Msb0c9QN0FB4LRm6wg5rmyW0&#x2F;view&quot;&gt;Alfi Mufidah&lt;&#x2F;a&gt;
+        &lt;&#x2F;td&gt;
+        &lt;td &gt;Pengembangan checklist (Delphi + adaptasi), CLOSER (34 item) untuk pelaporan studi pendidikan kuantitatif dan CIDER (17 item) untuk deskripsi intervensi.&lt;&#x2F;td&gt;
+        &lt;td &gt;Checklists (CLOSER, CIDER) — dipakai untuk menilai dan memperbaiki laporan intervensi pendidikan.&lt;&#x2F;td&gt;
+        &lt;td &gt;Checklist ini mengisi celah pelaporan di penelitian pendidikan (sering buruk bila memakai CONSORT&#x2F;TIDieR yang bukan untuk konteks pendidikan). Merekomendasikan penggunaan checklist agar studi mudah direplikasi.&lt;&#x2F;td&gt;
+        &lt;td &gt;Belum secara luas diadopsi — penelitian eksperimental di pendidikan (termasuk yang memanfaatkan AI) sebaiknya mengikuti CLOSER&#x2F;CIDER untuk meningkatkan transparansi.&lt;&#x2F;td&gt;
+      &lt;&#x2F;tr&gt;
+    &lt;&#x2F;tbody&gt;
+  &lt;&#x2F;table&gt;
+&lt;&#x2F;div&gt;
+</content>
+        
+    </entry>
+</feed>
