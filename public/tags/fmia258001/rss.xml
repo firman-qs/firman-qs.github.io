@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>fqsss - FMIA258001</title>
+      <link>https://firman-qs.github.io/</link>
+      <description>Opinionated, modern, pretty, and clean Zola theme.</description>
+      <generator>Zola</generator>
+      <language>id</language>
+      <atom:link href="https://firman-qs.github.io/tags/fmia258001/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sun, 26 Oct 2025 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>PBuM - Usulan Novelty Artikel Pertemuan 9</title>
+          <pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
+          <author>firman-qs</author>
+          <link>https://firman-qs.github.io/posts/mkpbum/novelty-artikel-pertemuan8/</link>
+          <guid>https://firman-qs.github.io/posts/mkpbum/novelty-artikel-pertemuan8/</guid>
+          <description xml:base="https://firman-qs.github.io/posts/mkpbum/novelty-artikel-pertemuan8/">&lt;p&gt;Nama: Firman Qashdus Sabil&lt;br &#x2F;&gt;
+NIM: 250321830676&lt;&#x2F;p&gt;
+&lt;style&gt;
+.table-container {
+  margin: 2rem auto;
+  overflow-x: auto;
+  width: 90vw;
+  margin-left: calc(-44.5vw + 50%);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 1rem 0;
+}
+
+.table-container table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 1px solid #444444; &#x2F;* outer border black *&#x2F;
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid #444444; &#x2F;* black borders for all cells *&#x2F;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+&lt;&#x2F;style&gt;
+&lt;div class=&quot;table-container&quot;&gt;
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th &gt;Judul &amp; Reviewer&lt;&#x2F;th&gt;
+        &lt;th &gt;Metode Penelitian&lt;&#x2F;th&gt;
+        &lt;th &gt;Instrumen&#x2F; Data Penelitian&lt;&#x2F;th&gt;
+        &lt;th &gt;Hasil&lt;&#x2F;th&gt;
+        &lt;th &gt;Gap&lt;&#x2F;th&gt;
+      &lt;&#x2F;tr&gt;
+    &lt;&#x2F;thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+         Hajikhani &amp; Suominen (2022), Mapping the sustainable development goals (SDGs) in science, technology and innovation: application of machine learning in SDG-oriented artefact detection. 
+          &lt;a href=&quot;https:&#x2F;&#x2F;firman-qs.github.io&#x2F;posts&#x2F;mkpbum&#x2F;review-artikel-pertemuan8&#x2F;&quot;&gt;Firman Qashdus Sabil&lt;&#x2F;a&gt;
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;
+          Supervised machine learning untuk klasifikasi teks (text classification). Mereka melatih model pada publikasi yang sudah diberi label SDG, lalu mentransfer model itu untuk mengklasifikasikan dokumen paten (EPO) sebagai proksi orientasi teknologi terhadap SDG. Proses mencakup preprocessing (TF-IDF, Word2Vec&#x2F;Doc2Vec), pemodelan dokumen, pelatihan dan validasi.
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Dataset publikasi berlabel SDG (dari basis publikasi seperti Scopus&#x2F;SCOPUS hasil lexicon-based query) untuk training.&lt;&#x2F;li&gt;
+                &lt;li&gt;Koleksi paten (European Patent Office) sebagai data target (test).&lt;&#x2F;li&gt;
+                &lt;li&gt;Teknik NLP &amp; toolkit ML (implementasi Doc2Vec&#x2F;Word2Vec, classifier).&lt;&#x2F;li&gt;
+            &lt;&#x2F;ul&gt;
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;
+            Model ML bisa mengidentifikasi orientasi SDG pada paten dan memperluas cakupan deteksi dibanding query leksikal sederhana. Mereka menelaah SDG7 (energi bersih) sebagai studi kasus dan menilai cakupan SDG dalam paten EPO 2020.
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Interpretabilitas model (mengapa dokumen diklasifikasikan ke SDG tertentu) relatif minim.&lt;&#x2F;li&gt;
+                &lt;li&gt;Validasi lintas-konteks (mis. transfer ke basis paten negara lain atau dokumen pendidikan) masih terbatas.&lt;&#x2F;li&gt;
+                &lt;li&gt;Keterbatasan pada resource bahasa selain Bahasa Inggris (mungkin relevan jika ingin aplikasi pada kurikulum bahasa Arab&#x2F;Indonesia).&lt;&#x2F;li&gt;
+            &lt;&#x2F;ul&gt;
+        &lt;&#x2F;td&gt;
+      &lt;&#x2F;tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          Artyukhov et al. (2024), SDG 4, Academic Integrity and Artificial Intelligence: Clash or Win-Win Cooperation? (Sustainability).
+          &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;15r8oyX0vYN788TT5ER2qLpzkISKYYTVr&#x2F;view&quot;&gt;Fathina Taqiyatus Salsabila&lt;&#x2F;a&gt;
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;
+            Bibliometric analysis (Scopus) + analisis topik&#x2F;kata kunci menggunakan VOSviewer &amp; SciVal; memetakan literatur pada persimpangan SDG4, kualitas pendidikan, academic integrity, AI. Rentang data 2019–2024 pada analisis mereka.
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;
+            Database Scopus (sekitar 17.458 artikel pada beberapa tahap query), perangkat lunak bibliometrik (VOSviewer, SciVal). Query berlapis untuk menangkap tema: SDG4, quality of education, academic integrity, AI-related keywords.
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;
+            AI memberi peluang (personalisasi pembelajaran, aksesibilitas, analitik), tetapi menimbulkan risiko untuk integritas akademik (plagiarisme, misuse of AI-generated content), bias algoritmik, isu privasi &amp; digital divide. Mereka menekankan potensi sinergi bila ada kebijakan &amp; framework etis.
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;
+            &lt;ul&gt;
+            &lt;li&gt;Kurang banyak studi empiris di kelas (intervensi) yang menunjukkan bagaimana AI dapat dipakai praktis untuk meningkatkan kualitas sambil menjaga integritas.&lt;&#x2F;li&gt;
+            &lt;li&gt;Kekurangan studi konteks-spesifik (mis. sekolah menengah &#x2F; konteks negara berkembang) dan instrumen penilaian integritas ketika AI digunakan.&lt;&#x2F;li&gt;
+            &lt;&#x2F;ul&gt;
+        &lt;&#x2F;td&gt;
+      &lt;&#x2F;tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+            Smith et al. (2023), Discovering new pathways toward integration between health and sustainable development goals with natural language processing and network science (Globalization &amp; Health)
+            &lt;a href=&quot;https:&#x2F;&#x2F;atikanur38.blogspot.com&#x2F;2025&#x2F;10&#x2F;sains-pembangunan-sdg-3-4-6-7-12-13.html&quot;&gt;Atika Nur Fadhilah&lt;&#x2F;a&gt;
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;
+            Analisis korpus besar artikel (27.928 abstrak yang relevan SDG3 + lainnya) menggunakan top2vec (topic modeling berbasis embedding) + network science untuk membuat jaringan topik dan menemukan “zipper themes” (tema pengait antar-SDG). Dua langkah: (1) analisis frekuensi integrasi SDG antar tahun; (2) topik &amp; jaringan untuk mengidentifikasi tema interdisipliner.
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;
+            Data bibliografis (dimensions.ai), algoritma top2vec, teknik clustering (HDBSCAN&#x2F;UMAP), network metrics.
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;
+            Peningkatan integrasi antara SDG3 dan SDG lain sejak 2001; mengidentifikasi 197 topik dan 19 komunitas topik. Beberapa area (mis. hubungan kesehatan–pendidikan, kesehatan–ketahanan pangan) kuat; overlap dengan SDG lingkungan (12–15) relatif kurang dikembangkan → peluang riset. Mereka juga memvalidasi bahwa kombinasi NLP+network science efektif untuk mensintesis literatur besar.
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Kebutuhan studi yang menghubungkan hasil-topic modelling dengan intervensi praktis di lapangan (mis. pendidikan).&lt;&#x2F;li&gt;
+                &lt;li&gt;Under-development pada hubungan kesehatan ↔ environmental SDGs (ruang untuk studi interdisipliner).&lt;&#x2F;li&gt;
+            &lt;&#x2F;ul&gt;
+        &lt;&#x2F;td&gt;
+      &lt;&#x2F;tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+            Varriale et al. (2025), Artificial intelligence in technology networks: A catalyst for achieving the SDGs (Technovation).
+            &lt;a href=&quot;https:&#x2F;&#x2F;matkulpbmsitisinta.blogspot.com&#x2F;2025&#x2F;10&#x2F;analisis-atau-review-kritis-substansi_26.html&quot;&gt;Siti Sinta Maulidia Rohmah&lt;&#x2F;a&gt;
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;Konstruksi basis data praktik bisnis berkelanjutan (2161 SBP, sustainable business practices) dari literatur; social network analysis (SNA) untuk memetakan hubungan AI dengan teknologi lain (IoT, blockchain, cloud, immersive) terhadap 17 SDGs.&lt;&#x2F;td&gt;
+        &lt;td&gt;Database 2161 praktik, SNA tools (network metrics), analisis kualitatif terhadap pola konektivitas teknologi-SDG.&lt;&#x2F;td&gt;
+        &lt;td&gt;AI berperan sentral, terutama terkait SDG7, SDG9, SDG12; AI sering diintegrasikan dengan IoT, computing, aplikasi digital. Juga ditemukan gap integrasi AI dengan immersive&#x2F;proximity tech. Menegaskan pentingnya ekosistem teknologi (AI bukan solusinya sendiri).&lt;&#x2F;td&gt;
+        &lt;td&gt;
+            &lt;ul&gt;
+            &lt;li&gt;Kurang studi aplikasi sederhana yang menguji kolaborasi AI + teknologi low-cost di konteks pendidikan (mis. penggunaan AI+IoT sederhana untuk pembelajaran STEM&#x2F;SDG).&lt;&#x2F;li&gt;
+            &lt;li&gt;Keterbatasan penerapan di konteks sosial&#x2F;lingkungan dan evaluasi dampak pembelajaran.&lt;&#x2F;li&gt;
+            &lt;&#x2F;ul&gt;
+        &lt;&#x2F;td&gt;
+      &lt;&#x2F;tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          Said et al. (2024), Mapping of K-12 science and mathematics curriculum against SDGs (Qatar).
+          &lt;a href=&quot;https:&#x2F;&#x2F;mellyyua.blogspot.com&#x2F;2025&#x2F;10&#x2F;review-artikel-minggu-9-pbm.html&quot;&gt;Melly Yuni Anjani&lt;&#x2F;a&gt;
+        &lt;&#x2F;td&gt;
+        &lt;td&gt;Mapping kurikulum (keyword-based mapping) menggunakan dua pendekatan&#x2F;daftar kata kunci (Brugmann et al., SDSN) untuk memeriksa apakah standar kurikulum Sains &amp; Matematika K-12 memuat konten SDG. Analisis deskriptif kuantitatif terhadap item standar.&lt;&#x2F;td&gt;
+        &lt;td&gt;Dokumen kurikulum (410 standar science, 122 standar mathematics), daftar keyword SDG&#x2F;ESD, metode mapping berdasarkan kemunculan&#x2F;konteks kata.&lt;&#x2F;td&gt;
+        &lt;td&gt;Hanya 12.7% standar Sains menyentuh aspek SDG; Matematika bahkan hanya 5.7% yang berkaitan dengan SDG. SDG yang paling tercakup: SDG13 (climate), SDG15, SDG3, SDG12, SDG7. Mereka menekankan kebutuhan integrasi konten ESD dan pedagogi yang lebih aplikatif (project-based, real data).&lt;&#x2F;td&gt;
+        &lt;td&gt;Kebutuhan studi intervensi kelas yang menguji materi&#x2F;aktivitas konkret untuk mengintegrasikan SDG ke dalam pelajaran sains&#x2F;matematika, termasuk penggunaan tools digital sederhana untuk data-driven inquiry. Kebutuhan alat penilaian kompetensi ESD (authentic assessment) dan kesiapan guru (ICT skills).&lt;&#x2F;td&gt;
+      &lt;&#x2F;tr&gt;
+      &lt;!-- &lt;tr&gt;
+        &lt;td&gt;
+          Improving reporting standards in quantitative educational intervention research: introducing the CLOSER and CIDER checklists
+          &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1e5WSw4f2Msb0c9QN0FB4LRm6wg5rmyW0&#x2F;view&quot;&gt;Alfi Mufidah&lt;&#x2F;a&gt;
+        &lt;&#x2F;td&gt;
+        &lt;td &gt;Pengembangan checklist (Delphi + adaptasi), CLOSER (34 item) untuk pelaporan studi pendidikan kuantitatif dan CIDER (17 item) untuk deskripsi intervensi.&lt;&#x2F;td&gt;
+        &lt;td &gt;Checklists (CLOSER, CIDER), dipakai untuk menilai dan memperbaiki laporan intervensi pendidikan.&lt;&#x2F;td&gt;
+        &lt;td &gt;Checklist ini mengisi celah pelaporan di penelitian pendidikan (sering buruk bila memakai CONSORT&#x2F;TIDieR yang bukan untuk konteks pendidikan). Merekomendasikan penggunaan checklist agar studi mudah direplikasi.&lt;&#x2F;td&gt;
+        &lt;td &gt;Belum secara luas diadopsi, penelitian eksperimental di pendidikan (termasuk yang memanfaatkan AI) sebaiknya mengikuti CLOSER&#x2F;CIDER untuk meningkatkan transparansi.&lt;&#x2F;td&gt;
+      &lt;&#x2F;tr&gt; --&gt;
+    &lt;&#x2F;tbody&gt;
+  &lt;&#x2F;table&gt;
+&lt;&#x2F;div&gt;
+&lt;ol&gt;
+&lt;li&gt;Dari sisi metode: banyak studi map&#x2F;analitik besar (bibliometrik, NLP, SNA) tetapi sedikit intervensi praktis di kelas yang menguji bagaimana teknologi&#x2F;AI dapat membantu integrasi SDG ke pembelajaran Sains&#x2F;Matematika di K-12.&lt;&#x2F;li&gt;
+&lt;li&gt;Dari sisi contoh&#x2F;implementasi: kurikulum sering belum memuat konten SDG secara eksplisit, perlu pengembangan materi dan metode pembelajaran berbasis masalah nyata (project&#x2F;data-based).&lt;&#x2F;li&gt;
+&lt;li&gt;Dari sisi AI: bukti konseptual kuat bahwa AI + teknologi lain berdampak besar pada SDG, namun bukti empiris di konteks pendidikan (kelas menengah&#x2F;menengah atas) masih minim; juga dibutuhkan perhatian pada integritas&#x2F;etika saat memakai AI.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;judul-usulan&quot;&gt;Judul usulan&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Pengaruh Pembelajaran Fisika Berbasis Data Lingkungan (proyek sederhana + simulasi) terhadap Pemahaman Konsep Perubahan Iklim dan Sikap Keberlanjutan Siswa SMA, dengan Analisis Respons Open-Ended Menggunakan NLP.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;The Effect of Environmental Data-Based Physics Learning (simple projects + simulations) on High School Students’ Understanding of Climate Change Concepts and Sustainability Attitudes, with Open-Ended Response Analysis Using NLP.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Penelitian ini:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Menjawab gap kurikulum (Said et al.): menempatkan SDG13 (climate) ke dalam pembelajaran fisika lewat data nyata dan proyek sederhana.&lt;&#x2F;li&gt;
+&lt;li&gt;Memanfaatkan teknik NLP&#x2F;analitik ringan (dalam Hajikhani &amp;amp; Smith) untuk menganalisa jawaban terbuka siswa (menghubungkan literatur besar ke studi kelas kecil).&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;iframe src=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;15MwqIF-xkeZLtzMTxpikZbNtN6_jDi77&#x2F;preview&quot; width=&quot;100%&quot; height=&quot;600&quot; allow=&quot;autoplay&quot; frameborder=&quot;0&quot;&gt;&lt;&#x2F;iframe&gt;
+&lt;iframe src=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1mm3fCl1u2axMf7V6_h0Korafuq4OzGBI&#x2F;preview&quot; width=&quot;100%&quot; height=&quot;600&quot; allow=&quot;autoplay&quot; frameborder=&quot;0&quot;&gt;&lt;&#x2F;iframe&gt;
+&lt;!-- ![Scholar Indonesia](..&#x2F;fg61.png)3 --&gt;
+&lt;!-- ![Scholar Inggris](..&#x2F;fg62.png) --&gt;</description>
+      </item>
+      <item>
+          <title>PBuM - Review Artikel Pertemuan 9</title>
+          <pubDate>Sat, 25 Oct 2025 00:00:00 +0000</pubDate>
+          <author>firman-qs</author>
+          <link>https://firman-qs.github.io/posts/mkpbum/review-artikel-pertemuan8/</link>
+          <guid>https://firman-qs.github.io/posts/mkpbum/review-artikel-pertemuan8/</guid>
+          <description xml:base="https://firman-qs.github.io/posts/mkpbum/review-artikel-pertemuan8/">&lt;p&gt;Nama: Firman Qashdus Sabil&lt;br &#x2F;&gt;
+NIM: 250321830676&lt;&#x2F;p&gt;
+&lt;p&gt;Anda dapat mendownload:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;artikel: &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;14OKJMF99-sjxEjgZd43dspyU4olaFvqg&#x2F;view?usp=sharing&quot;&gt;disini $\rightarrow$ https:&#x2F;&#x2F;doi.org&#x2F;10.1007&#x2F;s11192-022-04358-x&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;!-- - pdf review Artikel: [disini $\rightarrow$ Drive review artikel](https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1-bB_VblQ0trslAnH-QY8gS-qE475NpdK&#x2F;view?usp=sharing) --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Review Artikel Pertemuan 9: Sains &amp;amp; Pembangunan: SDG 3, 4, 6, 7, 12, 13&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h1 id=&quot;identitas-artikel&quot;&gt;Identitas Artikel&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;strong&gt;Judul&lt;&#x2F;strong&gt;: Mapping the sustainable development goals (SDGs) in science,
+technology and innovation: application of machine learning in SDG-oriented
+artefact detection&lt;br &#x2F;&gt;
+&lt;strong&gt;Penulis&lt;&#x2F;strong&gt;: Arash Hajikhani dan Arho Suominen&lt;br &#x2F;&gt;
+&lt;strong&gt;Jurnal&lt;&#x2F;strong&gt;: Scientometrics (2022) Vol. 127, hlm. 6661–6693&lt;br &#x2F;&gt;
+&lt;strong&gt;DOI&lt;&#x2F;strong&gt;: &lt;a href=&quot;https:&#x2F;&#x2F;doi.org&#x2F;10.1007&#x2F;s11192-022-04358-x&quot;&gt;https:&#x2F;&#x2F;doi.org&#x2F;10.1007&#x2F;s11192-022-04358-x&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;tujuan&quot;&gt;Tujuan&lt;&#x2F;h1&gt;
+&lt;p&gt;Artikel ini bertujuan untuk mengembangkan pendekatan baru dalam mengidentifikasi
+kontribusi ilmu pengetahuan dan teknologi terhadap Sustainable Development Goals
+(SDGs) menggunakan machine learning (ML). Penulis ingin memperluas metode
+klasifikasi SDG dari publikasi ilmiah ke dokumen paten, sehingga dapat memetakan
+hubungan antara penelitian ilmiah, inovasi teknologi, dan tujuan pembangunan
+berkelanjutan.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;metode-penelitian&quot;&gt;Metode Penelitian&lt;&#x2F;h1&gt;
+&lt;p&gt;Penelitian ini menggunakan metode kuantitatif berbasis &lt;em&gt;text mining&lt;&#x2F;em&gt; dan &lt;em&gt;machine learning&lt;&#x2F;em&gt;. Langkah-langkahnya meliputi:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Menyusun taksonomi dan kata kunci SDG berdasarkan basis data Scopus&#x2F;SciVal dan dokumen resmi PBB (2015–2020).&lt;&#x2F;li&gt;
+&lt;li&gt;Menggunakan data publikasi ilmiah yang telah diberi label SDG sebagai data latih (training data).&lt;&#x2F;li&gt;
+&lt;li&gt;Menguji beberapa algoritma klasifikasi teks seperti Naive Bayes, Support Vector Machine, dan Logistic Regression dengan berbagai model representasi teks (TF-IDF, Word2Vec, Doc2Vec).&lt;&#x2F;li&gt;
+&lt;li&gt;Menentukan model terbaik (Word2Vec + Logistic Regression) untuk mendeteksi relevansi SDG dalam paten EPO (European Patent Office).&lt;&#x2F;li&gt;
+&lt;li&gt;Membandingkan hasil deteksi ML dengan pencarian leksikal tradisional.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h1 id=&quot;hasil-temuan-utama&quot;&gt;Hasil&#x2F;Temuan Utama&lt;&#x2F;h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Model ML terbaik (Word2Vec + Logistic Regression) memiliki akurasi lebih dari 60% untuk sebagian besar kategori SDG, dengan kinerja terbaik pada SDG 7 (energi bersih).&lt;&#x2F;li&gt;
+&lt;li&gt;Penerapan model ini pada 132.226 paten EPO (tahun 2020) menunjukkan bahwa lebih dari 20% keluarga paten berkaitan dengan SDG 7.&lt;&#x2F;li&gt;
+&lt;li&gt;Model ML memperluas cakupan identifikasi paten SDG sebesar 14% dibandingkan metode pencarian leksikal biasa.&lt;&#x2F;li&gt;
+&lt;li&gt;Analisis jaringan menunjukkan bahwa ML mampu menemukan klaster tematik baru (misalnya teknologi baterai isi ulang) yang tidak teridentifikasi dengan pendekatan konvensional.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h1 id=&quot;kesimpulan&quot;&gt;Kesimpulan&lt;&#x2F;h1&gt;
+&lt;p&gt;Penelitian ini berhasil menunjukkan bahwa machine learning dapat meningkatkan
+kemampuan deteksi artefak ilmu pengetahuan dan teknologi yang relevan dengan
+SDGs. Pendekatan ini memperluas cakupan pemetaan inovasi terhadap tujuan
+keberlanjutan serta dapat digunakan untuk mendukung kebijakan riset dan strategi
+perusahaan dalam mengarahkan inovasi yang berkontribusi pada SDGs.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;kelebihan-termasuk-gap-yang-diisi-oleh-artikel&quot;&gt;Kelebihan (termasuk gap yang diisi oleh artikel)&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Artikel ini mengisi gap dalam literatur mengenai cara menghubungkan publikasi ilmiah dan paten dengan SDGs secara sistematis menggunakan pendekatan otomatis.&lt;&#x2F;li&gt;
+&lt;li&gt;Sebelumnya, pemetaan SDG dalam konteks inovasi banyak dilakukan secara deskriptif atau berbasis kata kunci sederhana. Penelitian ini memperkenalkan model ML yang mampu mengklasifikasi teks kompleks dan mendeteksi hubungan tersembunyi.&lt;&#x2F;li&gt;
+&lt;li&gt;Memberikan bukti empiris tentang bagaimana machine learning dapat diterapkan lintas domain (dari publikasi ke paten).&lt;&#x2F;li&gt;
+&lt;li&gt;Berkontribusi pada pengembangan kerangka pengukuran “Beyond GDP” untuk mengevaluasi dampak inovasi terhadap keberlanjutan.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;kekurangan&quot;&gt;Kekurangan&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Akurasi model masih terbatas (sekitar 60%), terutama pada kategori SDG dengan definisi yang lebih luas (misalnya SDG 8, 14, 15).&lt;&#x2F;li&gt;
+&lt;li&gt;Hanya menggunakan data paten dari EPO (2020), sehingga generalisasi globalnya terbatas.&lt;&#x2F;li&gt;
+&lt;li&gt;Tidak membahas pendekatan deep learning yang mungkin dapat meningkatkan performa klasifikasi.&lt;&#x2F;li&gt;
+&lt;li&gt;Tidak menilai faktor semantik yang lebih kompleks seperti hubungan sebab-akibat antara inovasi dan pencapaian SDG.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;novelty-dari-artikel-ini&quot;&gt;Novelty dari Artikel Ini&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Penerapan pertama machine learning-based classification untuk menghubungkan publikasi ilmiah dan dokumen paten dalam konteks SDGs.&lt;&#x2F;li&gt;
+&lt;li&gt;Penggunaan transfer learning dari publikasi (sains) ke paten (teknologi) untuk memetakan relevansi SDG.&lt;&#x2F;li&gt;
+&lt;li&gt;Menunjukkan peningkatan signifikan (14%) dalam cakupan deteksi dibandingkan metode berbasis kata kunci.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;novelty-yang-dapat-diajukan-untuk-penelitian-selanjutnya&quot;&gt;Novelty yang Dapat Diajukan untuk Penelitian Selanjutnya&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Menggunakan deep learning (misalnya BERT, GPT-based models) untuk menangkap konteks semantik yang lebih dalam dan meningkatkan akurasi klasifikasi.&lt;&#x2F;li&gt;
+&lt;li&gt;Mengintegrasikan analisis multibahasa untuk memetakan paten non-Inggris atau publikasi regional.&lt;&#x2F;li&gt;
+&lt;li&gt;Mengaitkan hasil klasifikasi dengan indikator dampak sosial-ekonomi untuk menilai efektivitas inovasi terhadap pencapaian SDG.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;!-- &lt;iframe src=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1-bB_VblQ0trslAnH-QY8gS-qE475NpdK&#x2F;preview&quot; width=&quot;100%&quot; height=&quot;600&quot; allow=&quot;autoplay&quot; frameborder=&quot;0&quot;&gt;&lt;&#x2F;iframe&gt; --&gt;
+</description>
+      </item>
+      <item>
+          <title>PBuM - Usulan Novelty Artikel Pertemuan 7</title>
+          <pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
+          <author>firman-qs</author>
+          <link>https://firman-qs.github.io/posts/mkpbum/novelty-artikel-pertemuan7/</link>
+          <guid>https://firman-qs.github.io/posts/mkpbum/novelty-artikel-pertemuan7/</guid>
+          <description xml:base="https://firman-qs.github.io/posts/mkpbum/novelty-artikel-pertemuan7/">&lt;p&gt;Nama: Firman Qashdus Sabil&lt;br &#x2F;&gt;
+NIM: 250321830676&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Catatan: “Empat dari lima artikel (A, C, D, E)….” Seharusnya &lt;em&gt;“Empat dari lima artikel (A, B, D, E)…”&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Anda dapat mendownload:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;pdf usulan novelty Artikel: &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;18LDTd-LJ_wy_raDj_4rN_op9P1KN_WkY&#x2F;view?usp=sharing&quot;&gt;disini $\rightarrow$ drive usulan novelty artikel pertemuan 7&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;usulan-novelty-studi-kasus-kkn-tematik-community-service&quot;&gt;Usulan novelty: Studi Kasus KKN Tematik, Community Service&lt;&#x2F;h1&gt;
+&lt;iframe src=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;18LDTd-LJ_wy_raDj_4rN_op9P1KN_WkY&#x2F;preview&quot; width=&quot;100%&quot; height=&quot;600&quot; allow=&quot;autoplay&quot; frameborder=&quot;0&quot;&gt;&lt;&#x2F;iframe&gt;
+</description>
+      </item>
+      <item>
+          <title>PBuM - Review Artikel Pertemuan 7</title>
+          <pubDate>Sat, 11 Oct 2025 00:00:00 +0000</pubDate>
+          <author>firman-qs</author>
+          <link>https://firman-qs.github.io/posts/mkpbum/review-artikel-pertemuan7/</link>
+          <guid>https://firman-qs.github.io/posts/mkpbum/review-artikel-pertemuan7/</guid>
+          <description xml:base="https://firman-qs.github.io/posts/mkpbum/review-artikel-pertemuan7/">&lt;p&gt;Nama: Firman Qashdus Sabil&lt;br &#x2F;&gt;
+NIM: 250321830676&lt;&#x2F;p&gt;
+&lt;p&gt;Anda dapat mendownload:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;artikel: &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1NjFAoQafCzM7xY5DEke8WXeB29PT6T5N&#x2F;view?usp=sharing&quot;&gt;disini $\rightarrow$ https:&#x2F;&#x2F;doi.org&#x2F;10.29303&#x2F;jppipa.v11i3.10448&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;pdf review Artikel: &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1-bB_VblQ0trslAnH-QY8gS-qE475NpdK&#x2F;view?usp=sharing&quot;&gt;disini $\rightarrow$ Drive review artikel&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;artikel-pertemuan-7-studi-kasus-kkn-tematik-community-service&quot;&gt;Artikel Pertemuan 7: Studi Kasus KKN Tematik, Community Service&lt;&#x2F;h1&gt;
+&lt;iframe src=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1-bB_VblQ0trslAnH-QY8gS-qE475NpdK&#x2F;preview&quot; width=&quot;100%&quot; height=&quot;600&quot; allow=&quot;autoplay&quot; frameborder=&quot;0&quot;&gt;&lt;&#x2F;iframe&gt;
+</description>
+      </item>
+      <item>
+          <title>PBuM - Usulan Novelty Artikel Pertemuan 6</title>
+          <pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate>
+          <author>firman-qs</author>
+          <link>https://firman-qs.github.io/posts/mkpbum/novelty-artikel-pertemuan6/</link>
+          <guid>https://firman-qs.github.io/posts/mkpbum/novelty-artikel-pertemuan6/</guid>
+          <description xml:base="https://firman-qs.github.io/posts/mkpbum/novelty-artikel-pertemuan6/">&lt;p&gt;Nama: Firman Qashdus Sabil&lt;br &#x2F;&gt;
+NIM: 250321830676&lt;&#x2F;p&gt;
+&lt;p&gt;Anda dapat mendownload:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;pdf usulan novelty Artikel: &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1eg6edTXKtZEhgEmnI7xJ4sxn9VQWAUqj&#x2F;view?usp=sharing&quot;&gt;disini $\rightarrow$ drive usulan novelty artikel pertemuan 6&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;usulan-novelty-teknik-analisis-masalah-berbasis-data&quot;&gt;Usulan novelty: Teknik analisis masalah berbasis data&lt;&#x2F;h1&gt;
+&lt;iframe src=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1eg6edTXKtZEhgEmnI7xJ4sxn9VQWAUqj&#x2F;preview&quot; width=&quot;100%&quot; height=&quot;600&quot; allow=&quot;autoplay&quot; frameborder=&quot;0&quot;&gt;&lt;&#x2F;iframe&gt;
+</description>
+      </item>
+      <item>
+          <title>PBuM - Review Artikel Pertemuan 6</title>
+          <pubDate>Mon, 06 Oct 2025 00:00:00 +0000</pubDate>
+          <author>firman-qs</author>
+          <link>https://firman-qs.github.io/posts/mkpbum/review-artikel-pertemuan6/</link>
+          <guid>https://firman-qs.github.io/posts/mkpbum/review-artikel-pertemuan6/</guid>
+          <description xml:base="https://firman-qs.github.io/posts/mkpbum/review-artikel-pertemuan6/">&lt;p&gt;Nama: Firman Qashdus Sabil&lt;br &#x2F;&gt;
+NIM: 250321830676&lt;&#x2F;p&gt;
+&lt;p&gt;Anda dapat mendownload:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;artikel: &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1WsZHuVzcU71CtAemg7rVs02nopQROdVA&#x2F;view?usp=sharing&quot;&gt;disini $\rightarrow$ https:&#x2F;&#x2F;doi.org&#x2F;10.1016&#x2F;j.neucom.2024.128096&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;pdf review Artikel: &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1hh9BX9yUttXgFUcaGyEMECPSz23NfDLt&#x2F;view?usp=sharing&quot;&gt;disini $\rightarrow$ Drive review artikel&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;artikel-pertemuan-6-inovasi-teknologi-ramah-lingkungan&quot;&gt;Artikel Pertemuan 6: Inovasi Teknologi Ramah Lingkungan&lt;&#x2F;h1&gt;
+&lt;iframe src=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1hh9BX9yUttXgFUcaGyEMECPSz23NfDLt&#x2F;preview&quot; width=&quot;100%&quot; height=&quot;600&quot; allow=&quot;autoplay&quot; frameborder=&quot;0&quot;&gt;&lt;&#x2F;iframe&gt;
+</description>
+      </item>
+      <item>
+          <title>PBuM - Usulan Novelty Artikel Pertemuan 5</title>
+          <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
+          <author>firman-qs</author>
+          <link>https://firman-qs.github.io/posts/mkpbum/novelty-artikel-pertemuan5/</link>
+          <guid>https://firman-qs.github.io/posts/mkpbum/novelty-artikel-pertemuan5/</guid>
+          <description xml:base="https://firman-qs.github.io/posts/mkpbum/novelty-artikel-pertemuan5/">&lt;p&gt;Nama: Firman Qashdus Sabil&lt;br &#x2F;&gt;
+NIM: 250321830676&lt;&#x2F;p&gt;
+&lt;p&gt;Anda dapat mendownload:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;pdf usulan novelty Artikel: &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;10fhO94zuMFTE4rtgbYztvNNBDfIo-vTZ&#x2F;view?usp=sharing&quot;&gt;disini $\rightarrow$ drive usulan novelty artikel pertemuan 5&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;usulan-novelty-teknik-analisis-masalah-berbasis-data&quot;&gt;Usulan novelty: Teknik analisis masalah berbasis data&lt;&#x2F;h1&gt;
+&lt;iframe src=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;10fhO94zuMFTE4rtgbYztvNNBDfIo-vTZ&#x2F;preview&quot; width=&quot;100%&quot; height=&quot;600&quot; allow=&quot;autoplay&quot; frameborder=&quot;0&quot;&gt;&lt;&#x2F;iframe&gt;
+</description>
+      </item>
+      <item>
+          <title>PBuM - Usulan Novelty Artikel Pertemuan 4</title>
+          <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
+          <author>firman-qs</author>
+          <link>https://firman-qs.github.io/posts/mkpbum/novelty-artikel-pertemuan4/</link>
+          <guid>https://firman-qs.github.io/posts/mkpbum/novelty-artikel-pertemuan4/</guid>
+          <description xml:base="https://firman-qs.github.io/posts/mkpbum/novelty-artikel-pertemuan4/">&lt;p&gt;Nama: Firman Qashdus Sabil&lt;br &#x2F;&gt;
+NIM: 250321830676&lt;&#x2F;p&gt;
+&lt;p&gt;Anda dapat mendownload:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;pdf usulan novelty Artikel: &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1zP9GJQdFv0C8EgwBJ4RLKXO0N1jweAzd&#x2F;view?usp=sharing&quot;&gt;disini $\rightarrow$ drive usulan novelty artikel pertemuan 4&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;usulan-novelty-isu-lokal-air-energi-sampah-pangan-kesehatan-dan-keterkaitan-sdgs&quot;&gt;Usulan novelty: Isu lokal: air, energi, sampah, pangan, kesehatan, dan keterkaitan SDGs&lt;&#x2F;h1&gt;
+&lt;iframe src=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1zP9GJQdFv0C8EgwBJ4RLKXO0N1jweAzd&#x2F;preview&quot; width=&quot;100%&quot; height=&quot;600&quot; allow=&quot;autoplay&quot; frameborder=&quot;0&quot;&gt;&lt;&#x2F;iframe&gt;
+</description>
+      </item>
+      <item>
+          <title>PBuM - Review Artikel Pertemuan 4</title>
+          <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
+          <author>firman-qs</author>
+          <link>https://firman-qs.github.io/posts/mkpbum/review-artikel-pertemuan4/</link>
+          <guid>https://firman-qs.github.io/posts/mkpbum/review-artikel-pertemuan4/</guid>
+          <description xml:base="https://firman-qs.github.io/posts/mkpbum/review-artikel-pertemuan4/">&lt;p&gt;Nama: Firman Qashdus Sabil&lt;br &#x2F;&gt;
+NIM: 250321830676&lt;&#x2F;p&gt;
+&lt;p&gt;Anda dapat mendownload:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;artikel: &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1AgeZLZL7hAl-ci_ZjJxoXL8MtejPK5bF&#x2F;view?usp=sharing&quot;&gt;disini $\rightarrow$ https:&#x2F;&#x2F;doi.org&#x2F;10.48550&#x2F;arXiv.2406.16965&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;pdf review Artikel: &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;14Y4oDDD1cgJqO2vE_NyOI_lSlN7uS1yw&#x2F;view?usp=sharing&quot;&gt;disini $\rightarrow$ Drive review artikel&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;artikel-pertemuan-4-isu-lokal-air-energi-sampah-pangan-kesehatan-dan-keterkaitan-sdgs&quot;&gt;Artikel Pertemuan 4: Isu lokal: air, energi, sampah, pangan, kesehatan, dan keterkaitan SDGs&lt;&#x2F;h1&gt;
+&lt;iframe src=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;14Y4oDDD1cgJqO2vE_NyOI_lSlN7uS1yw&#x2F;preview&quot; width=&quot;100%&quot; height=&quot;600&quot; allow=&quot;autoplay&quot; frameborder=&quot;0&quot;&gt;&lt;&#x2F;iframe&gt;
+</description>
+      </item>
+      <item>
+          <title>PBuM - Review Artikel Pertemuan 5</title>
+          <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
+          <author>firman-qs</author>
+          <link>https://firman-qs.github.io/posts/mkpbum/review-artikel-pertemuan5/</link>
+          <guid>https://firman-qs.github.io/posts/mkpbum/review-artikel-pertemuan5/</guid>
+          <description xml:base="https://firman-qs.github.io/posts/mkpbum/review-artikel-pertemuan5/">&lt;p&gt;Nama: Firman Qashdus Sabil&lt;br &#x2F;&gt;
+NIM: 250321830676&lt;&#x2F;p&gt;
+&lt;p&gt;Anda dapat mendownload:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;artikel: &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1RLmqn_KEjAtmjEOs4t67-ybbX50dOuvh&#x2F;view?usp=sharing&quot;&gt;disini $\rightarrow$ https:&#x2F;&#x2F;doi.org&#x2F;10.3390&#x2F;world4020019&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;pdf review Artikel: &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1MlRP-AzOuHK_vYCaHVklD7dLW4jfDYQv&#x2F;view?usp=sharing&quot;&gt;disini $\rightarrow$ Drive review artikel&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;artikel-pertemuan-5-teknik-analisis-masalah-berbasis-data&quot;&gt;Artikel Pertemuan 5: Teknik Analisis Masalah Berbasis Data&lt;&#x2F;h1&gt;
+&lt;iframe src=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1MlRP-AzOuHK_vYCaHVklD7dLW4jfDYQv&#x2F;preview&quot; width=&quot;100%&quot; height=&quot;600&quot; allow=&quot;autoplay&quot; frameborder=&quot;0&quot;&gt;&lt;&#x2F;iframe&gt;
+</description>
+      </item>
+      <item>
+          <title>PBuM - Usulan Novelty Artikel Pertemuan 3</title>
+          <pubDate>Sun, 21 Sep 2025 00:00:00 +0000</pubDate>
+          <author>firman-qs</author>
+          <link>https://firman-qs.github.io/posts/mkpbum/novelty-artikel-pertemuan3/</link>
+          <guid>https://firman-qs.github.io/posts/mkpbum/novelty-artikel-pertemuan3/</guid>
+          <description xml:base="https://firman-qs.github.io/posts/mkpbum/novelty-artikel-pertemuan3/">&lt;p&gt;Nama: Firman Qashdus Sabil&lt;br &#x2F;&gt;
+NIM: 250321830676&lt;&#x2F;p&gt;
+&lt;p&gt;Anda dapat mendownload:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;pdf usulan novelty Artikel: &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1tz1MQ8vI-qOX6KyZNoZhN9CUWfdPgqgz&#x2F;view?usp=sharing&quot;&gt;disini $\rightarrow$ drive usulan novelty artikel pertemuan 3&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;usulan-novelty&quot;&gt;Usulan novelty&lt;&#x2F;h1&gt;
+&lt;iframe src=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1tz1MQ8vI-qOX6KyZNoZhN9CUWfdPgqgz&#x2F;preview&quot; width=&quot;100%&quot; height=&quot;600&quot; allow=&quot;autoplay&quot; frameborder=&quot;0&quot;&gt;&lt;&#x2F;iframe&gt;
+</description>
+      </item>
+      <item>
+          <title>PBuM - Review Artikel Pertemuan 3</title>
+          <pubDate>Tue, 16 Sep 2025 00:00:00 +0000</pubDate>
+          <author>firman-qs</author>
+          <link>https://firman-qs.github.io/posts/mkpbum/review-artikel-pertemuan3/</link>
+          <guid>https://firman-qs.github.io/posts/mkpbum/review-artikel-pertemuan3/</guid>
+          <description xml:base="https://firman-qs.github.io/posts/mkpbum/review-artikel-pertemuan3/">&lt;p&gt;Nama: Firman Qashdus Sabil&lt;br &#x2F;&gt;
+NIM: 250321830676&lt;&#x2F;p&gt;
+&lt;p&gt;Anda dapat mendownload:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;artikel: &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1P_Ard9cbxlRgDg4u_3qmZa9XFG6fmGtA&#x2F;view?usp=drive_link&quot;&gt;disini $\rightarrow$ https:&#x2F;&#x2F;doi.org&#x2F;10.1007&#x2F;s11165-025-10273-x&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;pdf review Artikel: &lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1WZEyycSxjZTcC0-enSZf24wloizmx23C&#x2F;view?usp=drive_link&quot;&gt;disini $\rightarrow$ Drive review artikel pertemuan 3&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;artikel-pertemuan-3-teori-belajar-sains-konstruktivisme-inquiry-stem-pbl&quot;&gt;Artikel Pertemuan 3: teori belajar sains (konstruktivisme, inquiry, stem, pbl)&lt;&#x2F;h1&gt;
+&lt;iframe src=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1WZEyycSxjZTcC0-enSZf24wloizmx23C&#x2F;preview&quot; width=&quot;100%&quot; height=&quot;600&quot; allow=&quot;autoplay&quot; frameborder=&quot;0&quot;&gt;&lt;&#x2F;iframe&gt;
+</description>
+      </item>
+    </channel>
+</rss>
