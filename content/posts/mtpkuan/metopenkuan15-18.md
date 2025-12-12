@@ -1,6 +1,6 @@
 +++
 title = "Metopen Kuantitatif - Review Artikel 18"
-date = "2025-12-10"
+date = "2025-12-9"
 description = "Analisis Varian (uji prasyarat, MANCOVA, dan non parametrik yang relevan)"
 
 [taxonomies]
