@@ -91,7 +91,7 @@ index_format = "fuse_json"
 [extra]
 # Which theme should be used by default (light/dark).
 #
-# default_theme = "dark"
+default_theme = "dark"
 #
 # Sets theme and browser theme color.
 # See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
@@ -102,7 +102,7 @@ accent_color_dark = "#ffa348"
 # Whether to use fonts bundled with Duckquill instead of system ones.
 # Keep in mind that it also changes the style of headings.
 #
-# bundled_fonts = true
+bundled_fonts = true
 #
 # Use emoji as a favicon.
 # Only one emoji is being rendered, everything else is truncated.
@@ -144,7 +144,8 @@ show_backlinks = true
 # Whether to enable the KaTeX library for rendering LaTeX.
 # Note: This will make your page significantly heavier.
 # Instead, consider enabling it per page/section.
-katex = true
+# katex = true
+mathjax = true
 #
 # Whether to render table of contents on all pages.
 # Will not be rendered if page doesn't have any headings.
@@ -184,7 +185,7 @@ csp = [
 
 [extra.nav]
 # Whether to automatically hide nav when not hovered or focused
-# auto_hide = true
+auto_hide = false
 # Whether to show the Atom/RSS feed button in the nav
 show_feed = true
 # Whether to show the manual theme switcher in the nav
@@ -204,6 +205,8 @@ links = [
 	# ] },
 	{ url = "@/posts/_index.md", name = "Posts" },
 	{ url = "@/projects/index.md", name = "Projects" },
+	{ url = "https://scholar.google.com/citations?user=CjFKELwAAAAJ&hl=en", name = "Publications" },
+	{ url = "https://github.com/firman-qs/.dotfiles", name = "Dotfiles" },
 	{ url = "https://github.com/firman-qs", name = "Github" }
 ]
 
@@ -233,8 +236,8 @@ show_copyright = true
 # Whether to show "Powered by Zola and Duckquill"
 show_powered_by = true
 # Whether to show link to website source
-show_source = false
-# Custom copyright text
+# show_source = false
+# # Custom copyright text
 #
 # copyright = "© *Aperture* **Science** ~~Innovators~~, `1972`"
 

@@ -14,15 +14,14 @@ Due to several reasons, the open-sourcing of Elm has been delayed until early 20
 
 Here are some screenshots from Elm.
 
-# Home
-![Home](../project-1.png)
+<!--<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;">
+  <img src="../project-1.png" alt="Home" style="width:100%;">
+  <img src="../project-1b.png" alt="Home" style="width:100%;">
+  <img src="../project-1c.png" alt="Home" style="width:100%;">
+  <img src="../project-1d.png" alt="Home" style="width:100%;">
+</div>-->
 
-# Graph
+<!--![Home](../project-1.png)
 ![Home](../project-1b.png)
-
-# Plotter
 ![Home](../project-1c.png)
-
-# Creating Circuit
-![Home](../project-1d.png)
-
+![Home](../project-1d.png)-->

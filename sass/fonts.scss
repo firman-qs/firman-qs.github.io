@@ -1,37 +1,47 @@
 @font-face {
-	font-style: normal;
-	font-weight: 100 900;
-	src: url("fonts/InterVariable.woff2") format("woff2");
-	font-family: "Inter Variable";
-	font-display: swap;
+    font-style: normal;
+    src: url("fonts/InterVariable.woff2") format("woff2");
+    font-family: "Inter Variable";
+    font-display: swap;
 }
 
 @font-face {
-	font-style: italic;
-	font-weight: 100 900;
-	src: url("fonts/InterVariable-Italic.woff2") format("woff2");
-	font-family: "Inter Variable";
-	font-display: swap;
+    font-style: italic;
+    src: url("fonts/InterVariable-Italic.woff2") format("woff2");
+    font-family: "Inter Variable";
+    font-display: swap;
 }
 
 @font-face {
-	font-style: normal;
-	font-weight: 100 900;
-	src: url("fonts/JetBrainsMono.woff2") format("woff2");
-	font-family: "JetBrains Mono";
-	font-display: swap;
+    font-style: normal;
+    src: url("KaTeX_SansSerif-Regular.woff2") format("woff2");
+    font-family: "Katex Font";
+    font-display: swap;
 }
 
 @font-face {
-	font-style: italic;
-	font-weight: 100 900;
-	src: url("fonts/JetBrainsMono-Italic.woff2") format("woff2");
-	font-family: "JetBrains Mono";
-	font-display: swap;
+    font-style: italic;
+    src: url("KaTeX_SansSerif-Italic.woff2") format("woff2");
+    font-family: "Katex Font";
+    font-display: swap;
+}
+
+@font-face {
+    font-style: normal;
+    src: url("fonts/JetBrainsMono.woff2") format("woff2");
+    font-family: "JetBrains Mono";
+    font-display: swap;
+}
+
+@font-face {
+    font-style: italic;
+    src: url("fonts/JetBrainsMono-Italic.woff2") format("woff2");
+    font-family: "JetBrains Mono";
+    font-display: swap;
 }
 
 body {
-	font-family: "Inter Variable", var(--font-system-ui), var(--font-emoji);
+    font-family: "Inter Variable", var(--font-system-ui), var(--font-emoji);
 }
 
 h1,
@@ -40,17 +50,15 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: bold;
-	font-family: "Inter Variable", var(--font-system-ui), var(--font-emoji);
-}
-
-h1 {
-	font-weight: 900;
+    font-weight: 600;
+    /* letter-spacing: 0.5pt; */
+    font-family: "JetBrains Mono", var(--font-system-ui), var(--font-emoji);
 }
 
 pre,
 code,
 kbd,
 samp {
-	font-family: "JetBrains Mono", var(--font-monospace-code);
+    font-size: var(--font-size-medium);
+    font-family: "JetBrains Mono", var(--font-monospace-code);
 }

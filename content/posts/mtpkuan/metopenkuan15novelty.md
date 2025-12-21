@@ -8,6 +8,7 @@ tags = ["PFIS258005", "kuliah"]
 
 [extra]
 comment = true
+katex = true
 +++
 
 Nama: Firman Qashdus Sabil\

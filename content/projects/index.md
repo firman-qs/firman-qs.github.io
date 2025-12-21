@@ -14,17 +14,12 @@ Due to several reasons, the open-sourcing of Elm has been delayed until early 20
 
 Here are some screenshots from Elm.
 
-### Home
-![Home](project-1.png)
-
-### Graph
-![Home](project-1b.png)
-
-### Plotter
-![Home](project-1c.png)
-
-### Creating Circuit
-![Home](project-1d.png)
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;">
+  <img src="/projects/project-1.png" alt="Home" style="width:100%;">
+  <img src="/projects/project-1b.png" alt="Home" style="width:100%;">
+  <img src="/projects/project-1c.png" alt="Home" style="width:100%;">
+  <img src="/projects/project-1d.png" alt="Home" style="width:100%;">
+</div>
 
 ## LAMBDA
 > Yet Antoher AI for E Coming Soon... LAMBDA stand for [L]ambda [A]int [M]ade [b]y [D]umb [A]lgorithm

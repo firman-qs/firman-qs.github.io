@@ -48,7 +48,7 @@
 			 		 </li>
 				{%- elif link.url is matching('https?://') %}
 					<li>
-						<a href="{{ link.url }}" rel="{{ rel_attributes }}" class="external">
+						<a href="{{ link.url }}" rel="{{ rel_attributes }}" class="external", target="_blank">
 							{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
 						</a>
 					</li>

@@ -103,13 +103,3 @@ faktor di dalam suku di dalam tanda kurung besar harus sama dengan nol.
 $$
 \frac{\partial f}{\partial y}-\frac{\mathrm{d}}{\mathrm{d}x}\frac{\partial f}{\partial y'} = 0.\tag{Persamaan Euler-Lagrange}
 $$
-
-
-
-
-
-
-
-
-
-
