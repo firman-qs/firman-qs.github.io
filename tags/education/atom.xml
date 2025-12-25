@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="id">
+    <title>fqsss - education</title>
+    <subtitle>Opinionated, modern, pretty, and clean Zola theme.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://firman-qs.github.io/tags/education/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://firman-qs.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-12-25T00:00:00+00:00</updated>
+    <id>https://firman-qs.github.io/tags/education/atom.xml</id>
+    <entry xml:lang="id">
+        <title>Education system uniformism, just a blunt opinion</title>
+        <published>2025-12-25T00:00:00+00:00</published>
+        <updated>2025-12-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              firman-qs
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://firman-qs.github.io/posts/blunt-opinion/educationuniformism/"/>
+        <id>https://firman-qs.github.io/posts/blunt-opinion/educationuniformism/</id>
+        
+        <content type="html" xml:base="https://firman-qs.github.io/posts/blunt-opinion/educationuniformism/"></content>
+        
+    </entry>
+</feed>
