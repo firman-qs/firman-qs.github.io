@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>fqsss - classicalmechanics101</title>
+    <subtitle>my obscure personal site as physics student + machine dictactor</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://firman-qs.github.io/tags/classicalmechanics101/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://firman-qs.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-12-11T00:00:00+00:00</updated>
+    <id>https://firman-qs.github.io/tags/classicalmechanics101/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Menurunkan Persamaan Euler-Lagrange Melalui Prinsip D&#x27;Alembert</title>
+        <published>2023-12-11T00:00:00+00:00</published>
+        <updated>2023-12-11T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://firman-qs.github.io/posts/classical-mechanics/deriving-euler-lagrange-b/"/>
+        <id>https://firman-qs.github.io/posts/classical-mechanics/deriving-euler-lagrange-b/</id>
+        
+        <content type="html" xml:base="https://firman-qs.github.io/posts/classical-mechanics/deriving-euler-lagrange-b/">&lt;p&gt;Kita akan memulai dengan $S$ sebagai integral dari fungsional $f[…]$&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+S = \int_{x_1}^{x_2} \mathrm{d}x~f[y(x), y’(x), x] \tag{1}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;di mana $y(x)$ adalah kurva yang belum diketahui, yang menghubungkan ($x_1, y_1$) dan ($x_2, y_2$), sehingga&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+y(x_1) = y_1 ~~~\text{and}~~~ y(x_2) = y_2\tag{2}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Di antara semua kemungkinan kurva yang memenuhi Persamaan (2), kita harus
+mencari satu kurva yang meminimumkan (atau memaksimumkan, atau setidaknya
+stasionar) integral $S$. Perhatikan bahwa fungsional $f[…]$ pada Persamaan
+(1) adalah fungsi dari tiga variabel (variabel dalam konteks fungsional bisa
+berupa fungsi). Namun, karena integral mengikuti lintasan $y=y(x)$, integrand
+$f[y(x),y’(x), x]$ adalah fungsi dari satu variabel $x$.&lt;&#x2F;p&gt;
+&lt;p&gt;Jika kita menuliskan solusi yang kita inginkan (yaitu kurva yang membuat $S$ minimum)
+sebagai $y = y(x)$ maka integral $S$ dalam Persamaan (1) pada $y=y(x)$ nilainya
+kurang dari sembarang kurva $y=Y(x)$ di mana&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+Y(x)=y(x) + \eta(x)\tag{3}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;dengan $\eta(x)$ adalah &lt;em&gt;bump&lt;&#x2F;em&gt; atau simpangan antara kurva $y(x)$ dengan $Y(x)$.
+Karena $Y(x)$ harus melewati titik awal&#x2F;$x_1$ dan akhir&#x2F;$x_2$ maka $\eta(x)$ harus
+memenuhi&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+\eta(x_1)=\eta(x_2)=0\tag{4}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Tentu ada banyak (tak-hingga) pilihan untuk $\eta(x)$, misalnya, kita bisa memilih
+$\eta = (x-x_1)(x_2-x)$ atau $\eta(x)=\sin[\pi(x-x_1)&#x2F;(x_2-x_1)]$&lt;&#x2F;p&gt;
+&lt;p&gt;Integral $S$ yang dilakukan disepanjang kurva $Y(x)$ harus lebih besar dibandingkan
+ketika diambil pada kurva $y(x)$. Untuk menyatakan perysaratan ini, saya akan
+memperkenalkan parameter $\alpha$ dan mendifinisikan ulang $Y(x)$  sebagai&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+Y(x)=y(x)+\alpha \eta(x)\tag{5}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Sekarang, integral $S$ yang diambil pada kurva $Y(x)$ bergantung pada parameter $\alpha$,
+sehingga saya dapat menyebutnya $S(\alpha)$. Kurva target kita, yaitu $y(x)$ didapatkan
+melalui Persamaan (5) dengan men-set $\alpha =0$. Untuk melakukan ini, kita hanya perlu
+memeriksa $\mathrm{d}S&#x2F;\mathrm{d}a = 0$ ketika $\alpha=0$.&lt;&#x2F;p&gt;
+&lt;p&gt;Secara detail, integral $S(\alpha)$ adalah sebagai berikut:&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+S(\alpha) &amp;amp;= \int_{x_1}^{x_2}\mathrm{d}x\ f(Y, Y’, x) \
+&amp;amp;= \int_{x_1}^{x_2}\mathrm{d}x\ f(y+\alpha \eta, y’+\alpha \eta’, x)\tag{5}
+\end{aligned}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Untuk mendiferensialkan Persamaan (5) terhadap $\alpha$, kita harus melakukan
+$\partial f&#x2F;\partial \alpha$. Karena $\alpha$ muncul pada dua argumen dari $f$,
+maka $\partial f&#x2F;\partial \alpha$ akan memberikan dua suku:&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+\frac{\partial}{\partial \alpha} f(y+\alpha \eta, y’+\alpha\eta’, x) = \eta \frac{\partial f}{\partial y} + \eta’\frac{\partial f}{\partial y’},
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;dan untuk $\mathrm{d}S&#x2F;\mathrm{d}a$ yang harus sama dengan nol, maka&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+\frac{\mathrm{d}S}{\mathrm{d}a} = \int_{x_1}^{x_2}\mathrm{d}x\ \frac{\partial f}{\partial \alpha} = \int_{x_1}^{x_2}\mathrm{d}x\ \left(
+\eta \frac{\partial f}{\partial y}+\eta’\frac{\partial f}{\partial y’}\tag{6}
+\right) = 0.
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Kondisi ini harus benar, untuk sembarang $\eta(x)$ yang memenuhi Persamaan (4).&lt;&#x2F;p&gt;
+&lt;p&gt;Jika kita menuliskan suku kedua pada ruas kanan dengan integal parsial maka,&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;\int_{x_1}^{x_2}\mathrm{d}x\ \eta&#x27;(x)\frac{\partial f}{\partial y&#x27;} = 
+\left[\eta(x)\frac{\partial f}{\partial y&#x27;}\right]_{x_1}^{x^2} - \int_{x_1}^{x_2}\mathrm{d}x\ \eta(x)\frac{\mathrm{d}}{\mathrm{d}x}
+\left(\frac{\partial f}{\partial y&#x27;}\right)&lt;&#x2F;script&gt;
+&lt;p&gt;Karena kondisi Persamaan (4), suku pertama pada ruas kanan sama dengan nol, sehingga&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+\int_{x_1}^{x_2}\mathrm{d}x\ \eta’(x)\frac{\partial f}{\partial y’} = -
+\int_{x_1}^{x_2}\mathrm{d}x\ \eta(x)\frac{\mathrm{d}}{\mathrm{d}x}
+\left(\frac{\partial f}{\partial y’}\right).\tag{7}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Dengan mensubtitusi Persamaan (7) ke (6), didapatkan&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+\int_{x_1}^{x_2}\mathrm{d}x\ \eta(x) \left(
+\frac{\partial f}{\partial y}-\frac{\mathrm{d}}{\mathrm{d}x}\frac{\partial f}{\partial y’}
+\right)=0.
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Kondisi di atas harus dipenuhi untuk sembarang fungsi $\eta(x)$. Sehingga,
+faktor di dalam suku di dalam tanda kurung besar harus sama dengan nol.&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+\frac{\partial f}{\partial y}-\frac{\mathrm{d}}{\mathrm{d}x}\frac{\partial f}{\partial y’} = 0.\tag{Persamaan Euler-Lagrange}
+$$&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

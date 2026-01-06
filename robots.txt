@@ -1,0 +1,5 @@
+
+Sitemap: https://firman-qs.github.io/sitemap.xml
+User-Agent: *
+Allow: /
+Host: https://firman-qs.github.io
