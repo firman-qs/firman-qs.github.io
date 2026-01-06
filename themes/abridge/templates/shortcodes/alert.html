@@ -1,0 +1,11 @@
+{%- if not language_strings -%} {%- set alert_type = "tip" -%} {%- elif
+important -%} {%- set alert_type = "important" -%} {%- elif warning -%} {%- set
+alert_type = "warning" -%} {%- elif caution -%} {%- set alert_type = "caution"
+-%} {%- endif -%}
+
+<blockquote class="{{ alert_type }}">
+    <p class="alert-title">
+        <i class="icon"></i>
+    </p>
+    {{ body | markdown | safe }}
+</blockquote>

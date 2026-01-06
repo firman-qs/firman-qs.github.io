@@ -2,6 +2,7 @@
 title = "Particle Swarm Optimization"
 date = "2025-10-06"
 description = "An interesting non Gradient Descent Particle Swarm Optimization"
+draft = true
 
 [taxonomies]
 tags=["physics", "python", "example"]

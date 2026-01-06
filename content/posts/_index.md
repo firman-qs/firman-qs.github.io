@@ -1,9 +1,6 @@
 +++
-title = "My Posts"
+paginate_by = 10
 sort_by = "date"
-template = "article_list.html"
-page_template = "article.html"
-paginate_by = 5
+template = "index.html"
+transparent = true
 +++
-
-A set of Personal, not personal, public, not public, structured, and random text.

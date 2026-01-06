@@ -7,8 +7,8 @@ description = "We will derive the Euler-Lagrange Equation in non-mathematician w
 tags = ["classicalmechanics101"]
 
 [extra]
-featured = true
-katex = true
+math = true
+math_auto_render = true
 +++
 
 Kita akan memulai dengan $S$ sebagai integral dari fungsional $f[...]$
@@ -91,11 +91,11 @@ Kondisi ini harus benar, untuk sembarang $\eta(x)$ yang memenuhi Persamaan (4).
 
 Jika kita menuliskan suku kedua pada ruas kanan dengan integal parsial maka,
 
-$$
-\int_{x_1}^{x_2}\mathrm{d}x\ \eta'(x)\frac{\partial f}{\partial y'} = \left[
-\eta(x)\frac{\partial f}{\partial y'}
-\right]_{x_1}^{x^2} - \int_{x_1}^{x_2}\mathrm{d}x\ \eta(x)\frac{\mathrm{d}}{\mathrm{d}x}\left(\frac{\partial f}{\partial y'}\right).
-$$
+{% katex(block=true) %}
+\int_{x_1}^{x_2}\mathrm{d}x\ \eta'(x)\frac{\partial f}{\partial y'} = 
+\left[\eta(x)\frac{\partial f}{\partial y'}\right]_{x_1}^{x^2} - \int_{x_1}^{x_2}\mathrm{d}x\ \eta(x)\frac{\mathrm{d}}{\mathrm{d}x}
+\left(\frac{\partial f}{\partial y'}\right)
+{% end %}
 
 Karena kondisi Persamaan (4), suku pertama pada ruas kanan sama dengan nol, sehingga
 

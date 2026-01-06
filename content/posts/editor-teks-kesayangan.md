@@ -2,6 +2,7 @@
 title = "Msy GNU Emacs"
 date = "2023-11-09"
 description = "Emacs is a great operating system lacking only a great text editor"
+draft = true
 
 [taxonomies]
 tags = ["emacs", "text editor"]
@@ -65,4 +66,3 @@ menjelaskannya:
 
 # Konfigurasi Doom Emacs
 Terdapat beberapa modul yang saya aktifkan di dalam Doom Emacs
-

@@ -1,0 +1,140 @@
+/******************************************************************************
+ *   Extra - Put your extra SASS/CSS here, it will get bundled with abridge.css
+ *****************************************************************************/
+:root {
+    --fs: 1.02rem;
+    --rc: 0rem;
+}
+
+/* .blockdiv {
+    background: #efedf5;
+    background: linear-gradient(
+        180deg,
+        rgba(239, 237, 245, 1) 1%,
+        rgba(238, 238, 238, 1) 11%,
+        rgba(221, 221, 221, 1) 100%
+    );
+} */
+
+.block a,
+.sblock a {
+    font-size: 0.8rem;
+}
+
+.sblock .s150 {
+    font-size: 1rem;
+}
+
+header nav big a {
+    font-size: 1.5em;
+}
+
+big {
+    font-size: 1.4em;
+}
+
+nav,
+article big,
+article h1 a {
+    font-size: 1.4rem;
+    font-family: monospace;
+    /* font-family: "Spectral", monospace; */
+}
+
+footer nav,
+article nav {
+    font-size: 1rem;
+}
+
+.fcursive {
+    font-family: monospace;
+    font-size: 0.9rem;
+    /* font-family: "Parisienne", cursive; */
+    /* font-weight: 400;
+    font-style: normal; */
+    /* font-size: 1.2rem; */
+}
+.home-eq {
+    font-size: 0.85rem;
+}
+
+/* article h1 a,
+article big a,
+article h1 a:visited,
+article big a:visited {
+    color: #ffdd33;
+} */
+
+.s150 {
+    font-size: 1.3em;
+}
+
+header nav .svgm,
+header nav .svgs {
+    min-width: 1rem;
+    min-height: 1rem;
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* font-family: "Spectral", monospace; */
+    font-family: monospace;
+}
+
+h2,
+.s140 {
+    font-size: 1.1em;
+}
+
+h3,
+h4,
+h5,
+.s130 {
+    font-size: 1em;
+}
+.s120 {
+    font-size: 1em;
+}
+.s110 {
+    font-size: 1em;
+}
+.s95 {
+    font-size: 0.95em;
+}
+.s90 {
+    font-size: 0.9em;
+}
+.s85 {
+    font-size: 0.85em;
+}
+.s80 {
+    font-size: 0.8em;
+}
+.s75 {
+    font-size: 0.75em;
+}
+.s70 {
+    font-size: 0.7em;
+}
+
+h1 {
+    font-size: 1.3em;
+}
+
+.sblock .tpad {
+    padding-top: 0rem;
+}
+
+article.custom-pad {
+    padding: 0.25rem 0rem;
+}
+
+article.custom-pad .sum {
+    margin: 0pt;
+}

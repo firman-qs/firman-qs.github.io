@@ -1,14 +1,29 @@
 +++
+date = 2023-11-09
+description = "Bytheway editor"
+draft = false
 title = "My Neovim Setup with Lazy.nvim Plugin Manager"
-date = "2023-11-09"
-description = "bytheway editor"
-
-[taxonomies]
-tags = ["neovim", "lazy.nvim", "dotfiles", "plugin management"]
 
 [extra]
-comment = true
+keywords = "neovim, lazy.nvim, dotfiles, plugin management, vim"
+series = "Features"
+toc = true
+
+[taxonomies]
+tags = [
+    "Features",
+    "neovim",
+    "lazy.nvim",
+    "dotfiles",
+    "plugin management"
+]
 +++
+
+I'll write this soon, in the meantime please visit my nvim configuration
+repository, it was just updated
+[https://github.com/firman-qs/nvim/](https://github.com/firman-qs/nvim/)
+
+<!--ss
 
 Neovim has become my go-to editor for everything from coding to writing LaTeX
 documents. I recently restructured my config using
@@ -87,11 +102,13 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 ```
+
 This block checks whether lazy.nvim exists in the expected path. If not, it
 clones the repository. That way, you can just git-clone your config and
 everything sets up automatically.
 
 ### Load Plugins with Lazy.nvim
+
 ```lua
 require("lazy").setup({
   { import = "plugins" },
@@ -221,6 +238,4 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     vim.highlight.on_yank()
   end,
 })
-```
-
-
+```-->

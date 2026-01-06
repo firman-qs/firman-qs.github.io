@@ -1,273 +1,400 @@
-title = "fqsss"
+# do NOT include a trailing slash on the base URL
 base_url = "https://firman-qs.github.io/"
-description = "Opinionated, modern, pretty, and clean Zola theme."
-theme = "duckquill"
+# Usable site directly from disk, Including Search: "/home/jieiku/.dev/abridge/public"
+# Also set index format = "elasticlunr_javascript", and in [extra] uglyurls = true, integrity = false
+# If you use the npm/node script then all you have to do is set search_library = "offline", and everything else is automatic.
 
+title = "fqsss"
+description = "my obscure personal site as physics student + machine dictactor" #for SEO aim for 140-180 Characters
+theme = "abridge"
+
+default_language = "en"
 compile_sass = true
-minify_html = true
-generate_feeds = true
-# Only the first file will be used in the navbar feed button,
-# other feeds will still be available in page's head.
-feed_filenames = ["rss.xml", "atom.xml"]
+minify_html = false
 build_search_index = true
-author = "firman-qs"
+generate_feeds = true
+taxonomies = [
+#    {name = "categories", feed = true},
+    {name = "tags", feed = true},
+]
 
-# Based on https://github.com/welpo/tabi
-#
-# To translate the entire theme, there must be a file with the same ISO 639-1 or BCP 47
-# language code in the `i18n` directory of your site or the Duckquill theme.
-# For example, "i18n/fr.toml" for French or "i18n/zh-Hans.toml" for Simplified Chinese.
-# Otherwise the theme will be in English.
-#
-# ISO 639-1: https://localizely.com/iso-639-1-list/
-# BCP 47: https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
-default_language = "id"
+#ignored_content = []
+#ignored_static = ["apple-touch-icon.png","banner.png","safari-pinned-tab.svg","favicon*","m*.png","android-chrome*png"]
 
-taxonomies = [{ name = "tags", feed = true }]
+#feed_filename = "atom.xml"
+#output_dir = "public"
+#ignored_content = ["*.{graphml,xlsx}", "temp.*"]
+#hard_link_static = false # set to true to hard link instead of copying, useful for very large files.
+
+[search]                # Options specific to elasticlunr search.
+# index format can be: elasticlunr_json or elasticlunr_javascript or fuse_json
+index_format = "elasticlunr_json"
+include_title = true        # include title of page/section in index
+include_description = true # include description of page/section in index
+include_content = true      # include rendered content of page/section in index
+# truncate_content_length = 100 # Truncate at nth character. May be useful if index is getting too large.
 
 [markdown]
 highlight_code = true
 highlight_theme = "css"
-highlight_themes_css = [
-	{ theme = "solarized-dark", filename = "syntax-theme-dark.css" },
-	{ theme = "solarized-light", filename = "syntax-theme-light.css" }
-]
-smart_punctuation = true
-bottom_footnotes = true
+bottom_footnotes = true # adds footnote backreference
+render_emoji = true
+external_links_target_blank = true # rel="noopener"
+external_links_no_follow = false   # rel="nofollow"
+external_links_no_referrer = false # rel="noreferrer"
+smart_punctuation = true          # `...` to `…`, `"quote"` to `“curly”` etc
 
-[search]
-# index_format = "elasticlunr_json"
-index_format = "fuse_json"
-
-# [languages.ar]
-# title = "Duckquill"
-# description = "سمة زولا العصرية والحديثة والجميلة والنظيفة."
+# Any Extra language you do not use, delete or comment out the extra language sections:
+# [languages.fr]
+# title = "Abridge"
+# description = "Abridge est un thème Zola rapide et léger utilisant le html sémantique, le CSS abridge.css class-light et aucun JS obligatoire."
 # generate_feeds = true
-
-# taxonomies = [{ name = "tags", feed = true }]
+# build_search_index = true
+# search.include_title = true # include title of page/section in index
+# search.include_description = true # include description of page/section in index
+# search.include_content = true # include rendered content of page/section in index
+# # search.truncate_content_length = 100 # Truncate at nth character. May be useful if index is getting too large.
+# taxonomies = [
+# #    {name = "categories", feed = true},
+#     {name = "tags", feed = true},
+# ]
 
 # [languages.es]
-# title = "Duckquill"
-# description = "Tema Zola de opinión, moderno, bonito y limpio."
+# title = "Abridge"
+# description = "Abridge es un tema de Zola rápido y liviano que utiliza HTML semántico, CSS ligero de clase abridge.css y JS no obligatorio."
 # generate_feeds = true
+# build_search_index = true
+# search.include_title = true # include title of page/section in index
+# search.include_description = true # include description of page/section in index
+# search.include_content = true # include rendered content of page/section in index
+# # search.truncate_content_length = 100 # Truncate at nth character. May be useful if index is getting too large.
+# taxonomies = [
+# #    {name = "categories", feed = true},
+#     {name = "tags", feed = true},
+# ]
 
-# taxonomies = [{ name = "tags", feed = true }]
-
-# [languages.fr]
-# title = "Duckquill"
-# description = "Un thème affirmé, moderne, beau et clair pour Zola."
+# [languages.pt]
+# title = "Abridge"
+# description = "Abridge é um tema rápido e leve que usa HTML semântico, CSS de clase leve abridge.css y JS não obrigatório."
 # generate_feeds = true
-
-# taxonomies = [{ name = "tags", feed = true }]
-
-# [languages.id]
-# title = "Duckquill"
-# description = "Tema Zola yang berpandangan, moden, cantik dan bersih."
-# generate_feeds = true
-
-# taxonomies = [{ name = "tags", feed = true }]
-
-# [languages.ru]
-# title = "Duckquill"
-# description = "Мнимая, современная, симпатичная, и аккуратная тема Zola."
-# generate_feeds = true
-
-# taxonomies = [{ name = "tags", feed = true }]
-
-# [languages.fa]
-# title = "Duckquill"
-# description = "پوسته ای صاحب نظر، به‌روز، زیبا و تمیز برای Zola."
-# generate_feeds = true
-
-# taxonomies = [{ name = "tags", feed = true }]
-
-# [languages.zh-Hans]
-# title = "Duckquill"
-# description = "有主见、现代、漂亮、简洁的 Zola 主题。"
-# generate_feeds = true
-
-# taxonomies = [{ name = "tags", feed = true }]
+# build_search_index = true
+# search.include_title = true # include title of page/section in index
+# search.include_description = true # include description of page/section in index
+# search.include_content = true # include rendered content of page/section in index
+# # search.truncate_content_length = 100 # Truncate at nth character. May be useful if index is getting too large.
+# taxonomies = [
+# #    {name = "categories", feed = true},
+#     {name = "tags", feed = true},
+# ]
 
 [extra]
-# Which theme should be used by default (light/dark).
-#
-# default_theme = "dark"
-#
-# Sets theme and browser theme color.
-# See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
-accent_color = "#ff7800"
-# Ditto but for the dark theme.
-# If not set regular variant will be used.
-accent_color_dark = "#ffa348"
-# Whether to use fonts bundled with Duckquill instead of system ones.
-# Keep in mind that it also changes the style of headings.
-#
-bundled_fonts = true
-#
-# Use emoji as a favicon.
-# Only one emoji is being rendered, everything else is truncated.
-#
-# emoji_favicon = "🦆🪶"
-#
-# URL to website's issue tracker
-issues_url = "https://github.com/firman-qs/firman-qs.github.io/issues"
-# URL to website's source code
-source_url = "https://github.com/firman-qs/firman-qs.github.io"
-# Additional CSS styles; expects them to be in the "./static/" directory.
-# If you are using Sass it will be generated there automatically.
-#
-# styles = [
-#   "YOUR_STYLE.css",
-#   "ALSO_YOUR_STYLE.css"
-# ]
-styles = ["custom.css"]
-#
-# Additional JavaScript scripts; expects them to be in the "./static/" directory.
-#
-# scripts = [
-#   "YOUR_SCRIPT.js",
-#   "ALSO_YOUR_SCRIPT.js"
-# ]
-#
-# Whether to show "copy code" button on all code blocks
-# that have the language set.
-# See https://www.getzola.org/documentation/content/syntax-highlighting/
-show_copy_button = true
-# Whether to show estimated read time in posts.
-show_reading_time = true
-#
-# Whether to show a share button in article's quick actions.
-# Uses https://shareopenly.org.
-show_share_button = true
-# Whether to show the backlinks button for linked articles in the article's quick actions
-show_backlinks = true
-# Whether to enable the KaTeX library for rendering LaTeX.
-# Note: This will make your page significantly heavier.
-# Instead, consider enabling it per page/section.
-# katex = true
-mathjax = true
-#
-# Whether to render table of contents on all pages.
-# Will not be rendered if page doesn't have any headings.
-# Can be set per page/section.
-# toc = true
-#
-# Whether to render inline table of contents at the top of all pages,
-# in addition to floating quick navigation buttons.
-# Can be set per page/section.
-# toc_inline = true
-#
-# Whether to use numbered (ordered) list for table of contents.
-# Can be set per page/section.
-# toc_ordered = true
-#
-# Custom separator used across the theme.
-# separator = "•"
-# Custom separator used in title tag and posts metadata.
-# title_separator = "-"
-#
-# Whether to use Content Security Policy.
-# Keep in mind that although this can potentially increase security,
-# it can break some stuff, in which case you will need to set custom policy.
-csp = [
-	{ directive = "font-src", domains = ["'self'"] },
-	{ directive = "img-src", domains = ["'self'", "https:", "data:"] },
-	{ directive = "media-src", domains = ["'self'", "https:"] },
-	{ directive = "script-src", domains = ["'self'"] },
-	{ directive = "style-src", domains = ["'self'", "'unsafe-inline'"] },
-	{ directive = "frame-src", domains = ["https://player.vimeo.com", "https://www.youtube-nocookie.com", "https://toot.community",  "https://drive.google.com", "https://docs.google.com"] },
-	{ directive = "connect-src", domains = ["https://toot.community"] },
-	{ directive = "base-uri", domains = ["'none'"] },
-	{ directive = "form-action", domains = ["'none'"] }
-]
-# Uncomment this to disable the card displayed in share previews
-# card = false
+###############################################################################
+### Layout & Format
+### position: top, bottom, both, false(hidden)
+### size: s150, s140, s130, s120, s110, s95, s90, s85, s80, s75, s70, false(full size)
+### divider:    " "        "&middot;"        "&bull;"
+###############################################################################
 
-[extra.nav]
-# Whether to automatically hide nav when not hovered or focused
-auto_hide = false
-# Whether to show the Atom/RSS feed button in the nav
-show_feed = true
-# Whether to show the manual theme switcher in the nav
-show_theme_switcher = true
-# Whether to show the link to the source repository in the nav
-show_repo = true
-# Links used in the nav.
-# For local files use same link format as in Markdown,
-# i.e. "@/blog/_index.md".
-# See https://www.getzola.org/documentation/content/linking/#internal-links
-links = [
-	# { name = "Links", menu = [
-	# 	{ url = "@/posts/_index.md", name = "Posts" },
-	# 	# { url = "@/demo/index.md", name = "Demos" },
-	# 	{ url = "@/projects/index.md", name = "Projects" },
-	# 	# { url = "@/mods/index.md", name = "Mods" }
-	# ] },
-	{ url = "@/posts/_index.md", name = "Posts" },
-	{ url = "@/projects/index.md", name = "Projects" },
-	{ url = "https://scholar.google.com/citations?user=CjFKELwAAAAJ&hl=en", name = "Publications" },
-	{ url = "https://github.com/firman-qs/.dotfiles", name = "Dotfiles" },
-	{ url = "https://github.com/firman-qs", name = "Github" }
+menu = [
+   # {url = "blog", name = "Blog", slash = true, blank = false, size="s110"},
+    # {url = "about", name = "About", slash = true, blank = false, size="s110"},
+    {url = "archive", name = "Posts", slash = true, blank = false, size="s110"},
+    # {url = "categories", name = "Categories", slash = true, blank = false, size="s110"},
+    {url = "tags", name = "Tags", slash = true, blank = false, size="s110"},
+    {url = "https://scholar.google.com/citations?user=CjFKELwAAAAJ&hl=en", name = "Publication", slash = false, blank = true, size="s110"},
+    {url = "https://github.com/firman-qs", name = "Github", slash = false, blank = true, size="s110"},
+    # {url = "https://github.com/firman-qs/.dotfiles", name = "Dotfiles", slash = false, blank = true, size="s110"},
+]
+menu_footer = [
+    # {url = "about", name = "About", slash = true, blank = false, size="s90"},
+    # {url = "contact", name = "Contact", slash = true, blank = false, size="s90"},
+    {url = "privacy", name = "Privacy", slash = true, blank = false, size="s90"},
+    {url = "sitemap.xml", name = "Sitemap", slash = false, blank = true, size="s90"},
 ]
 
-[extra.footer]
-# Links used in the footer.
-# Same as the nav ones.
-links = [
-	{ url = "@/posts/_index.md", name = "Posts" },
-	{ url = "@/projects/index.md", name = "Projects" },
-	# { url = "@/demo/index.md", name = "Demo" },
-	# { url = "@/mods/index.md", name = "Mods" },
-	{ url = "https://github.com/firman-qs", name = "Github" }
+toc = true
+recent = false # TOC / index
+recent_items = 15
+series = true
+series_items = 0 # Max number of items to display in series list, use 0 to disable
+#Series_parts = "$NUMBER_OF_PARTS part Series"
+
+#arrow_pagination = true # If set to true then the pagination will use the old arrows mode, be sure to also enable the icons.
+
+meta_index = { position="bottom", size="s90", author=false, readtime=true, readstring="min", date=true, updated=false, categories_tags=true, divider="" }
+meta_post = { position="top", size="s95", author=true, readtime=false, readstring="min read", date=true, updated=true, categories_tags=true, divider="" }
+
+hide_section_dates = false # hides the date for sections that use posts.html as their template.
+hide_page_nextprev_titles = false # hides the next/previous titles for pages that use page.html as their template.
+title_size_index = "s85"
+footer_size = "s70" # the size of the copyright and powered by text
+footer_credit = true
+#footer_credit_override = '<p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> &#38; <a href="https://github.com/Jieiku/abridge/" target="_blank">Abridge</a></p>'
+#archive_reverse = true # Set to True to sort posts chronologically per year instead of newest first on the archive page: example.com/archive/
+
+### Uncomment one of the below lines, or neither, depending on which type of logo you want to use:
+#logo = { file="logo.svg", width="32", height="32", alt="Abridge", text="bridge" }
+textlogo = '<font color="#f90">fq</font>sss'
+# textlogo = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#f90" viewBox="0 0 96 96" width="28" height="28"><path stroke-width="14" d="M14 99 46 7h4l32 92"/><path stroke-width="9" d="M-3 82c43-26 59-26 102 0"/><path stroke-linecap="round" stroke-width="1.5" d="M94 72v7m-5-9.8v7m-5-9.8v7.1M79 64v7M63 57.7v7m-5-8.2v7m-5-7.8v7m-5-7.2v7m-5-6.7v7m-5-6.3v7m-5-5.8v7M17 64v7m-5-4.6v7m-5-4.2v7M2 72v7"/></svg>bridge'
+
+sitedesc = false # enables or disables the display of the site description below the logo.
+headhr = false # show or hide horizontal rule below header
+foothr = false # show or hide horizontal rule above footer
+
+### $CURRENT_YEAR and $SITE_TITLE can be used anywhere within the copyright, you can change their position or you can also delete them and type whatever you want instead.
+#copyright = false # set to false to disable the copyright.
+#copyright_override = '© 2019-$CURRENT_YEAR $SITE_TITLE'
+#copyright_override = '© $CURRENT_YEAR $SITE_TITLE • Website content is licensed <a rel="noopener" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.'
+
+
+###############################################################################
+### meta/seo/analytic tags
+### To disable title_addition but keep built in page additions eg, Posts page: "Posts | Abridge" set title_addition to an empty string
+### To always set the page title exactly eg "Abridge" then comment out title_addition or set to false (not recommend, bad for SEO)
+###############################################################################
+
+title_separator = "|"  # Separator between title and title_addition, set as |, -, _, etc
+title_addition = "my obscure personal site as physics student + machine dictactor" # a default value for title addition (for SEO aim for 50-70 characters including the title and separator 'Abridge | title_addition')
+author = "fqs" # Put Your Name here
+keywords = "physics, student, computer, programming, using abridge theme, Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" # used for the primary site index
+banner = "banner.png" # Used as default image for OpenGraph/Twitter if page specific image is undefined.
+twitter_meta = "your-user-name" # for SEO: twitter:site and twitter:creator
+google = "Your Google Site verification code."
+bing = "Your Bing Site verification code."
+seo = true  # enable or disable seo-related meta tags: opengraph, facebook, twitter
+#dev = false # development mode, if true then robots.txt should prevent search indexing.
+
+#head_extra = '<meta name="analytics" content="my-analytics-id" /><meta name="advertising" content="my-advertising-id" />'
+
+
+###############################################################################
+### Footer social links; these are used in macros/social.html
+###   https://github.com/Jieiku/abridge/blob/master/templates/macros/social.html
+###############################################################################
+
+feed = true # this adds the RSS feed icon in the footer.
+# mail = "aldo@gmail.com"
+# mastodon = "https://mastodon.example.com/@username"
+# element = "matrix.example.com"
+#buymeacoffee = "your-user-name"
+# kofi = "your-user-name"
+#discord = "https://discord.com/invite/my-server" # https://discord.com/invite/my-server  *or*  https://discord.com/servers/my-server-id
+#twitter = "your-user-name"
+#facebook = "your-user-name"
+# linkedin = "your-user-name"
+#gitlab = "your-user-name"
+github = "firman-qs"
+#codeberg = "your-user-name" # Everything after https://codeberg.org/   eg: username  *or*  username/repository
+#github_sponsor = "your-user-name"
+#bitbucket = "your-user-name"
+#python = "your-user-name"
+#docker = "your-user-name"
+#stack = "your-user-name"
+# instagram = "your-user-name"
+#pixelfed = "https://pixelfed.example.com/" # Heaviest icon, off by default
+#pinterest = "your-user-name"
+# twitch = "your-user-name"
+# youtube = "channel/your-channel-id"
+#peertube = "https://peertube.example.com/@username"
+#researchgate = "your-profile-id"
+#telegram = "your-user-name"
+
+
+###############################################################################
+### Resource Files
+### You can load extra css files if you need to, just separate by comma:
+### stylesheets = [ "abridge.css", "extra.css" ]
+### search_library, library to use. valid values:
+###   false, "elasticlunr", "elasticlunrjava", "pagefind", "tinysearch", "offline"
+###     elasticlunr - elasticlunr using the elasticlunr_json index format
+###     elasticlunrjava - elasticlunr using the elasticlunr_javascript index format
+###     pagefind - pagefind using the fuse_json index format
+###     tinysearch - tinysearch using the fuse_json index format
+###     offline - elasticlunr using the elasticlunr_javascript index format with content paths relative to the location on disk.
+###       (offline: implies uglyurls=true and integrity=false, node script will pass base_url argument as the path on disk.)
+###
+###       The PWA feature is another way to build an offline site, so there are now two
+###       different ways to build an offline site with Abridge.
+###############################################################################
+
+uglyurls = false # if set to true then links are generated with the full path. eg https://abridge.netlify.app/index.html
+integrity = true # increases site security, should normally be true. (setting to false is useful during js development)
+js_bundle = true # multiple javascript files combined into a single file (setting to false is useful during js development)
+
+js_copycode = true # The copy button on code blocks that allows you to copy them to the clipboard.
+js_email_encode = true # obfuscates email address in footer
+js_prestyle = true # used to preload: FontAwesome, Katex, external Google Fonts
+js_switcher = true # The button that allows manually changing between light/dark mode.
+js_switcher_default = "dark" # default nojs switcher mode: dark, light (make sure to also set $switcherDefault in abridge.scss)
+
+search_library = "elasticlunr"
+stylesheets = ["abridge.css"]
+
+webmanifest = "manifest.min.json" # Required for PWAs
+
+
+###############################################################################
+### PWA (Progressive Web Application)
+### By default Abridge has pwa_NORM_TTL and pwa_LONG_TTL set to 0, this essential turns the PWA cache strategy into network first.
+###  Abridge uses cachebust hashing on js and css files, so anytime a page cache is updated, these resources would also get updated if changed.
+###  Media files rarely change, especially font files, so it is a good idea cache indefinitely.
+###  For pwa_TTL_EXEMPT indefinitely cached resources, you can force a new cache by incrementing the pwa_VER (cache version number).
+### If you would like to try a cache first strategy then set a value higher than 0 for pwa_NORM_TTL and pwa_LONG_TTL.
+###  The options below other than pwa=true, only come into play when the npm/node script is ran.
+###############################################################################
+
+pwa = true # true to load the service worker
+pwa_VER = '3.12.1' # Service Worker cache version. (increment if you need to force a new cache)
+
+### 3600=1hour, 28800=8hours, 86400=1day, 604800=1week, 1209600=2weeks
+pwa_NORM_TTL = 0 #  86400 is reasonable. html, json, xml, anything else undefined
+pwa_LONG_TTL = 0 # 604800 is reasonable.
+
+### list of files that overrides TTL_LONG/TTL_EXEMPT to be a NORM TTL.
+pwa_TTL_NORM = '"sw.min.js", "sw_load.min.js"'
+
+### TTL_LONG file extensions will be cached for the LONG_TTL duration.
+pwa_TTL_LONG = '"jpg", "jpeg", "png", "gif", "webp", "avif", "ico", "svg", "xsl", "txt"'
+
+### TTL_EXEMPT file extensions will be cached indefinitely unless sw_load version is incremented, which would invalidate any existing cache. (and a new cache would be started)
+pwa_TTL_EXEMPT = '"js", "css", "otf", "eot", "ttf", "woff", "woff2", "mp4", "webm", "mp3", "ogg"'
+
+### If set to true then the entire site is cached. (useful for making an entire site usable while offline)
+pwa_cache_all = true
+
+### List of Files for the PWA to initially Cache, used if pwa_cache_all = false
+pwa_BASE_CACHE_FILES = "'/js/theme.min.js','/js/theme_light.min.js','/abridge.css','/js/abridge.min.js','/','/404.html','/offline/','/manifest.min.json'"
+
+pwa_IGNORE_FILES = ["_headers","sw.min.js","sw.js"]
+#pwa_IGNORE_FILES = ["_headers","sw.min.js","sw.js","android-chrome-192x192.png","android-chrome-512x512.png","apple-touch-icon.png","favicon-16x16.png","favicon-32x32.png","favicon.ico","m48.png","m72.png","m96.png","m128.png","m192.png","m384.png","m512.png","m1024.png","mstile-150x150.png"]
+
+###############################################################################
+### Favicons, comment out a line to disable loading some or all of these if needed.
+###############################################################################
+
+favicon_theme_color = "#333333"
+favicon_ms_color = "#333333"
+favicon_mask = "safari-pinned-tab.svg" # safari-pinned-tab.svg
+favicon_mask_color = "#ff9900"
+favicon_svg = "favicon.svg" # favicon.svg
+favicon180 = "favicon.svg" # apple-touch-icon.png
+favicon32 = "favicon.svg" # favicon-32x32.png
+favicon16 = "favicon.svg" # favicon-16x16.png
+
+
+###############################################################################
+### Commenting System for visitors to leave comments on pages.
+###   hyvor talk
+###############################################################################
+
+#comments.hyvor = "9366" # hyvor website id, comment out to disable.
+#comments.hyvorcolor = "os" # set the color property for hyvor
+
+
+###############################################################################
+### Icons
+### Loading the entire fontawesome icon collection will negatively impact your sites performance.
+### For a lightweight solution consider adding only the icons that you need.
+### you can load individual scss based svg icons by including them in the _extra.scss file
+### https://github.com/Jieiku/abridge/blob/master/COPY-TO-ROOT-SASS/_extra.scss
+###############################################################################
+
+### To disable any of these icons set them to "false" (will default to unicode icons instead)
+#icon_search = "svgs svgm search" # Search button in search box.
+#icon_adjust = "svgs adjust" # Theme Switcher button in top menu. (add class svgh to change colors on hover)
+#icon_first = "svgs svgh angll" # Pagination First Page.
+#icon_prev = "svgs svgh angl" # Pagination Previous Page.
+#icon_next = "svgs svgh angr" # Pagination Next Page.
+#icon_last = "svgs svgh angrr" # Pagination Last Page.
+#icon_top = "svgs svgh angu" # Back to Top Button.
+
+#icon_read = "svgs fa-solid fa-glasses" # displayed in metadata on index and below title on page.
+#icon_date = "svgs fa-solid fa-calendar" # displayed in metadata on index and below title on page.
+#icon_info = "svgs fa-solid fa-circle-info" # displayed in metadata on index and below title on page for categories/tags
+#icon_author = "svgs fa-solid fa-pen-fancy" # displayed in metadata on index and below title on page.
+
+### Uncomment below line to load fontawesome, eg: <i class="fa-solid fa-heart"></i>
+fontawesome = "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+icon_read = "svgs fa-solid fa-glasses" # displayed in metadata on index and below title on page.
+icon_date = "svgs fa-solid fa-calendar" # displayed in metadata on index and below title on page.
+icon_info = "svgs fa-solid fa-circle-info" # displayed in metadata on index and below title on page for categories/tags
+icon_author = "svgs fa-solid fa-pen-fancy" # displayed in metadata on index and below title on page.
+
+
+###############################################################################
+### Security Settings
+### Security Headers should preferably be set by your webserver (Nginx, Apache)
+###   https://observatory.mozilla.org  https://csp-evaluator.withgoogle.com/
+### If you are unable to load your security headers with your webserver, this will load a couple of them as meta tags.
+### There are many other security related headers most of which can only be set by the webserver method.
+### If you happen to use Netlify, you can define all the headers in your netlify.toml file:
+###   https://github.com/Jieiku/abridge/blob/master/netlify.toml
+### UnComment any of these lines to enable their meta tags.
+###############################################################################
+
+#security_header_referrer = "strict-origin-when-cross-origin"
+
+#security_header_csp = "default-src 'none'; object-src 'none'; base-uri 'self'; manifest-src 'self'; connect-src 'self'; form-action 'self'; script-src 'self'; img-src 'self' data: cdn.cloudflare.com; frame-src 'self' www.youtube-nocookie.com player.vimeo.com; media-src 'self' data: cdn.cloudflare.com www.youtube-nocookie.com player.vimeo.com; font-src 'self' cdn.cloudflare.com cdn.jsdelivr.net fonts.gstatic.com; style-src 'self' cdn.cloudflare.com cdn.jsdelivr.net fonts.googleapis.com;"
+
+
+###############################################################################
+### FONTS - Abridge by default uses the System Font Stack
+###   https://css-tricks.com/snippets/css/system-font-stack/
+### However if you need you can load a specific font below,
+###   make sure to have the relevant woff2 fonts in your static/fonts folder
+### I measured the least Cumulative Layout Shift with: Roboto, Lato, Arimo
+###############################################################################
+
+### For externally loaded Fonts, make sure to include the FULL url including the https prefix:
+
+# fonts = [ {url = "https://fonts.googleapis.com/css?family=Roboto:400,700,italic|Roboto+Mono:400,italic"} ]
+# fonts = [ {url = "https://fonts.googleapis.com/css?family=Roboto:400,700,italic|Roboto+Mono:400,italic"} ]
+
+### Local fonts are defined in the css, https://github.com/Jieiku/abridge/tree/master/COPY-TO-ROOT-SASS/fonts/_Arimo.scss
+### To load a local font resource, look at the bottom of this file: https://github.com/Jieiku/abridge/blob/master/COPY-TO-ROOT-SASS/abridge.scss
+
+### After loading them in the CSS, You can also define them below and it will add the preload tag to the head.
+### preloading fonts will eliminate Content Layout Shift, but will hurt with page load time. (not recommended)
+
+fonts = [
+{url = "fonts/UniversRegular.ttf"},
+{url = "fonts/UniversBold.ttf"},
+{url = "fonts/UniversCnRg.ttf"},
+{url = "fonts/UniversCnBold.ttf"},
+   # {url = "fonts/Roboto-Mono.woff2"},
+   # {url = "fonts/Roboto-Mono-Italic.woff2"},
+   # {url = "fonts/Roboto.woff2"},
+   # {url = "fonts/Roboto-Italic.woff2"},
+   # {url = "fonts/Roboto-Bold.woff2"},
 ]
-# Social links in the footer.
-# Any URL-encoded SVG can be used as an icon.
-# https://simpleicons.org is the recommended source of SVG icons.
-# For URL encoding use https://yoksel.github.io/url-encoder/.
-# Make sure that "external quotes" are set to "double".
-socials = [
-	{ url = "https://github.com/firman-qs", name = "GitHub", icon = "%3Csvg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EGitHub%3C/title%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E" },
-	{ url = "https://instagram.com", name = "Instagram", icon = "%3Csvg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EInstagram%3C/title%3E%3Cpath d='M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077'/%3E%3C/svg%3E" },
-	{ url = "https://mastodon.social", name = "Mastodon", icon = "%3Csvg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EMastodon%3C/title%3E%3Cpath d='M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z'/%3E%3C/svg%3E" },
-	{ url = "https://twitter.com", name = "Twitter", icon = "%3Csvg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3ETwitter%3C/title%3E%3Cpath d='M21.543 7.104c.015.211.015.423.015.636 0 6.507-4.954 14.01-14.01 14.01v-.003A13.94 13.94 0 0 1 0 19.539a9.88 9.88 0 0 0 7.287-2.041 4.93 4.93 0 0 1-4.6-3.42 4.916 4.916 0 0 0 2.223-.084A4.926 4.926 0 0 1 .96 9.167v-.062a4.887 4.887 0 0 0 2.235.616A4.928 4.928 0 0 1 1.67 3.148 13.98 13.98 0 0 0 11.82 8.292a4.929 4.929 0 0 1 8.39-4.49 9.868 9.868 0 0 0 3.128-1.196 4.941 4.941 0 0 1-2.165 2.724A9.828 9.828 0 0 0 24 4.555a10.019 10.019 0 0 1-2.457 2.549z'/%3E%3C/svg%3E" }
-]
-# Whether to show "© Title, YEAR"
-show_copyright = true
-# Whether to show "Powered by Zola and Duckquill"
-show_powered_by = true
-# Whether to show link to website source
-# show_source = false
-# # Custom copyright text
-#
-# copyright = "© *Aperture* **Science** ~~Innovators~~, `1972`"
 
-# Based on https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/
-#
-# Mastodon-powered commenting.
-# Values can be overridden in the front-matter, e.g.
-# for multi-author blogs or guest posts.
-#
-# These variables are also used for Mastodon verification,
-# the needed rel="me" link is set in the head based on these.
-[extra.comments]
-# Your Mastodon API host; instance that you have an account on.
-host = "vmst.io"
-# Your Mastodon username; used to determine who the original poster is.
-user = "daudix"
-# Whether to show the QR code to Mastodon post
-show_qr = true
 
-# GoatCounter analytics; enabled only if present in config.
-[extra.goatcounter]
-# Your GoatCounter server; goatcounter.com is used by default.
-#
-# host = "YOUR_SERVER"
-#
-# Your GoatCounter username
-user = "duckquill"
+###############################################################################
+### Katex - math js library, used to to render mathematical notations
+### It's best to enable katex on a per page bases as I did here:
+###   https://abridge.netlify.app/overview-math/
+###   https://github.com/Jieiku/abridge/blob/master/content/overview-math.md?plain=1#L11-L13
+### Otherwise you will load the katex related javascript on every page!
+###############################################################################
 
-[extra.debug]
-# Display outlines around all elements for debugging purposes
-layout = false
-# Don't load any styles for debugging purposes
-no_styles = false
+#katex_options = "js/katexoptions.js"
+#katex_bundle = "js/katexbundle.min.js"
+
+### Load Katex Local Resources
+#katex_css = "katex.min.css" # Fonts - load the css/fonts locally
+#katex_js = "js/katex.min.js" # use local js, so that we dont have to whitelist cdn.jsdelivr.net for script src in CSP
+#mathtex_js = "js/mathtex-script-type.min.js" # use local js, so that we dont have to whitelist cdn.jsdelivr.net for script src in CSP
+#katex_autorender_js = "js/katex-auto-render.min.js"
+
+### Load Katex External Resources
+#katex_css = "https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" # Fonts - use remote fonts
+#katex_css_integrity = "sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs"
+#katex_js = "https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"
+#katex_js_integrity = "sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4"
+#katex_autorender_js = "https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"
+#katex_autorender_js_integrity = "sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"
+#mathtex_js = "https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/mathtex-script-type.min.js"
+#mathtex_js_integrity = "sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT"
+
+math = true # Recommended setting false, and enable on per page bases instead.
+math_auto_render = true # Recommended setting false, and enable on per page bases instead.

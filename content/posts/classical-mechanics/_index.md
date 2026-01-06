@@ -1,10 +1,9 @@
 +++
-title = "Mekanika Klasik"
+paginate_by = 10
 sort_by = "date"
+template = "index.html"
 transparent = true
-template = "article_list.html"
-page_template = "article.html"
-paginate_by = 5
-+++
 
-Quarks, quirks, and questionable constants.
+[extra]
+math = true
++++

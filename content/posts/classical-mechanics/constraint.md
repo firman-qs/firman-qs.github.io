@@ -2,6 +2,7 @@
 title = "Konstrain dan Gaya Konstrain"
 date = "2023-11-02"
 description = "yet another classical mechanics"
+draft = true
 
 [taxonomies]
 tags=["classicalmechanics101"]
@@ -45,6 +46,3 @@ $$
 
 
 > Under construction...........
-
-
-

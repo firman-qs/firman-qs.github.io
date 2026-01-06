@@ -1,7 +1,6 @@
 +++
-title = "Pembangunan Berkelanjutan untuk Masyarakat"
+paginate_by = 10
 sort_by = "date"
-transparent = true
+template = "index.html"
+transparent = false
 +++
-
-Pembangunan Berkelanjutan untuk Masyarakat

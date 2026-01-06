@@ -7,15 +7,18 @@ description = "Nothing special, just XMonad rice"
 tags=["linuxrice", "documentation"]
 
 [extra]
-comment = true
+toc = true
+math = true
+math_auto_render = true
 +++
 
-# ABOUT
-
-Originally, this was my old archlinux [DTOS](https://distro.tube/dtos/)
-configuration, but now i am on fedora (update: i am back [home](https://archlinux.org/)). I have tested on my fedora and it
-works fine. For other distributions it should be the same, just complete
-the necessary packages. I'll try to give a little guidance.
+Haskell, i think, is the most artistic programming language among other i've
+learned. And, as window manager hoper, there is one written in Haskell, the name
+already show the signature, "Xmonad". Originally, this was my old archlinux
+[DTOS](https://distro.tube/dtos/) configuration, but now i am on fedora (update:
+i am back [home](https://archlinux.org/)). I have tested on my fedora and it
+works fine. For other distributions it should be the same, just complete the
+necessary packages. I'll try to give a little guidance.
 
 `Note` Before you go and copy my config, read the section below for the
 dependencies and short tutorial to get started. if I didn't miss
@@ -188,7 +191,7 @@ more deeply, using stack or cabal is great.
         This will give you an xmonad-log binary in the directory. Move
         this to an appropriate directory in your $PATH.
 
-# IMPORTS
+# Imports
 
 These are Haskell modules that we must import so that we can use their
 functions later in the config. We use `import` stetement for to import
@@ -280,7 +283,7 @@ import XMonad.Util.SpawnOnce
 import Colors.XmonadPywal
 ```
 
-# VARIABLES
+# Variables
 
 It's nice to assign values to stuff that you will use more than once in
 the config. Setting values for things like font, terminal and editor
@@ -325,7 +328,7 @@ mySoundPlayer = "ffplay -nodisp -autoexit "  -- The program that will play syste
 windowCount :: X (Maybe String)
 windowCount = gets $ Just . show . length . W.integrate' . W.stack . W.workspace . W.current . windowset
 ```
-# AUTOSTARTS
+# Autostarts
 
 This is a program that automatically runs on startup or restarting
 xmonad. We need to store it in `startupHook` on [main](./#main) method
@@ -346,7 +349,7 @@ myStartupHook = do
     setWMName "LG3D"
 ```
 
-# LAYOUTS
+# Layouts
 
 Defining the layouts that I want to have available. This require us to
 import modules `XMonad.Layout`.
@@ -446,7 +449,7 @@ myLayoutHook = avoidStruts
             ||| wideAccordion
 ```
 
-# WORKSPACES
+# Workspaces
 
 Thisi worspace configuration contains workspace name, how make custom
 xmonad polybar-module clickable, and theme for workspace name on change
@@ -494,7 +497,7 @@ myShowWNameTheme = def
     }
 ```
 
-# MANAGEHOOK
+# Managehook
 
 Sets some rules for certain programs. Examples include forcing certain
 programs to always float, or to always appear on a certain workspace.
@@ -533,7 +536,7 @@ myManageHook = composeAll
     ] <+> namedScratchpadManageHook myScratchPads
 ```
 
-# SYSTEM SOUNDS
+# System sounds
 
 Available sounds that are part of the default
 [dtos-sounds](https://gitlab.com/dtos/dtos-sounds) package include:
@@ -555,7 +558,7 @@ startupSound  = soundDir ++ "startup-01.mp3"
 shutdownSound = soundDir ++ "shutdown-01.mp3"
 ```
 
-# NAMED ACTIONS
+# Named actions
 
 `NamedActions` is a wrapper for keybinding configuration that can list
 the available keybindings. The following custom functions are used to
@@ -582,7 +585,7 @@ showKeybindings x = addName "Show Keybindings" $ io $ do
     return ()
 ```
 
-# KEYBINDINGS
+# Keybindings
 
 This config use the
 [Xmonad.Util.EZConfig](https://hackage.haskell.org/package/xmonad-contrib-0.17.1/docs/XMonad-Util-EZConfig.html)
@@ -797,7 +800,7 @@ myKeys c =
     nonEmptyNonNSP  = WSIs (return (\ws -> isJust (W.stack ws) && W.tag ws /= "NSP"))
 ```
 
-# MAKE XMONAD AND POLYBAR TALK TO EACH OTHER
+# Make xmonad and polybar talk to each other
 
 As i have explained before, we need to integrate xmonad to visualize the
 current window title and workspaces in polybar. To make xmonad and
@@ -838,7 +841,7 @@ dbusOutput dbus str = do
     memberName = D.memberName_ "Update"
 ```
 
-# THE MAIN
+# The main
 
 This is the "main" of XMonad. This where everything in our configs comes
 together and works.

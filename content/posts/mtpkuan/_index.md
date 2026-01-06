@@ -1,7 +1,6 @@
 +++
-title = "Metode Penelitian Kuantitatif"
+paginate_by = 10
 sort_by = "date"
-transparent = true
+template = "index.html"
+transparent = false
 +++
-
-Metode Penelitian Kuantitatif

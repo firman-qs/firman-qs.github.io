@@ -8,7 +8,8 @@ tags = ["physics", "python", "example"]
 
 [extra]
 comment = true
-katex = true
+math = true
+toc = true
 +++
 
 ## Introduction: Simple Equation Derivation

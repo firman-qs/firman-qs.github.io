@@ -1,0 +1,60 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+
+@font-face {
+    font-family: "Arimo";
+    src: local("Arimo"), url("fonts/Arimo.woff2"); //latin regular
+    font-display: swap;
+}
+@font-face {
+    font-family: "Arimo";
+    src: local("Arimo-Italic"), url("fonts/Arimo-Italic.woff2"); //latin italic
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Arimo";
+    src: local("Arimo-Bold"), url("fonts/Arimo-Bold.woff2"); //latin bold
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "UniversCondensed";
+    src:
+        local("UniversCnRg"),
+        url("fonts/UniversCnRg.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "UniversCondensed";
+    src:
+        local("UniversCnRg"),
+        url("fonts/UniversCnRg.ttf") format("truetype");
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Univers";
+    src:
+        local("UniversRegular"),
+        url("fonts/UniversRegular.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Univers";
+    src:
+        local("UniversBold"),
+        url("fonts/UniversBold.ttf") format("truetype");
+    font-weight: bold;
+    font-display: swap;
+}

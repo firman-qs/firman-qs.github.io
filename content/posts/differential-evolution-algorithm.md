@@ -1,13 +1,15 @@
 +++
-title = "Differential Evolution Algorithm Implemented in Rust 🦀"
 date = "2025-08-09"
+title = "Differential Evolution Algorithm Implemented in Rust 🦀"
 description = "Unoptimized (just crab/p code) but Memory Safe implementation of differential evolution in Rust"
+draft = true
 
 [taxonomies]
 tags=["rust", "algorithm"]
 
 [extra]
 comment = true
+math = true
 +++
 
 > 🚧 _Page under construction_ 
@@ -204,4 +206,3 @@ impl ObjectiveFunction for Griewank {
 
 # Reference
 - Price, K.V., Storn, R.M. and Lampinen, J.A. (2005) _Differential evolution, Natural computing series_. https://doi.org/10.1007/3-540-31306-0.
-
