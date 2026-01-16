@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://firman-qs.github.io/js/theme.min.js" integrity="sha384-pb++s6uBRKaQv+iAXpgA/H3IlpLZdO14tTwuCI7uXmz4aaZdByoCcM+6BhynMq/1"></script>
+  <link rel="stylesheet" href="https://firman-qs.github.io/abridge.css?h=adbd256d95e421007af9" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="https://firman-qs.github.io/" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://firman-qs.github.io/manifest.min.json" />
+  <link rel="mask-icon" href="https://firman-qs.github.io/safari-pinned-tab.svg" color="#ff9900" />
+  <link rel="icon" type="image/svg+xml" href="https://firman-qs.github.io/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://firman-qs.github.io/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://firman-qs.github.io/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://firman-qs.github.io/favicon.svg" />
+  <link rel="preload" as="font" href="https://firman-qs.github.io/fonts/UniversRegular.ttf" type="font/woff2" />
+  <link rel="preload" as="font" href="https://firman-qs.github.io/fonts/UniversBold.ttf" type="font/woff2" />
+  <link rel="preload" as="font" href="https://firman-qs.github.io/fonts/UniversCnRg.ttf" type="font/woff2" />
+  <link rel="preload" as="font" href="https://firman-qs.github.io/fonts/UniversCnBold.ttf" type="font/woff2" />
+  <link rel="preload" as="style" class="preStyle" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" crossorigin="anonymous" />
+  <link rel="preload" as="style" class="preStyle" href="https://firman-qs.github.io/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" />
+  <link rel="alternate" type="application/atom+xml" title="fqsss Atom Feed" href="https://firman-qs.github.io/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>My Neovim Setup with Lazy.nvim Plugin Manager | fqsss</title>
+  <meta name="author" content="fqs" />
+  <meta name="copyright" content="fqsss" />
+  <meta name="description" content="Bytheway editor" />
+  <link rel="canonical" href="https://firman-qs.github.io/posts/configure-nvim/" />
+  <meta name="keywords" content="neovim, lazy.nvim, dotfiles, plugin management, vim, physics, student, computer, programming, using abridge theme, Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" />
+  <meta name="google-site-verification" content="Your Google Site verification code." />
+  <meta name="msvalidate.01" content="Your Bing Site verification code." />
+  <meta property="og:url" content="https://firman-qs.github.io/posts/configure-nvim/" />
+  <meta name="twitter:url" content="https://firman-qs.github.io/posts/configure-nvim/" />
+  <meta property="og:description" content="Bytheway editor" />
+  <meta name="twitter:description" content="Bytheway editor" />
+  <meta property="og:title" content="My Neovim Setup with Lazy.nvim Plugin Manager | fqsss" />
+  <meta name="twitter:title" content="My Neovim Setup with Lazy.nvim Plugin Manager | fqsss" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://firman-qs.github.io/banner.png" />
+  <meta property="og:image" content="https://firman-qs.github.io/banner.png" />
+  <meta property="og:site_name" content="fqsss" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2023-11-09" />
+  <meta name="twitter:site" content="@your-user-name" />
+  <meta name="twitter:creator" content="@your-user-name" />
+  <script defer src="https://firman-qs.github.io/js/abridge.min.js?h=e0f9a881a665c86cce9c" integrity="sha384-QF67y7RnPkuDrJNQqn3/7nYxqxWkW/qHI7zN0WTES1aXbf+TotoByRBb835fUE6U"></script>
+  <script defer src="https://firman-qs.github.io/js/katexbundle.min.js?h=56b2761149aaa1d81994" integrity="sha384-UR0Li9YQWtf8BWhMEkmcKrcYY/Km3tAPQ8+768VhubM14b1z/WljMs8woKF34r2E"></script>
+  <noscript><link rel="stylesheet" href="https://firman-qs.github.io/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><big><a href="https://firman-qs.github.io" title="fqsss"><font color="#f90">fq</font>sss</a></big></div>
+      <div>
+
+        <div>
+          <ul><li><a class="s110" href="https://firman-qs.github.io/archive/"> Posts </a></li><li><a class="s110" href="https://firman-qs.github.io/tags/"> Tags </a></li><li><a class="s110" href="https:&#x2F;&#x2F;scholar.google.com&#x2F;citations?user=CjFKELwAAAAJ&amp;hl=en" target="_blank"> Publication </a></li><li><a class="s110" href="https:&#x2F;&#x2F;github.com&#x2F;firman-qs" target="_blank"> Github </a></li><li><i type="reset" id="mode" class="js svgs adjust"></i></ul>
+        </div>
+
+        <div>
+          <div>
+            <form autocomplete=off class="js" name="goSearch" id="searchbox">
+              <div class="searchd">
+                <input id="searchinput" type="text" placeholder="Search" title="Search" />
+                <button type="submit" title="Search" class="svgs svgm search"></button>
+              </div>
+              <div class="results"><div id="suggestions"></div></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1><a href="https://firman-qs.github.io/posts/configure-nvim/">My Neovim Setup with Lazy.nvim Plugin Manager</a></h1>
+
+      <span class="s95"><i class="svgs fa-solid fa-pen-fancy"></i>  fqs <span class="rpad"></span><i class="svgs fa-solid fa-calendar"></i>  November 09, 2023 <span class="rpad"></span> #<a href="https://firman-qs.github.io/tags/features/">Features</a>  #<a href="https://firman-qs.github.io/tags/neovim/">neovim</a>  #<a href="https://firman-qs.github.io/tags/lazy-nvim/">lazy.nvim</a>  #<a href="https://firman-qs.github.io/tags/dotfiles/">dotfiles</a>  #<a href="https://firman-qs.github.io/tags/plugin-management/">plugin management</a> </span>
+
+    
+        <div class="block">
+      <div class="blockdiv">
+        <a class="b s150" href="https://firman-qs.github.io/tags/features/">Features (Series)</a><br>
+            <a class="scur" href="https://firman-qs.github.io/posts/configure-nvim/">My Neovim Setup with Lazy.nvim Plugin Manager</a><br> 
+          
+      </div>
+    </div>
+
+
+<p>I’ll write this soon, in the meantime please visit my nvim configuration
+repository, it was just updated
+<a rel="noopener" target="_blank" href="https://github.com/firman-qs/nvim/">https://github.com/firman-qs/nvim/</a></p>
+<!--ss
+
+Neovim has become my go-to editor for everything from coding to writing LaTeX
+documents. I recently restructured my config using
+[`lazy.nvim`](https://github.com/folke/lazy.nvim), a fast, modern plugin
+manager written in Lua. In this post, I'll walk through how I organized my
+Neovim setup and how you can do the same.
+
+## 🧱 Project Structure
+
+Here's the directory structure of my `~/.config/nvim`:
+
+```text
+.
+├── init.lua
+├── lazy-lock.json
+├── lua
+    ├── plugins
+    │   ├── ai.lua
+    │   ├── autocompletion.lua
+    │   ├── autoformat.lua
+    │   ├── buffers-or-tabs.lua
+    │   ├── dap.lua
+    │   ├── filemanager.lua
+    │   ├── garbage-day.lua
+    │   ├── git.lua
+    │   ├── latex.lua
+    │   ├── lsp.lua
+    │   ├── mini.lua
+    │   ├── multicursors.lua
+    │   ├── plugins.lua
+    │   ├── rust.lua
+    │   ├── session.lua
+    │   ├── surround.lua
+    │   ├── telescope.lua
+    │   ├── theme.lua
+    │   ├── trouble.lua
+    │   ├── typst.lua
+    │   ├── ui.lua
+    │   └── whichkey.lua
+    └── settings
+        └── init.lua
+```
+
+
+## Setting Up `init.lua`
+
+The `init.lua` file is the heart of a Neovim configuration. It’s the first
+thing Neovim loads, and in my setup, it handles:
+
+- global settings
+- bootstrapping the plugin manager (`lazy.nvim`)
+- custom UI tweaks
+
+---
+
+### Load Global Settings
+
+```lua
+require("settings")
+```
+
+### Bootstrap `lazy.nvim`
+
+Before we load any plugins, we make sure the `lazy.nvim` plugin manager is installed:
+
+```lua
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+  local lazyrepo = "https://github.com/folke/lazy.nvim.git"
+  local out = vim.fn.system({
+    "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath
+  })
+  if vim.v.shell_error ~= 0 then
+    error("Error cloning lazy.nvim:\n" .. out)
+  end
+end
+vim.opt.rtp:prepend(lazypath)
+```
+
+This block checks whether lazy.nvim exists in the expected path. If not, it
+clones the repository. That way, you can just git-clone your config and
+everything sets up automatically.
+
+### Load Plugins with Lazy.nvim
+
+```lua
+require("lazy").setup({
+  { import = "plugins" },
+}, {
+  ui = {
+    icons = vim.g.have_nerd_font and {} or {
+      cmd = "⌘",
+      config = "🛠",
+      event = "📅",
+      ft = "📂",
+      init = "⚙",
+      keys = "🗝",
+      plugin = "🔌",
+      runtime = "💻",
+      require = "🌙",
+      source = "📄",
+      start = "🚀",
+      task = "📌",
+      lazy = "💤 ",
+    },
+  },
+})
+```
+Here, I import all plugins from lua/plugins/, and customize the UI icons shown
+by Lazy (especially handy if you're not using Nerd Fonts). The icons make the
+plugin loading screen more expressive and readable.
+
+### Optional: Set Terminal Background to Match Neovim
+
+```lua
+local modified = false
+vim.api.nvim_create_autocmd({ "UIEnter", "ColorScheme" }, {
+  callback = function()
+    local normal = vim.api.nvim_get_hl(0, { name = "Normal" })
+    if normal.bg then
+      io.write(string.format("\027]11;#%06x\027\\", normal.bg))
+      modified = true
+    end
+  end,
+})
+
+vim.api.nvim_create_autocmd("UILeave", {
+  callback = function()
+    if modified then
+      io.write("\027]111\027\\")
+    end
+  end,
+})
+```
+
+
+## Global Settings (`lua/settings/init.lua`)
+
+This is where I define my personal Neovim preferences — everything from line
+numbers to key mappings. By isolating these in `lua/settings/init.lua`, I keep
+my `init.lua` clean and modular.
+
+Let’s walk through what I’ve customized. 
+It's self explanatory so I leave it to you
+
+```lua
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+vim.opt.number = true            -- Absolute line numbers
+vim.opt.relativenumber = false   -- I prefer absolute lines only
+vim.opt.cursorline = false       -- Cursorline off to reduce visual noise
+vim.opt.signcolumn = "yes"       -- Always show sign column
+vim.opt.colorcolumn = "80"       -- Vertical ruler for code style
+vim.opt.scrolloff = 4            -- Keep cursor centered with some margin
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+   
+vim.g.have_nerd_font = true
+
+vim.opt.mouse = "a"              -- Full mouse support
+vim.opt.showmode = false         -- Hide "-- INSERT --", handled by statusline
+vim.opt.clipboard = "unnamedplus" -- Share clipboard with OS
+
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.hlsearch = true
+vim.opt.inccommand = "split"
+
+vim.opt.wrap = false
+vim.opt.breakindent = true
+vim.opt.smartindent = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+
+vim.opt.updatetime = 250
+vim.opt.timeoutlen = 300
+
+vim.opt.undofile = true
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.swapfile = false
+vim.opt.backup = false
+
+vim.opt.list = false
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣", eol = "󰌑" }
+vim.opt.guicursor = ""
+
+vim.keymap.set("n", "<Esc><Esc>", "<cmd>nohlsearch<CR>")
+vim.keymap.set("n", "<Esc>", "<cmd>noh<CR>")
+
+vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
+
+vim.keymap.set({ "n", "i" }, "<C-s>", vim.cmd.w, { desc = "Save File" })
+vim.keymap.set("n", "<leader>fs", vim.cmd.w, { desc = "Save File" })
+
+vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+
+vim.keymap.set("n", "<A-k>", ":m -2<CR>")
+vim.keymap.set("n", "<A-j>", ":m +1<CR>")
+vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv")
+
+```
+
+### Optional: Yank Highlighting
+```lua
+vim.api.nvim_create_autocmd("TextYankPost", {
+  desc = "Highlight when yanking (copying) text",
+  group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
+  callback = function()
+    vim.highlight.on_yank()
+  end,
+})
+```-->
+
+      <nav>
+        <div>
+          <a href="https://firman-qs.github.io/posts/plotting-fresnel-py/">&#8249; Plotting Fresnel Equation</a>
+        </div>
+        <div>
+        </div>
+      </nav>
+    </article>
+
+    <div class="sblock">
+      <div class="blockdiv">
+        <a class="b s150" href="https://firman-qs.github.io/tags/features/">Series</a><br>
+            
+      <a class="scur" href="https://firman-qs.github.io/posts/configure-nvim/">My Neovim Setup with Lazy.nvim Plugin Manager</a><br>
+    
+      </div>
+  </main>
+  <footer>
+    <div class="c">
+      <nav class="tpad"><div><a type="application/atom+xml" href="https://firman-qs.github.io/atom.xml" target="_blank" title="fqsss Atom Feed"><i type="Button" class="svg rss" title="fqsss Atom Feed"></i></a><a href="https://github.com/firman-qs/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></div></nav>
+      <nav class="vpad">
+        <a class="rpad s90" href="https://firman-qs.github.io/privacy/"> Privacy </a>
+        <a class="rpad s90" href="https://firman-qs.github.io/sitemap.xml" target="_blank"> Sitemap </a>
+      </nav>
+      <p class="s70"> &copy; <span id="year">2026</span> fqsss</p>
+      <p class="s70">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> & <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>fqsss - lazy.nvim</title>
+    <subtitle>my obscure personal site as physics student + machine dictactor</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://firman-qs.github.io/tags/lazy-nvim/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://firman-qs.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-11-09T00:00:00+00:00</updated>
+    <id>https://firman-qs.github.io/tags/lazy-nvim/atom.xml</id>
+    <entry xml:lang="en">
+        <title>My Neovim Setup with Lazy.nvim Plugin Manager</title>
+        <published>2023-11-09T00:00:00+00:00</published>
+        <updated>2023-11-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://firman-qs.github.io/posts/configure-nvim/"/>
+        <id>https://firman-qs.github.io/posts/configure-nvim/</id>
+        
+        <content type="html" xml:base="https://firman-qs.github.io/posts/configure-nvim/">&lt;p&gt;I’ll write this soon, in the meantime please visit my nvim configuration
+repository, it was just updated
+&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;firman-qs&#x2F;nvim&#x2F;&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;firman-qs&#x2F;nvim&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;!--ss
+
+Neovim has become my go-to editor for everything from coding to writing LaTeX
+documents. I recently restructured my config using
+[`lazy.nvim`](https:&#x2F;&#x2F;github.com&#x2F;folke&#x2F;lazy.nvim), a fast, modern plugin
+manager written in Lua. In this post, I&#x27;ll walk through how I organized my
+Neovim setup and how you can do the same.
+
+## 🧱 Project Structure
+
+Here&#x27;s the directory structure of my `~&#x2F;.config&#x2F;nvim`:
+
+```text
+.
+├── init.lua
+├── lazy-lock.json
+├── lua
+    ├── plugins
+    │   ├── ai.lua
+    │   ├── autocompletion.lua
+    │   ├── autoformat.lua
+    │   ├── buffers-or-tabs.lua
+    │   ├── dap.lua
+    │   ├── filemanager.lua
+    │   ├── garbage-day.lua
+    │   ├── git.lua
+    │   ├── latex.lua
+    │   ├── lsp.lua
+    │   ├── mini.lua
+    │   ├── multicursors.lua
+    │   ├── plugins.lua
+    │   ├── rust.lua
+    │   ├── session.lua
+    │   ├── surround.lua
+    │   ├── telescope.lua
+    │   ├── theme.lua
+    │   ├── trouble.lua
+    │   ├── typst.lua
+    │   ├── ui.lua
+    │   └── whichkey.lua
+    └── settings
+        └── init.lua
+```
+
+
+## Setting Up `init.lua`
+
+The `init.lua` file is the heart of a Neovim configuration. It’s the first
+thing Neovim loads, and in my setup, it handles:
+
+- global settings
+- bootstrapping the plugin manager (`lazy.nvim`)
+- custom UI tweaks
+
+---
+
+### Load Global Settings
+
+```lua
+require(&quot;settings&quot;)
+```
+
+### Bootstrap `lazy.nvim`
+
+Before we load any plugins, we make sure the `lazy.nvim` plugin manager is installed:
+
+```lua
+local lazypath = vim.fn.stdpath(&quot;data&quot;) .. &quot;&#x2F;lazy&#x2F;lazy.nvim&quot;
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+  local lazyrepo = &quot;https:&#x2F;&#x2F;github.com&#x2F;folke&#x2F;lazy.nvim.git&quot;
+  local out = vim.fn.system({
+    &quot;git&quot;, &quot;clone&quot;, &quot;--filter=blob:none&quot;, &quot;--branch=stable&quot;, lazyrepo, lazypath
+  })
+  if vim.v.shell_error ~= 0 then
+    error(&quot;Error cloning lazy.nvim:\n&quot; .. out)
+  end
+end
+vim.opt.rtp:prepend(lazypath)
+```
+
+This block checks whether lazy.nvim exists in the expected path. If not, it
+clones the repository. That way, you can just git-clone your config and
+everything sets up automatically.
+
+### Load Plugins with Lazy.nvim
+
+```lua
+require(&quot;lazy&quot;).setup({
+  { import = &quot;plugins&quot; },
+}, {
+  ui = {
+    icons = vim.g.have_nerd_font and {} or {
+      cmd = &quot;⌘&quot;,
+      config = &quot;🛠&quot;,
+      event = &quot;📅&quot;,
+      ft = &quot;📂&quot;,
+      init = &quot;⚙&quot;,
+      keys = &quot;🗝&quot;,
+      plugin = &quot;🔌&quot;,
+      runtime = &quot;💻&quot;,
+      require = &quot;🌙&quot;,
+      source = &quot;📄&quot;,
+      start = &quot;🚀&quot;,
+      task = &quot;📌&quot;,
+      lazy = &quot;💤 &quot;,
+    },
+  },
+})
+```
+Here, I import all plugins from lua&#x2F;plugins&#x2F;, and customize the UI icons shown
+by Lazy (especially handy if you&#x27;re not using Nerd Fonts). The icons make the
+plugin loading screen more expressive and readable.
+
+### Optional: Set Terminal Background to Match Neovim
+
+```lua
+local modified = false
+vim.api.nvim_create_autocmd({ &quot;UIEnter&quot;, &quot;ColorScheme&quot; }, {
+  callback = function()
+    local normal = vim.api.nvim_get_hl(0, { name = &quot;Normal&quot; })
+    if normal.bg then
+      io.write(string.format(&quot;\027]11;#%06x\027\\&quot;, normal.bg))
+      modified = true
+    end
+  end,
+})
+
+vim.api.nvim_create_autocmd(&quot;UILeave&quot;, {
+  callback = function()
+    if modified then
+      io.write(&quot;\027]111\027\\&quot;)
+    end
+  end,
+})
+```
+
+
+## Global Settings (`lua&#x2F;settings&#x2F;init.lua`)
+
+This is where I define my personal Neovim preferences — everything from line
+numbers to key mappings. By isolating these in `lua&#x2F;settings&#x2F;init.lua`, I keep
+my `init.lua` clean and modular.
+
+Let’s walk through what I’ve customized. 
+It&#x27;s self explanatory so I leave it to you
+
+```lua
+vim.g.mapleader = &quot; &quot;
+vim.g.maplocalleader = &quot; &quot;
+
+vim.opt.number = true            -- Absolute line numbers
+vim.opt.relativenumber = false   -- I prefer absolute lines only
+vim.opt.cursorline = false       -- Cursorline off to reduce visual noise
+vim.opt.signcolumn = &quot;yes&quot;       -- Always show sign column
+vim.opt.colorcolumn = &quot;80&quot;       -- Vertical ruler for code style
+vim.opt.scrolloff = 4            -- Keep cursor centered with some margin
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+   
+vim.g.have_nerd_font = true
+
+vim.opt.mouse = &quot;a&quot;              -- Full mouse support
+vim.opt.showmode = false         -- Hide &quot;-- INSERT --&quot;, handled by statusline
+vim.opt.clipboard = &quot;unnamedplus&quot; -- Share clipboard with OS
+
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.hlsearch = true
+vim.opt.inccommand = &quot;split&quot;
+
+vim.opt.wrap = false
+vim.opt.breakindent = true
+vim.opt.smartindent = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+
+vim.opt.updatetime = 250
+vim.opt.timeoutlen = 300
+
+vim.opt.undofile = true
+vim.opt.undodir = os.getenv(&quot;HOME&quot;) .. &quot;&#x2F;.vim&#x2F;undodir&quot;
+vim.opt.swapfile = false
+vim.opt.backup = false
+
+vim.opt.list = false
+vim.opt.listchars = { tab = &quot;» &quot;, trail = &quot;·&quot;, nbsp = &quot;␣&quot;, eol = &quot;󰌑&quot; }
+vim.opt.guicursor = &quot;&quot;
+
+vim.keymap.set(&quot;n&quot;, &quot;&lt;Esc&gt;&lt;Esc&gt;&quot;, &quot;&lt;cmd&gt;nohlsearch&lt;CR&gt;&quot;)
+vim.keymap.set(&quot;n&quot;, &quot;&lt;Esc&gt;&quot;, &quot;&lt;cmd&gt;noh&lt;CR&gt;&quot;)
+
+vim.keymap.set(&quot;n&quot;, &quot;&lt;leader&gt;q&quot;, vim.diagnostic.setloclist, { desc = &quot;Open diagnostic [Q]uickfix list&quot; })
+
+vim.keymap.set({ &quot;n&quot;, &quot;i&quot; }, &quot;&lt;C-s&gt;&quot;, vim.cmd.w, { desc = &quot;Save File&quot; })
+vim.keymap.set(&quot;n&quot;, &quot;&lt;leader&gt;fs&quot;, vim.cmd.w, { desc = &quot;Save File&quot; })
+
+vim.keymap.set(&quot;t&quot;, &quot;&lt;Esc&gt;&lt;Esc&gt;&quot;, &quot;&lt;C-\\&gt;&lt;C-n&gt;&quot;, { desc = &quot;Exit terminal mode&quot; })
+
+vim.keymap.set(&quot;n&quot;, &quot;&lt;A-k&gt;&quot;, &quot;:m -2&lt;CR&gt;&quot;)
+vim.keymap.set(&quot;n&quot;, &quot;&lt;A-j&gt;&quot;, &quot;:m +1&lt;CR&gt;&quot;)
+vim.keymap.set(&quot;v&quot;, &quot;&lt;A-k&gt;&quot;, &quot;:m &#x27;&lt;-2&lt;CR&gt;gv=gv&quot;)
+vim.keymap.set(&quot;v&quot;, &quot;&lt;A-j&gt;&quot;, &quot;:m &#x27;&gt;+1&lt;CR&gt;gv=gv&quot;)
+
+```
+
+### Optional: Yank Highlighting
+```lua
+vim.api.nvim_create_autocmd(&quot;TextYankPost&quot;, {
+  desc = &quot;Highlight when yanking (copying) text&quot;,
+  group = vim.api.nvim_create_augroup(&quot;kickstart-highlight-yank&quot;, { clear = true }),
+  callback = function()
+    vim.highlight.on_yank()
+  end,
+})
+```--&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>fqsss - software</title>
+    <subtitle>my obscure personal site as physics student + machine dictactor</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://firman-qs.github.io/tags/software/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://firman-qs.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-12-25T00:00:00+00:00</updated>
+    <id>https://firman-qs.github.io/tags/software/atom.xml</id>
+    <entry xml:lang="en">
+        <title>What We Teach, What We License, and What We Ignore</title>
+        <published>2025-12-25T00:00:00+00:00</published>
+        <updated>2025-12-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://firman-qs.github.io/education/moving-to-oss/"/>
+        <id>https://firman-qs.github.io/education/moving-to-oss/</id>
+        
+        <content type="html" xml:base="https://firman-qs.github.io/education/moving-to-oss/">&lt;p&gt;Most of us have experienced this since our school days. From an early age, we
+are taught to use proprietary software: Microsoft Office, Adobe products,
+Windows. Later, at university, the list grows longer—SPSS, MATLAB, Delphi, and
+many others. In an ideal situation, this wouldn’t be a problem. If students are
+financially able to buy the software, or if schools and universities provide
+proper student licenses, everything works as intended. That’s great. But what if
+they don’t?&lt;&#x2F;p&gt;
+&lt;p&gt;When licenses are not provided, an uncomfortable reality appears: &lt;em&gt;piracy&lt;&#x2F;em&gt;. The
+situation becomes even worse when teachers or lecturers require students to use
+specific proprietary software without offering any legal access to it. In a
+research methodology course, we were taught using SPSS. In scientific computing,
+we were taught MATLAB (or similar tools). In principle, this is fine. Software
+is just a medium. Ideally, students are first taught the underlying theory, and
+the software merely helps automate calculations that would otherwise be tedious
+and error-prone. MATLAB, for example, also makes visualization much more
+convenient. The real problem starts when exams or assignments require
+submissions in a specific proprietary format, while the university provides no
+license at all.&lt;&#x2F;p&gt;
+&lt;p&gt;Of course, many universities do provide licenses—&lt;em&gt;but not all&lt;&#x2F;em&gt;. Sometimes
+students rely on free trials, which act as a temporary escape hatch. But even
+then, another issue remains: students are trained exclusively on one specific
+software ecosystem. Not all students have the time, resources, or background to
+independently learn alternative tools outside the classroom—especially in
+developing countries. When educational institutions fail to provide licenses,
+students are left with only two options: &lt;em&gt;buy the software themselves (buying
+can also be done illegally), or crack it&lt;&#x2F;em&gt;. The latter is clearly undesirable,
+yet it is a well-known and often normalized practice in certain societies.&lt;&#x2F;p&gt;
+&lt;p&gt;What makes this situation particularly ironic is that instructors often loudly
+emphasize &lt;em&gt;“avoid plagiarism”, while quietly turning away from software piracy&lt;&#x2F;em&gt;.
+I try to give them the benefit of the doubt—perhaps they simply don’t realize
+the contradiction. Many of them are not software engineers or creators, so they
+may not directly feel the impact.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Still, that doesn’t make it right.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-foss&quot;&gt;The FOSS&lt;&#x2F;h2&gt;
+&lt;p&gt;There is, of course, no shortage of free and open-source software out there.
+This naturally raises a simple question: &lt;em&gt;why don’t we use them?&lt;&#x2F;em&gt; The simplest
+answer is also the most honest one—&lt;em&gt;we are trained from a very young age&lt;&#x2F;em&gt; to use
+proprietary software. From childhood, we are introduced to Windows. When we
+learn to write documents, create presentations, or manage spreadsheets, we are
+taught Microsoft Office. When we work with vector graphics, we are taught Corel
+or Adobe. For bitmap image processing, Adobe again. Social science students
+learn statistics through SPSS; qualitative research introduces NVivo; scientific
+research relies on OriginPro, MATLAB, and so on.&lt;&#x2F;p&gt;
+&lt;p&gt;Now imagine a &lt;em&gt;different default&lt;&#x2F;em&gt;: the laptops we bought came with Linux and
+LibreOffice preinstalled. Of course, LibreOffice may not feel as convenient as
+Microsoft Office for advanced academic writing—but then again, there is
+$\LaTeX$. I’m not saying we should teach $\LaTeX$ to elementary or high school
+students—that would be extreme. At that level, open-source office tools are more
+than sufficient, especially since students are not yet producing long or complex
+documents. Once students reach university, however, LaTeX becomes a very
+reasonable option.&lt;&#x2F;p&gt;
+&lt;p&gt;For vector graphics, we have Inkscape. For bitmap editing, GIMP. For 3D
+modeling, Blender. For statistics and programming—both beginner-friendly and
+advanced—we have Python, paired with the beautifully expressive Jupyter
+Notebook. Personally, I believe that translating statistical theory into lines
+of code—rather than clicking through menus—leads to deeper, more meaningful
+learning.&lt;&#x2F;p&gt;
+&lt;p&gt;All of this makes one thing very clear: the opportunity to use open-source
+alternatives is wide open. The real question is, whether we are willing to be
+open to them.&lt;&#x2F;p&gt;
+&lt;p&gt;At the same time, students should not be entirely dependent on what is taught in
+schools or universities. They must learn independently. In my opinion, the best
+way to learn is self-learning. &lt;em&gt;Stop immediately asking questions&lt;&#x2F;em&gt;—of course, ask
+when you truly need urgent clarification—but &lt;em&gt;try first to think, search, reason,
+answer, and verify things yourself&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Also, sometimes instructors say, &lt;em&gt;“This is not our field, so I won’t go too far into
+it.”&lt;&#x2F;em&gt; Unfortunately, this is often misunderstood by students as &lt;em&gt;“I don’t need to
+learn anything outside my major.”&lt;&#x2F;em&gt; I strongly disagree. We should learn across
+disciplines—or at least those closely connected to our field—as much as
+possible, even if not deeply. Multidisciplinary knowledge is no longer optional;
+it is a necessity, alongside having one or two core specializations.&lt;&#x2F;p&gt;
+&lt;p&gt;For this last point, I actually have more to say. The issue is interesting
+enough that I plan to write about it in a future post.&lt;&#x2F;p&gt;
+&lt;p&gt;Finally, a small but important note: I am not saying that proprietary software
+is bad. On the contrary, there are clear reasons why Windows, Microsoft Office,
+Adobe, and similar tools are so popular. Beyond being widely taught, they are
+genuinely comfortable and polished products. And that very comfort—the ease they
+provide—is precisely what made them dominant in the first place.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
