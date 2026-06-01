@@ -1,0 +1,33 @@
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = "Firman Q. S."
+theme = "hugo-modus"
+copyright = "&copy; 2026"
+
+[params]
+description = "A physics student currently pursuing a master’s degree at physics ed. Live at the intersection of physics and programming. Books without equations are rarely enjoyable reads."
+math = true
+
+[taxonomies]
+series = "series"
+
+[markup]
+[markup.highlight]
+style = "friendly"
+[markup.goldmark]
+[markup.goldmark.extensions]
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['\(', '\)'], ['$', '$'] ]
+
+[menus]
+[[menus.main]]
+name = "Projects & Publications"
+pageRef = "/projects"
+weight = 10
+[[menus.main]]
+name = "GitHub"
+url = "https://github.com/firman-qs"
+weight = 20

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Projects &amp; Publications on Firman Q. S.</title>
+		<link>http://localhost:1313/projects/</link>
+		<description>Recent content in Projects &amp; Publications on Firman Q. S.</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+			<copyright>&amp;copy; 2026</copyright>
+		
+		
+			<lastBuildDate>Sun, 08 Mar 2026 22:50:00 +0800</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Working with smaller chunks of thoughts</title>
+				<link>http://localhost:1313/projects/projects/</link>
+				<pubDate>Sun, 08 Mar 2026 22:50:00 +0800</pubDate>
+				<guid>http://localhost:1313/projects/projects/</guid>
+				<description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://data.brin.go.id/dataverse/BRIN_ID/?q=Ferron&#34;&gt;Differential evolution algorithm for solving time domain electromagnetics (TDEM) optimization problem, written in Rust&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://elm.sim/&#34;&gt;Elm, The electricity and magnetism virtual laboratory&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://scholar.google.com/citations?user=CjFKELwAAAAJ&amp;amp;hl=en&#34;&gt;My lonely google scholar&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+	</channel>
+</rss>

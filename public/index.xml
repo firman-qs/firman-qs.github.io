@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Firman Q. S.</title>
+		<link>http://localhost:1313/</link>
+		<description>Recent content on Firman Q. S.</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+			<copyright>&amp;copy; 2026</copyright>
+		
+		
+			<lastBuildDate>Sun, 08 Mar 2026 22:50:00 +0800</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title></title>
+				<link>http://localhost:1313/projects/</link>
+				<pubDate>Sun, 08 Mar 2026 22:50:00 +0800</pubDate>
+				<guid>http://localhost:1313/projects/</guid>
+				<description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://scholar.google.com/citations?user=CjFKELwAAAAJ&amp;amp;hl=en&#34;&gt;My lonely google scholar&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;2026&#34;&gt;2026&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://data.brin.go.id/dataverse/BRIN_ID/?q=Ferron&#34;&gt;Differential evolution algorithm for solving time domain electromagnetics (TDEM) optimization problem, written in Rust&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;2025&#34;&gt;2025&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://elm.sim/&#34;&gt;Elm, The electricity and magnetism virtual laboratory&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+			<item>
+				<title>Hacking on XMonad </title>
+				<link>http://localhost:1313/posts/xmonad-conf/</link>
+				<pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/xmonad-conf/</guid>
+				<description>&lt;p&gt;Haskell, i think, is the most artistic programming language among other i&amp;rsquo;ve&#xA;learned. And, as window manager hoper, there is one written in Haskell, the name&#xA;already show the signature, &amp;ldquo;Xmonad&amp;rdquo;. Originally, this was my old archlinux&#xA;&lt;a href=&#34;https://distro.tube/dtos/&#34;&gt;DTOS&lt;/a&gt; configuration, but now i am on fedora (update:&#xA;i am back &lt;a href=&#34;https://archlinux.org/&#34;&gt;home&lt;/a&gt;). I have tested on my fedora and it&#xA;works fine. For other distributions it should be the same, just complete the&#xA;necessary packages. I&amp;rsquo;ll try to give a little guidance.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Euler-Lagrange Equation</title>
+				<link>http://localhost:1313/posts/euler-lagrange/</link>
+				<pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/euler-lagrange/</guid>
+				<description>&lt;p&gt;Kita akan memulai dengan $S$ sebagai integral dari fungsional $f[...]$&lt;/p&gt;&#xA;$$&#xD;&#xA;S = \int_{x_1}^{x_2} \mathrm{d}x~f[y(x), y&#39;(x), x] \tag{1}&#xD;&#xA;$$&lt;p&gt;di mana $y(x)$ adalah kurva yang belum diketahui, yang menghubungkan ($x_1, y_1$) dan ($x_2, y_2$), sehingga&lt;/p&gt;&#xA;$$&#xD;&#xA;y(x_1) = y_1 ~~~\text{and}~~~ y(x_2) = y_2\tag{2}&#xD;&#xA;$$&lt;p&gt;Di antara semua kemungkinan kurva yang memenuhi Persamaan (2), kita harus&#xA;mencari satu kurva yang meminimumkan (atau memaksimumkan, atau setidaknya&#xA;stasionar) integral $S$. Perhatikan bahwa fungsional $f[...]$ pada Persamaan&#xA;(1) adalah fungsi dari tiga variabel (variabel dalam konteks fungsional bisa&#xA;berupa fungsi). Namun, karena integral mengikuti lintasan $y=y(x)$, integrand&#xA;$f[y(x),y&#39;(x), x]$ adalah fungsi dari satu variabel $x$.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Plotting Fresnel Equation</title>
+				<link>http://localhost:1313/posts/fresnel-plot-py/</link>
+				<pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/fresnel-plot-py/</guid>
+				<description>&lt;h2 id=&#34;introduction-simple-equation-derivation&#34;&gt;Introduction: Simple Equation Derivation&lt;/h2&gt;&#xA;&lt;p&gt;We start with Fresnel Equations&lt;/p&gt;&#xA;$$&#xD;&#xA;\tilde{E}_{0_R} &#xD;&#xA;= \left(\frac{\alpha-\beta}{\alpha+\beta}\right)\tilde{E}_{0_I}, ~~~~~~ \tilde{E}_{0_T} &#xD;&#xA;= \left(\frac{2}{\alpha + \beta}\right) \tilde{E}_{0_I}. \tag{1}&#xD;&#xA;$$&lt;p&gt;where&lt;/p&gt;&#xA;$$&#xD;&#xA;\alpha\equiv \frac{\cos\theta_T}{\cos\theta_I}, \tag{2}&#xD;&#xA;$$&lt;p&gt;and&lt;/p&gt;&#xA;$$&#xD;&#xA;\beta \equiv \frac{\mu_1 v_1}{\mu_2 v_2} = \frac{\mu_1 n_2}{\mu_2 n_1}. \tag{3}&#xD;&#xA;$$&lt;p&gt;If we assume the special case where $\mu_1 \cong \mu_2 \cong \mu_0$ then&lt;/p&gt;&#xA;$$&#xD;&#xA;\beta \cong \frac{n_2}{n_1}. \tag{4}&#xD;&#xA;$$&lt;p&gt;Based on Snell&amp;rsquo;s law we know that&lt;/p&gt;&#xA;$$&#xD;&#xA;\sin\theta_T = \frac{n_1}{n_2} \sin\theta_I. \tag{5}&#xD;&#xA;$$&lt;p&gt;Using identity $\cos^2\theta_T+\sin^2\theta_T = 1$ then the previous $ \alpha $ equation (2) becomes&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Neovim Setup with Lazy.nvim Plugin Manager</title>
+				<link>http://localhost:1313/posts/nvim-conf/</link>
+				<pubDate>Fri, 03 Nov 2023 09:03:55 +0700</pubDate>
+				<guid>http://localhost:1313/posts/nvim-conf/</guid>
+				<description>&lt;p&gt;I’ll write this soon, in the meantime please visit my nvim configuration repository, it was just updated.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/firman-qs/nvim/&#34;&gt;https://github.com/firman-qs/nvim/&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
