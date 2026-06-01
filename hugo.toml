@@ -4,6 +4,10 @@ title = "Firman Q. S."
 theme = "hugo-modus"
 copyright = "&copy; 2026"
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [params]
 description = "A physics student currently pursuing a master’s degree at physics ed. Live at the intersection of physics and programming. Books without equations are rarely enjoyable reads."
 math = true
