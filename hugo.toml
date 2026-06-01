@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://firman-qs.github.io/'
 locale = 'en-us'
 title = "Firman Q. S."
 theme = "hugo-modus"
@@ -17,7 +17,7 @@ series = "series"
 
 [markup]
 [markup.highlight]
-style = "friendly"
+noClasses = false
 [markup.goldmark]
 [markup.goldmark.extensions]
 [markup.goldmark.extensions.passthrough]

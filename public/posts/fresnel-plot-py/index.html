@@ -28,12 +28,9 @@
 		<meta property="article:modified_time" content="2023-12-11T00:00:00+00:00">
 
 
-
 <link rel="canonical" href="http://localhost:1313/posts/fresnel-plot-py/" />
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-
-
-
+ 
 <link rel="stylesheet" href="/css/dist/main.min.7bcd1ef62c6ac84ace46fb482120e8ac9df9253416fa9b1d89b211e2cd332465.css" />
 
 
@@ -50,14 +47,10 @@
     media="(prefers-color-scheme: dark)"
 />
 
+ 
 
 
-
-
-
-
-
-    <script>
+ <script>
     MathJax = {
         tex: {
             displayMath: [
@@ -81,8 +74,14 @@
     src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"
     async
 ></script>
+ 
 
 
+<link
+    rel="stylesheet"
+    href="css/custom.css"
+    media="(prefers-color-scheme: dark)"
+/>
 
   </head>
   <body>
@@ -165,172 +164,172 @@ $$<p>For reflectance and transmittance</p>
   <path d="M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z" />
   </svg></a> </h2>
 <p><a href="https://github.com/firman-qs/fresnel-equation-plot-python">https://github.com/firman-qs/fresnel-equation-plot-python</a>.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#4070a0">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">FRESNEL EQUATION PLOT.
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">Today we will plot FRESNEL EQUATION.
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">Required libraries: NumPy and Matplotlib.
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"># Import Library</span>
-</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">numpy</span> <span style="color:#007020;font-weight:bold">as</span> <span style="color:#0e84b5;font-weight:bold">np</span>
-</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">matplotlib.pyplot</span> <span style="color:#007020;font-weight:bold">as</span> <span style="color:#0e84b5;font-weight:bold">plt</span>
-</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">matplotlib</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#4070a0">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">For mathematical beauty, if you have, you can use latex fonts.
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>rc_fonts <span style="color:#666">=</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;text.usetex&#34;</span>: <span style="color:#007020;font-weight:bold">True</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;font.size&#34;</span>: <span style="color:#40a070">14</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;mathtext.default&#34;</span>: <span style="color:#4070a0">&#34;regular&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;axes.titlesize&#34;</span>: <span style="color:#40a070">15</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;axes.labelsize&#34;</span>: <span style="color:#40a070">15</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;legend.fontsize&#34;</span>: <span style="color:#40a070">14</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;xtick.labelsize&#34;</span>: <span style="color:#40a070">14</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;ytick.labelsize&#34;</span>: <span style="color:#40a070">14</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;figure.titlesize&#34;</span>: <span style="color:#40a070">15</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;text.latex.preamble&#34;</span>: <span style="color:#4070a0">r</span><span style="color:#4070a0">&#34;\usepackage{amsmath,amssymb,bm,physics,lmodern}&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;font.family&#34;</span>: <span style="color:#4070a0">&#34;serif&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;font.serif&#34;</span>: <span style="color:#4070a0">&#34;computer modern roman&#34;</span>,
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>matplotlib<span style="color:#666">.</span>rcParams<span style="color:#666">.</span>update(rc_fonts)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#4070a0">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">First we determine the refractive index of the medium,
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">for example from air (1.0) to glass (1.5).
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>n_1 <span style="color:#666">=</span> <span style="color:#40a070">1.0</span>  <span style="color:#60a0b0;font-style:italic"># refractive index of air</span>
-</span></span><span style="display:flex;"><span>n_2 <span style="color:#666">=</span> <span style="color:#40a070">1.5</span>  <span style="color:#60a0b0;font-style:italic"># refractive index of glass</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">alphaAndBeta</span>(theta_i):
-</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#39;&#39;&#39;
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">    Function that returns alpha (as a function of the angle of incidence) and 
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">    beta (you can see equations 9.106 and 9.108 in Griffiths&#39;s book Introduction
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">    to Electrodynamics)
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">    &#39;&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>    alpha <span style="color:#666">=</span> (np<span style="color:#666">.</span>sqrt(<span style="color:#40a070">1</span><span style="color:#666">-</span>((n_1<span style="color:#666">/</span>n_2)<span style="color:#666">*</span>np<span style="color:#666">.</span>sin(theta_i))<span style="color:#666">**</span><span style="color:#40a070">2</span>))<span style="color:#666">/</span>(np<span style="color:#666">.</span>cos(theta_i))
-</span></span><span style="display:flex;"><span>    beta <span style="color:#666">=</span> n_2<span style="color:#666">/</span>n_1
-</span></span><span style="display:flex;"><span>    <span style="color:#007020;font-weight:bold">return</span> alpha, beta
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">reflectionAndTransmissionCoefficient</span>(theta_i):
-</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#39;&#39;&#39;
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">    Function that returns the reflection coefficient and transmission coefficient
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">    (you can read the Fresnel equation (Equation 9.109) in Griffiths&#39;s book:
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">    Introduction to Electrodynamics).
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">    &#39;&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>    alpha <span style="color:#666">=</span> alphaAndBeta(theta_i)[<span style="color:#40a070">0</span>]
-</span></span><span style="display:flex;"><span>    beta <span style="color:#666">=</span> alphaAndBeta(theta_i)[<span style="color:#40a070">1</span>]
-</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic"># (Equation 9.109 Griffith Introduction to Electrodynamics).</span>
-</span></span><span style="display:flex;"><span>    reflection_coefficient <span style="color:#666">=</span> (alpha<span style="color:#666">-</span>beta)<span style="color:#666">/</span>(alpha<span style="color:#666">+</span>beta)
-</span></span><span style="display:flex;"><span>    transmission_coefficient <span style="color:#666">=</span> <span style="color:#40a070">2</span><span style="color:#666">/</span>(alpha<span style="color:#666">+</span>beta)
-</span></span><span style="display:flex;"><span>    <span style="color:#007020;font-weight:bold">return</span> reflection_coefficient, transmission_coefficient
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">reflectanceAndTransmittance</span>(theta_i):
-</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">&#34;&#34;&#34; Reflectance and Transmittance Function.
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">    A function that returns the transmittance reflectance (Equation 9.115 &amp; 9.116
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">    in Griffiths&#39;s book Introduction to Electrodynamics).
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">    &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    alpha <span style="color:#666">=</span> alphaAndBeta(theta_i)[<span style="color:#40a070">0</span>]
-</span></span><span style="display:flex;"><span>    beta <span style="color:#666">=</span> alphaAndBeta(theta_i)[<span style="color:#40a070">1</span>]
-</span></span><span style="display:flex;"><span>    <span style="color:#60a0b0;font-style:italic"># (Equation 9.115 &amp; 9.116 Griffith Introduction to Electrodynamics).</span>
-</span></span><span style="display:flex;"><span>    reflectance <span style="color:#666">=</span> ((alpha<span style="color:#666">-</span>beta)<span style="color:#666">/</span>(alpha<span style="color:#666">+</span>beta))<span style="color:#666">**</span><span style="color:#40a070">2</span>
-</span></span><span style="display:flex;"><span>    transmittance <span style="color:#666">=</span> alpha<span style="color:#666">*</span>beta<span style="color:#666">*</span>((<span style="color:#40a070">2</span><span style="color:#666">/</span>(alpha<span style="color:#666">+</span>beta))<span style="color:#666">**</span><span style="color:#40a070">2</span>)
-</span></span><span style="display:flex;"><span>    <span style="color:#007020;font-weight:bold">return</span> reflectance, transmittance
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"># Creates an array of theta_i axis values</span>
-</span></span><span style="display:flex;"><span>theta_range <span style="color:#666">=</span> np<span style="color:#666">.</span>radians(np<span style="color:#666">.</span>linspace(<span style="color:#40a070">0</span>, <span style="color:#40a070">100</span>, <span style="color:#40a070">100</span>))
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"># Create an array of transmission &amp; reflection coefficient values ​​for each</span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"># theta_i in theta_range</span>
-</span></span><span style="display:flex;"><span>reflection_coefficient <span style="color:#666">=</span> np<span style="color:#666">.</span>array(
-</span></span><span style="display:flex;"><span>    [reflectionAndTransmissionCoefficient(theta)[<span style="color:#40a070">0</span>] <span style="color:#007020;font-weight:bold">for</span> theta <span style="color:#007020;font-weight:bold">in</span> theta_range])
-</span></span><span style="display:flex;"><span>transmission_coefficient <span style="color:#666">=</span> np<span style="color:#666">.</span>array(
-</span></span><span style="display:flex;"><span>    [reflectionAndTransmissionCoefficient(theta)[<span style="color:#40a070">1</span>] <span style="color:#007020;font-weight:bold">for</span> theta <span style="color:#007020;font-weight:bold">in</span> theta_range])
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"># Create an array of transmittance &amp; reflectance values ​​for each theta_i</span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"># in theta_range</span>
-</span></span><span style="display:flex;"><span>reflectance <span style="color:#666">=</span> np<span style="color:#666">.</span>array([reflectanceAndTransmittance(theta)[<span style="color:#40a070">0</span>]
-</span></span><span style="display:flex;"><span>                        <span style="color:#007020;font-weight:bold">for</span> theta <span style="color:#007020;font-weight:bold">in</span> theta_range])
-</span></span><span style="display:flex;"><span>transmittance <span style="color:#666">=</span> np<span style="color:#666">.</span>array([reflectanceAndTransmittance(theta)[<span style="color:#40a070">1</span>]
-</span></span><span style="display:flex;"><span>                          <span style="color:#007020;font-weight:bold">for</span> theta <span style="color:#007020;font-weight:bold">in</span> theta_range])
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"># Brewster&#39;s angle</span>
-</span></span><span style="display:flex;"><span>theta_brewster <span style="color:#666">=</span> np<span style="color:#666">.</span>degrees(np<span style="color:#666">.</span>arctan(n_2<span style="color:#666">/</span>n_1))
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"># Tick for x-axis and y-axis</span>
-</span></span><span style="display:flex;"><span>ticks_x <span style="color:#666">=</span> np<span style="color:#666">.</span>setdiff1d(np<span style="color:#666">.</span>append(np<span style="color:#666">.</span>arange(<span style="color:#40a070">0</span>, <span style="color:#40a070">90</span>, <span style="color:#40a070">10</span>),
-</span></span><span style="display:flex;"><span>                       np<span style="color:#666">.</span>round([theta_brewster], <span style="color:#40a070">3</span>)), [<span style="color:#40a070">50</span>, <span style="color:#40a070">60</span>])
-</span></span><span style="display:flex;"><span>ticks_y <span style="color:#666">=</span> np<span style="color:#666">.</span>arange(<span style="color:#666">-</span><span style="color:#40a070">0.4</span>, <span style="color:#40a070">1</span>, <span style="color:#40a070">0.2</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#4070a0">&#39;&#39;&#39;
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">Plot of Reflection and Transmission Coefficients
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">&#39;&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>figure, (graph_1, graph_2) <span style="color:#666">=</span> plt<span style="color:#666">.</span>subplots(<span style="color:#40a070">1</span>, <span style="color:#40a070">2</span>, figsize<span style="color:#666">=</span>(<span style="color:#40a070">12</span>, <span style="color:#40a070">6</span>))
-</span></span><span style="display:flex;"><span>graph_1<span style="color:#666">.</span>plot(np<span style="color:#666">.</span>degrees(theta_range), reflection_coefficient,
-</span></span><span style="display:flex;"><span>             label<span style="color:#666">=</span><span style="color:#4070a0">r</span><span style="color:#4070a0">&#39;Reflection Coefficient $\frac{E_</span><span style="color:#70a0d0">{0_R}</span><span style="color:#4070a0">}{E_</span><span style="color:#70a0d0">{0_I}</span><span style="color:#4070a0">}$&#39;</span>, linewidth<span style="color:#666">=</span><span style="color:#40a070">2</span>, color<span style="color:#666">=</span><span style="color:#4070a0">&#39;blue&#39;</span>)
-</span></span><span style="display:flex;"><span>graph_1<span style="color:#666">.</span>plot(np<span style="color:#666">.</span>degrees(theta_range), transmission_coefficient,
-</span></span><span style="display:flex;"><span>             label<span style="color:#666">=</span><span style="color:#4070a0">r</span><span style="color:#4070a0">&#39;Transmission Coefficient $\frac{E_</span><span style="color:#70a0d0">{0_T}</span><span style="color:#4070a0">}{E_</span><span style="color:#70a0d0">{0_I}</span><span style="color:#4070a0">}$&#39;</span>, linewidth<span style="color:#666">=</span><span style="color:#40a070">2</span>, color<span style="color:#666">=</span><span style="color:#4070a0">&#39;orange&#39;</span>)
-</span></span><span style="display:flex;"><span>graph_1<span style="color:#666">.</span>set_xlabel(<span style="color:#4070a0">r</span><span style="color:#4070a0">&#39;Angle of Incidence $\theta_I$&#39;</span>)
-</span></span><span style="display:flex;"><span>graph_1<span style="color:#666">.</span>set_ylabel(<span style="color:#4070a0">&#39;Reflection/Transmission Coefficients&#39;</span>)
-</span></span><span style="display:flex;"><span>graph_1<span style="color:#666">.</span>set_yticks(ticks<span style="color:#666">=</span>ticks_y)
-</span></span><span style="display:flex;"><span>graph_1<span style="color:#666">.</span>set_title(<span style="color:#4070a0">r</span><span style="color:#4070a0">&#39;&#39;&#39;Reflection ($r=\frac{E_</span><span style="color:#70a0d0">{0_R}</span><span style="color:#4070a0">}{E_</span><span style="color:#70a0d0">{0_I}</span><span style="color:#4070a0">}$) and
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">Transmission ($t=\frac{E_</span><span style="color:#70a0d0">{0_T}</span><span style="color:#4070a0">}{E_</span><span style="color:#70a0d0">{0_I}</span><span style="color:#4070a0">}$) Coefficients as a function of Angle of Incidence ($\theta_i$)&#39;&#39;&#39;</span>, pad<span style="color:#666">=</span><span style="color:#40a070">20</span>)
-</span></span><span style="display:flex;"><span>graph_1<span style="color:#666">.</span>axis([<span style="color:#40a070">0</span>, <span style="color:#40a070">90</span>, <span style="color:#666">-</span><span style="color:#40a070">0.4</span>, <span style="color:#40a070">1.0</span>])
-</span></span><span style="display:flex;"><span>graph_1<span style="color:#666">.</span>tick_params(top<span style="color:#666">=</span><span style="color:#007020;font-weight:bold">True</span>, right<span style="color:#666">=</span><span style="color:#007020;font-weight:bold">True</span>, direction<span style="color:#666">=</span><span style="color:#4070a0">&#34;in&#34;</span>, length<span style="color:#666">=</span><span style="color:#40a070">7</span>, width<span style="color:#666">=</span><span style="color:#40a070">0.9</span>)
-</span></span><span style="display:flex;"><span>graph_1<span style="color:#666">.</span>legend(loc<span style="color:#666">=</span><span style="color:#4070a0">&#34;upper right&#34;</span>, bbox_to_anchor<span style="color:#666">=</span>(<span style="color:#40a070">0.6</span>, <span style="color:#40a070">0.8</span>))
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#4070a0">&#39;&#39;&#39;
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">Transmittance &amp; Reflectance Plot
-</span></span></span><span style="display:flex;"><span><span style="color:#4070a0">&#39;&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>graph_2<span style="color:#666">.</span>plot(np<span style="color:#666">.</span>degrees(theta_range), reflectance,
-</span></span><span style="display:flex;"><span>             label<span style="color:#666">=</span><span style="color:#4070a0">r</span><span style="color:#4070a0">&#39;Reflectance $R$&#39;</span>, linewidth<span style="color:#666">=</span><span style="color:#40a070">2</span>, color<span style="color:#666">=</span><span style="color:#4070a0">&#39;blue&#39;</span>)
-</span></span><span style="display:flex;"><span>graph_2<span style="color:#666">.</span>plot(np<span style="color:#666">.</span>degrees(theta_range), transmittance,
-</span></span><span style="display:flex;"><span>             label<span style="color:#666">=</span><span style="color:#4070a0">r</span><span style="color:#4070a0">&#39;Transmittance $T$&#39;</span>, linewidth<span style="color:#666">=</span><span style="color:#40a070">2</span>, color<span style="color:#666">=</span><span style="color:#4070a0">&#39;orange&#39;</span>)
-</span></span><span style="display:flex;"><span>graph_2<span style="color:#666">.</span>set_xlabel(<span style="color:#4070a0">r</span><span style="color:#4070a0">&#39;Angle of Incidence $\theta_I$&#39;</span>)
-</span></span><span style="display:flex;"><span>graph_2<span style="color:#666">.</span>set_ylabel(<span style="color:#4070a0">&#39;Reflectance/Transmittance&#39;</span>)
-</span></span><span style="display:flex;"><span>graph_2<span style="color:#666">.</span>set_yticks(ticks<span style="color:#666">=</span>ticks_y)
-</span></span><span style="display:flex;"><span>graph_2<span style="color:#666">.</span>set_title(
-</span></span><span style="display:flex;"><span>    <span style="color:#4070a0">r</span><span style="color:#4070a0">&#39;Reflectance and Transmittance as a function of Angle of Incidence ($\theta_i$)&#39;</span>, pad<span style="color:#666">=</span><span style="color:#40a070">20</span>)
-</span></span><span style="display:flex;"><span>graph_2<span style="color:#666">.</span>axis([<span style="color:#40a070">0</span>, <span style="color:#40a070">90</span>, <span style="color:#666">-</span><span style="color:#40a070">0.05</span>, <span style="color:#40a070">1.05</span>])
-</span></span><span style="display:flex;"><span>graph_2<span style="color:#666">.</span>tick_params(top<span style="color:#666">=</span><span style="color:#007020;font-weight:bold">True</span>, right<span style="color:#666">=</span><span style="color:#007020;font-weight:bold">True</span>, direction<span style="color:#666">=</span><span style="color:#4070a0">&#34;in&#34;</span>, length<span style="color:#666">=</span><span style="color:#40a070">7</span>, width<span style="color:#666">=</span><span style="color:#40a070">0.9</span>)
-</span></span><span style="display:flex;"><span>graph_2<span style="color:#666">.</span>legend(loc<span style="color:#666">=</span><span style="color:#4070a0">&#34;upper right&#34;</span>, bbox_to_anchor<span style="color:#666">=</span>(<span style="color:#40a070">0.42</span>, <span style="color:#40a070">0.9</span>))
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"># General Properties of Graph 1 &amp; 2</span>
-</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">2</span>):
-</span></span><span style="display:flex;"><span>    <span style="color:#007020">locals</span>()[<span style="color:#4070a0">f</span><span style="color:#4070a0">&#34;graph_</span><span style="color:#70a0d0">{</span>i<span style="color:#666">+</span><span style="color:#40a070">1</span><span style="color:#70a0d0">}</span><span style="color:#4070a0">&#34;</span>]<span style="color:#666">.</span>grid()
-</span></span><span style="display:flex;"><span>    <span style="color:#007020">locals</span>()[<span style="color:#4070a0">f</span><span style="color:#4070a0">&#34;graph_</span><span style="color:#70a0d0">{</span>i<span style="color:#666">+</span><span style="color:#40a070">1</span><span style="color:#70a0d0">}</span><span style="color:#4070a0">&#34;</span>]<span style="color:#666">.</span>annotate(<span style="color:#4070a0">r</span><span style="color:#4070a0">&#34;Brewster&#39;s Angle $\theta_B$&#34;</span>,
-</span></span><span style="display:flex;"><span>                                      xy<span style="color:#666">=</span>(np<span style="color:#666">.</span>degrees(np<span style="color:#666">.</span>arctan(n_2<span style="color:#666">/</span>n_1)), <span style="color:#40a070">0.0</span>), xytext<span style="color:#666">=</span>(<span style="color:#40a070">33</span>, <span style="color:#40a070">0.2</span>),
-</span></span><span style="display:flex;"><span>                                      arrowprops<span style="color:#666">=</span>{<span style="color:#4070a0">&#34;arrowstyle&#34;</span>: <span style="color:#4070a0">&#34;-|&gt;&#34;</span>, <span style="color:#4070a0">&#34;color&#34;</span>: <span style="color:#4070a0">&#34;black&#34;</span>})
-</span></span><span style="display:flex;"><span>    <span style="color:#007020">locals</span>()[<span style="color:#4070a0">f</span><span style="color:#4070a0">&#34;graph_</span><span style="color:#70a0d0">{</span>i<span style="color:#666">+</span><span style="color:#40a070">1</span><span style="color:#70a0d0">}</span><span style="color:#4070a0">&#34;</span>]<span style="color:#666">.</span>set_xticks(ticks_x,
-</span></span><span style="display:flex;"><span>                                        [<span style="color:#4070a0">r</span><span style="color:#4070a0">&#34;$</span><span style="color:#70a0d0">{angle}</span><span style="color:#4070a0">^\circ$&#34;</span><span style="color:#666">.</span>format(angle<span style="color:#666">=</span>angle) <span style="color:#007020;font-weight:bold">for</span> angle <span style="color:#007020;font-weight:bold">in</span> ticks_x])
-</span></span><span style="display:flex;"><span>    <span style="color:#007020">locals</span>()[<span style="color:#4070a0">f</span><span style="color:#4070a0">&#34;graph_</span><span style="color:#70a0d0">{</span>i<span style="color:#666">+</span><span style="color:#40a070">1</span><span style="color:#70a0d0">}</span><span style="color:#4070a0">&#34;</span>]<span style="color:#666">.</span>axhline(<span style="color:#40a070">0.0</span>,
-</span></span><span style="display:flex;"><span>                                     linewidth<span style="color:#666">=</span><span style="color:#40a070">1</span>, color<span style="color:#666">=</span><span style="color:#4070a0">&#39;green&#39;</span>, linestyle<span style="color:#666">=</span><span style="color:#4070a0">&#39;--&#39;</span>)
-</span></span><span style="display:flex;"><span>    <span style="color:#007020">locals</span>()[<span style="color:#4070a0">f</span><span style="color:#4070a0">&#34;graph_</span><span style="color:#70a0d0">{</span>i<span style="color:#666">+</span><span style="color:#40a070">1</span><span style="color:#70a0d0">}</span><span style="color:#4070a0">&#34;</span>]<span style="color:#666">.</span>axvline(np<span style="color:#666">.</span>degrees(np<span style="color:#666">.</span>arctan(n_2<span style="color:#666">/</span>n_1)),
-</span></span><span style="display:flex;"><span>                                     linewidth<span style="color:#666">=</span><span style="color:#40a070">1</span>, color<span style="color:#666">=</span><span style="color:#4070a0">&#39;green&#39;</span>, linestyle<span style="color:#666">=</span><span style="color:#4070a0">&#39;--&#39;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"># Axis thickness</span>
-</span></span><span style="display:flex;"><span><span style="color:#007020;font-weight:bold">for</span> axis <span style="color:#007020;font-weight:bold">in</span> [<span style="color:#4070a0">&#39;top&#39;</span>, <span style="color:#4070a0">&#39;bottom&#39;</span>, <span style="color:#4070a0">&#39;left&#39;</span>, <span style="color:#4070a0">&#39;right&#39;</span>]:
-</span></span><span style="display:flex;"><span>    graph_1<span style="color:#666">.</span>spines[axis]<span style="color:#666">.</span>set_linewidth(<span style="color:#40a070">0.9</span>)
-</span></span><span style="display:flex;"><span>    graph_2<span style="color:#666">.</span>spines[axis]<span style="color:#666">.</span>set_linewidth(<span style="color:#40a070">0.9</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"># Subplots settings</span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#666">.</span>subplots_adjust(left<span style="color:#666">=</span><span style="color:#40a070">0.1</span>,
-</span></span><span style="display:flex;"><span>                    bottom<span style="color:#666">=</span><span style="color:#40a070">0.1</span>,
-</span></span><span style="display:flex;"><span>                    right<span style="color:#666">=</span><span style="color:#40a070">0.95</span>,
-</span></span><span style="display:flex;"><span>                    top<span style="color:#666">=</span><span style="color:#40a070">0.84</span>,
-</span></span><span style="display:flex;"><span>                    wspace<span style="color:#666">=</span><span style="color:#40a070">0.2</span>,
-</span></span><span style="display:flex;"><span>                    hspace<span style="color:#666">=</span><span style="color:#40a070">0.1</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#666">.</span>show()
-</span></span><span style="display:flex;"><span><span style="color:#60a0b0;font-style:italic"># Save plot to png file.</span>
-</span></span><span style="display:flex;"><span>figure<span style="color:#666">.</span>savefig(<span style="color:#4070a0">&#34;fresnel_equation_plot_python.png&#34;</span>, bbox_inches<span style="color:#666">=</span><span style="color:#4070a0">&#39;tight&#39;</span>)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">FRESNEL EQUATION PLOT.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">Today we will plot FRESNEL EQUATION.
+</span></span></span><span class="line"><span class="cl"><span class="s2">Required libraries: NumPy and Matplotlib.
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Import Library</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">For mathematical beauty, if you have, you can use latex fonts.
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">rc_fonts</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;text.usetex&#34;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;font.size&#34;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;mathtext.default&#34;</span><span class="p">:</span> <span class="s2">&#34;regular&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;axes.titlesize&#34;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;axes.labelsize&#34;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;legend.fontsize&#34;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;xtick.labelsize&#34;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;ytick.labelsize&#34;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;figure.titlesize&#34;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;text.latex.preamble&#34;</span><span class="p">:</span> <span class="sa">r</span><span class="s2">&#34;\usepackage{amsmath,amssymb,bm,physics,lmodern}&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;font.family&#34;</span><span class="p">:</span> <span class="s2">&#34;serif&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;font.serif&#34;</span><span class="p">:</span> <span class="s2">&#34;computer modern roman&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">rc_fonts</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">First we determine the refractive index of the medium,
+</span></span></span><span class="line"><span class="cl"><span class="s2">for example from air (1.0) to glass (1.5).
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">n_1</span> <span class="o">=</span> <span class="mf">1.0</span>  <span class="c1"># refractive index of air</span>
+</span></span><span class="line"><span class="cl"><span class="n">n_2</span> <span class="o">=</span> <span class="mf">1.5</span>  <span class="c1"># refractive index of glass</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">alphaAndBeta</span><span class="p">(</span><span class="n">theta_i</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">    Function that returns alpha (as a function of the angle of incidence) and 
+</span></span></span><span class="line"><span class="cl"><span class="s1">    beta (you can see equations 9.106 and 9.108 in Griffiths&#39;s book Introduction
+</span></span></span><span class="line"><span class="cl"><span class="s1">    to Electrodynamics)
+</span></span></span><span class="line"><span class="cl"><span class="s1">    &#39;&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">alpha</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="p">((</span><span class="n">n_1</span><span class="o">/</span><span class="n">n_2</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta_i</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta_i</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">beta</span> <span class="o">=</span> <span class="n">n_2</span><span class="o">/</span><span class="n">n_1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">reflectionAndTransmissionCoefficient</span><span class="p">(</span><span class="n">theta_i</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">    Function that returns the reflection coefficient and transmission coefficient
+</span></span></span><span class="line"><span class="cl"><span class="s1">    (you can read the Fresnel equation (Equation 9.109) in Griffiths&#39;s book:
+</span></span></span><span class="line"><span class="cl"><span class="s1">    Introduction to Electrodynamics).
+</span></span></span><span class="line"><span class="cl"><span class="s1">    &#39;&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">alpha</span> <span class="o">=</span> <span class="n">alphaAndBeta</span><span class="p">(</span><span class="n">theta_i</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">beta</span> <span class="o">=</span> <span class="n">alphaAndBeta</span><span class="p">(</span><span class="n">theta_i</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># (Equation 9.109 Griffith Introduction to Electrodynamics).</span>
+</span></span><span class="line"><span class="cl">    <span class="n">reflection_coefficient</span> <span class="o">=</span> <span class="p">(</span><span class="n">alpha</span><span class="o">-</span><span class="n">beta</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">alpha</span><span class="o">+</span><span class="n">beta</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">transmission_coefficient</span> <span class="o">=</span> <span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="n">alpha</span><span class="o">+</span><span class="n">beta</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">reflection_coefficient</span><span class="p">,</span> <span class="n">transmission_coefficient</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">reflectanceAndTransmittance</span><span class="p">(</span><span class="n">theta_i</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34; Reflectance and Transmittance Function.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    A function that returns the transmittance reflectance (Equation 9.115 &amp; 9.116
+</span></span></span><span class="line"><span class="cl"><span class="s2">    in Griffiths&#39;s book Introduction to Electrodynamics).
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">alpha</span> <span class="o">=</span> <span class="n">alphaAndBeta</span><span class="p">(</span><span class="n">theta_i</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">beta</span> <span class="o">=</span> <span class="n">alphaAndBeta</span><span class="p">(</span><span class="n">theta_i</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># (Equation 9.115 &amp; 9.116 Griffith Introduction to Electrodynamics).</span>
+</span></span><span class="line"><span class="cl">    <span class="n">reflectance</span> <span class="o">=</span> <span class="p">((</span><span class="n">alpha</span><span class="o">-</span><span class="n">beta</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">alpha</span><span class="o">+</span><span class="n">beta</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl">    <span class="n">transmittance</span> <span class="o">=</span> <span class="n">alpha</span><span class="o">*</span><span class="n">beta</span><span class="o">*</span><span class="p">((</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="n">alpha</span><span class="o">+</span><span class="n">beta</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">reflectance</span><span class="p">,</span> <span class="n">transmittance</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Creates an array of theta_i axis values</span>
+</span></span><span class="line"><span class="cl"><span class="n">theta_range</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create an array of transmission &amp; reflection coefficient values ​​for each</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># theta_i in theta_range</span>
+</span></span><span class="line"><span class="cl"><span class="n">reflection_coefficient</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="n">reflectionAndTransmissionCoefficient</span><span class="p">(</span><span class="n">theta</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">theta</span> <span class="ow">in</span> <span class="n">theta_range</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">transmission_coefficient</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="n">reflectionAndTransmissionCoefficient</span><span class="p">(</span><span class="n">theta</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">theta</span> <span class="ow">in</span> <span class="n">theta_range</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create an array of transmittance &amp; reflectance values ​​for each theta_i</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># in theta_range</span>
+</span></span><span class="line"><span class="cl"><span class="n">reflectance</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">reflectanceAndTransmittance</span><span class="p">(</span><span class="n">theta</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">for</span> <span class="n">theta</span> <span class="ow">in</span> <span class="n">theta_range</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">transmittance</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">reflectanceAndTransmittance</span><span class="p">(</span><span class="n">theta</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">                          <span class="k">for</span> <span class="n">theta</span> <span class="ow">in</span> <span class="n">theta_range</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Brewster&#39;s angle</span>
+</span></span><span class="line"><span class="cl"><span class="n">theta_brewster</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arctan</span><span class="p">(</span><span class="n">n_2</span><span class="o">/</span><span class="n">n_1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Tick for x-axis and y-axis</span>
+</span></span><span class="line"><span class="cl"><span class="n">ticks_x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">setdiff1d</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                       <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">([</span><span class="n">theta_brewster</span><span class="p">],</span> <span class="mi">3</span><span class="p">)),</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">ticks_y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mf">0.4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">Plot of Reflection and Transmission Coefficients
+</span></span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">figure</span><span class="p">,</span> <span class="p">(</span><span class="n">graph_1</span><span class="p">,</span> <span class="n">graph_2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">graph_1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">theta_range</span><span class="p">),</span> <span class="n">reflection_coefficient</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;Reflection Coefficient $\frac{E_</span><span class="si">{0_R}</span><span class="s1">}{E_</span><span class="si">{0_I}</span><span class="s1">}$&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">graph_1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">theta_range</span><span class="p">),</span> <span class="n">transmission_coefficient</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;Transmission Coefficient $\frac{E_</span><span class="si">{0_T}</span><span class="s1">}{E_</span><span class="si">{0_I}</span><span class="s1">}$&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">graph_1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Angle of Incidence $\theta_I$&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">graph_1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Reflection/Transmission Coefficients&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">graph_1</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">ticks</span><span class="o">=</span><span class="n">ticks_y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">graph_1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;&#39;&#39;Reflection ($r=\frac{E_</span><span class="si">{0_R}</span><span class="s1">}{E_</span><span class="si">{0_I}</span><span class="s1">}$) and
+</span></span></span><span class="line"><span class="cl"><span class="s1">Transmission ($t=\frac{E_</span><span class="si">{0_T}</span><span class="s1">}{E_</span><span class="si">{0_I}</span><span class="s1">}$) Coefficients as a function of Angle of Incidence ($\theta_i$)&#39;&#39;&#39;</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">graph_1</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.4</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">graph_1</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">top</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">direction</span><span class="o">=</span><span class="s2">&#34;in&#34;</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">graph_1</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s2">&#34;upper right&#34;</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">Transmittance &amp; Reflectance Plot
+</span></span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">graph_2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">theta_range</span><span class="p">),</span> <span class="n">reflectance</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;Reflectance $R$&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">graph_2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">theta_range</span><span class="p">),</span> <span class="n">transmittance</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;Transmittance $T$&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">graph_2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Angle of Incidence $\theta_I$&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">graph_2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Reflectance/Transmittance&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">graph_2</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">ticks</span><span class="o">=</span><span class="n">ticks_y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">graph_2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="sa">r</span><span class="s1">&#39;Reflectance and Transmittance as a function of Angle of Incidence ($\theta_i$)&#39;</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">graph_2</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">1.05</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">graph_2</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">top</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">direction</span><span class="o">=</span><span class="s2">&#34;in&#34;</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">graph_2</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s2">&#34;upper right&#34;</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">0.42</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># General Properties of Graph 1 &amp; 2</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">locals</span><span class="p">()[</span><span class="sa">f</span><span class="s2">&#34;graph_</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">locals</span><span class="p">()[</span><span class="sa">f</span><span class="s2">&#34;graph_</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">]</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="sa">r</span><span class="s2">&#34;Brewster&#39;s Angle $\theta_B$&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                                      <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arctan</span><span class="p">(</span><span class="n">n_2</span><span class="o">/</span><span class="n">n_1</span><span class="p">)),</span> <span class="mf">0.0</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">33</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                                      <span class="n">arrowprops</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;arrowstyle&#34;</span><span class="p">:</span> <span class="s2">&#34;-|&gt;&#34;</span><span class="p">,</span> <span class="s2">&#34;color&#34;</span><span class="p">:</span> <span class="s2">&#34;black&#34;</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">locals</span><span class="p">()[</span><span class="sa">f</span><span class="s2">&#34;graph_</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">]</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">ticks_x</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                                        <span class="p">[</span><span class="sa">r</span><span class="s2">&#34;$</span><span class="si">{angle}</span><span class="s2">^\circ$&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">angle</span><span class="o">=</span><span class="n">angle</span><span class="p">)</span> <span class="k">for</span> <span class="n">angle</span> <span class="ow">in</span> <span class="n">ticks_x</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">locals</span><span class="p">()[</span><span class="sa">f</span><span class="s2">&#34;graph_</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">]</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                                     <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">locals</span><span class="p">()[</span><span class="sa">f</span><span class="s2">&#34;graph_</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">]</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arctan</span><span class="p">(</span><span class="n">n_2</span><span class="o">/</span><span class="n">n_1</span><span class="p">)),</span>
+</span></span><span class="line"><span class="cl">                                     <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Axis thickness</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">axis</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;top&#39;</span><span class="p">,</span> <span class="s1">&#39;bottom&#39;</span><span class="p">,</span> <span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="s1">&#39;right&#39;</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">graph_1</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="n">axis</span><span class="p">]</span><span class="o">.</span><span class="n">set_linewidth</span><span class="p">(</span><span class="mf">0.9</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">graph_2</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="n">axis</span><span class="p">]</span><span class="o">.</span><span class="n">set_linewidth</span><span class="p">(</span><span class="mf">0.9</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Subplots settings</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">bottom</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">right</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">top</span><span class="o">=</span><span class="mf">0.84</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">wspace</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">hspace</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Save plot to png file.</span>
+</span></span><span class="line"><span class="cl"><span class="n">figure</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&#34;fresnel_equation_plot_python.png&#34;</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
 </span></span></code></pre></div><h2 id="final-result">Final Result&nbsp;<a class="headline-hash" href="#final-result"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
   <path d="M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z" />
   <path d="M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z" />
