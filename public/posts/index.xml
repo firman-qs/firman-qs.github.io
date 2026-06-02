@@ -12,9 +12,16 @@
 			<copyright>&amp;copy; 2026</copyright>
 		
 		
-			<lastBuildDate>Tue, 09 Jan 2024 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Sun, 09 Nov 2025 09:03:55 +0700</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Learning the Subject or Learning the Exam?</title>
+				<link>http://localhost:1313/posts/learning-exam/</link>
+				<pubDate>Sun, 09 Nov 2025 09:03:55 +0700</pubDate>
+				<guid>http://localhost:1313/posts/learning-exam/</guid>
+				<description>&lt;p&gt;As a student, I have often wondered whether &lt;em&gt;getting good&lt;/em&gt; in education necessarily means learning. The question arose not from reading educational research, but from observing of my friends&amp;ndash;asking me on &lt;em&gt;how to prepare for examinations?&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;TLDR:&#xA;A realization that has stayed with me for years began with something surprisingly ordinary: studying with friends before an exam.&#xA;I used to feel &lt;em&gt;*&lt;/em&gt; whenever a friend asked me to study together. I would happily agree, thinking we would spend time understanding the subject from the ground up. When discussing mathematics or physics, I preferred to start from the fundamental concepts and gradually build toward the formulas and procedures.&#xA;Yet the conversation would often go differently.&#xA;After a few minutes, they would interrupt and say something along the lines of, &amp;ldquo;Can we skip this part? Which section is likely to appear on the exam?&amp;rdquo; or &amp;ldquo;Just show me the steps needed to solve the question.&amp;rdquo;&#xA;&lt;em&gt;I found this attitude disappointing&lt;/em&gt;. The goal is clear: maximize marks while minimizing unnecessary effort. From a strategic perspective, this behavior, i can understand it. They may have limited time (or, limited inlaziness), multiple responsibilities, and competitive environments.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Hacking on XMonad </title>
 				<link>http://localhost:1313/posts/xmonad-conf/</link>
