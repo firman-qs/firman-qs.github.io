@@ -61,6 +61,5 @@ hugo.IsProduction }} {{ template "_internal/google_analytics.html" . }} {{ end
 <!--custom themes-->
 <link
     rel="stylesheet"
-    href="css/custom.css"
-    media="(prefers-color-scheme: dark)"
+    href="{{ "css/custom.css" | relURL }}"
 />

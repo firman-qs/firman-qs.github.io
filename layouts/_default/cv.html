@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <div class="cv-page">
+    <header class="cv-intro">
+      <p class="cv-label">Curriculum vitae</p>
+      <h1>{{ .Params.cv_name }}</h1>
+      <p class="cv-subtitle">{{ .Params.cv_subtitle }}</p>
+    </header>
+
+    <div class="cv-content">{{ .Content }}</div>
+  </div>
+{{ end }}

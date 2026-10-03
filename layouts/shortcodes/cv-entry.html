@@ -1,0 +1,8 @@
+<section class="cv-entry">
+  <div class="cv-entry-heading">
+    <p class="cv-entry-title"><strong>{{ with .Get "url" }}<a href="{{ . }}">{{ end }}{{ .Get "title" }}{{ if .Get "url" }}</a>{{ end }}</strong></p>
+    {{ with .Get "date" }}<p class="cv-date">{{ . }}</p>{{ end }}
+  </div>
+  <p class="cv-context">{{ .Get "context" }}</p>
+  <div class="cv-description">{{ .Inner | markdownify }}</div>
+</section>

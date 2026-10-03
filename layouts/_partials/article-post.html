@@ -1,0 +1,9 @@
+<article>
+  <header class="article-heading">
+    {{ partial "state.html" . }}
+    <h1 class="mt-1">{{ .Title }}</h1>
+    {{ partial "translations.html" . }}
+    {{ partial "metadata.html" . }}
+  </header>
+  {{ partial "headline-hash.html" .Content }}
+</article>

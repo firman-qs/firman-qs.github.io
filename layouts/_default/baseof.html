@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ .Params.lang | default .Language.Lang }}">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+    <header>{{ partial "header.html" . }}</header>
+    <img class="geometry-sketch" src="{{ "images/em-wave-sketch.svg" | relURL }}" alt="" aria-hidden="true" width="180" height="130" />
+    {{ $hasToc := and .IsPage (.Param "toc") (gt (len .Fragments.Identifiers) 0) }}
+    <main class="mt-10{{ if $hasToc }} reading-layout{{ end }}">
+      {{ if $hasToc }}
+        <aside class="page-toc" aria-label="Page contents">
+          {{ partial "toc.html" . }}
+        </aside>
+      {{ end }}
+      <div class="reading-content">
+        {{ block "main" . }}{{ end }}
+      </div>
+    </main>
+    <footer class="mt-10">{{ partial "footer.html" . }}</footer>
+    {{ partial "scripts.html" . }}
+  </body>
+</html>
