@@ -1,54 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Posts on Firman Q. S.</title>
-		<link>http://localhost:1313/posts/</link>
-		<description>Recent content in Posts on Firman Q. S.</description>
-		<generator>Hugo</generator>
-		<language>en-us</language>
-		
-		
-		
-			<copyright>&amp;copy; 2026</copyright>
-		
-		
-			<lastBuildDate>Sun, 09 Nov 2025 09:03:55 +0700</lastBuildDate>
-		
-			<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>Learning the Subject or Learning the Exam?</title>
-				<link>http://localhost:1313/posts/learning-exam/</link>
-				<pubDate>Sun, 09 Nov 2025 09:03:55 +0700</pubDate>
-				<guid>http://localhost:1313/posts/learning-exam/</guid>
-				<description>&lt;p&gt;As a student, I have often wondered whether &lt;em&gt;getting good&lt;/em&gt; in education necessarily means learning. The question arose not from reading educational research, but from observing of my friends&amp;ndash;asking me on &lt;em&gt;how to prepare for examinations?&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;TLDR:&#xA;A realization that has stayed with me for years began with something surprisingly ordinary: studying with friends before an exam.&#xA;I used to feel &lt;em&gt;*&lt;/em&gt; whenever a friend asked me to study together. I would happily agree, thinking we would spend time understanding the subject from the ground up. When discussing mathematics or physics, I preferred to start from the fundamental concepts and gradually build toward the formulas and procedures.&#xA;Yet the conversation would often go differently.&#xA;After a few minutes, they would interrupt and say something along the lines of, &amp;ldquo;Can we skip this part? Which section is likely to appear on the exam?&amp;rdquo; or &amp;ldquo;Just show me the steps needed to solve the question.&amp;rdquo;&#xA;&lt;em&gt;I found this attitude disappointing&lt;/em&gt;. The goal is clear: maximize marks while minimizing unnecessary effort. From a strategic perspective, this behavior, i can understand it. They may have limited time (or, limited inlaziness), multiple responsibilities, and competitive environments.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Hacking on XMonad </title>
-				<link>http://localhost:1313/posts/xmonad-conf/</link>
-				<pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/xmonad-conf/</guid>
-				<description>&lt;p&gt;Haskell, i think, is the most artistic programming language among other i&amp;rsquo;ve&#xA;learned. And, as window manager hoper, there is one written in Haskell, the name&#xA;already show the signature, &amp;ldquo;Xmonad&amp;rdquo;. Originally, this was my old archlinux&#xA;&lt;a href=&#34;https://distro.tube/dtos/&#34;&gt;DTOS&lt;/a&gt; configuration, but now i am on fedora (update:&#xA;i am back &lt;a href=&#34;https://archlinux.org/&#34;&gt;home&lt;/a&gt;). I have tested on my fedora and it&#xA;works fine. For other distributions it should be the same, just complete the&#xA;necessary packages. I&amp;rsquo;ll try to give a little guidance.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Euler-Lagrange Equation</title>
-				<link>http://localhost:1313/posts/euler-lagrange/</link>
-				<pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/euler-lagrange/</guid>
-				<description>&lt;p&gt;Kita akan memulai dengan $S$ sebagai integral dari fungsional $f[...]$&lt;/p&gt;&#xA;$$&#xD;&#xA;S = \int_{x_1}^{x_2} \mathrm{d}x~f[y(x), y&#39;(x), x] \tag{1}&#xD;&#xA;$$&lt;p&gt;di mana $y(x)$ adalah kurva yang belum diketahui, yang menghubungkan ($x_1, y_1$) dan ($x_2, y_2$), sehingga&lt;/p&gt;&#xA;$$&#xD;&#xA;y(x_1) = y_1 ~~~\text{and}~~~ y(x_2) = y_2\tag{2}&#xD;&#xA;$$&lt;p&gt;Di antara semua kemungkinan kurva yang memenuhi Persamaan (2), kita harus&#xA;mencari satu kurva yang meminimumkan (atau memaksimumkan, atau setidaknya&#xA;stasionar) integral $S$. Perhatikan bahwa fungsional $f[...]$ pada Persamaan&#xA;(1) adalah fungsi dari tiga variabel (variabel dalam konteks fungsional bisa&#xA;berupa fungsi). Namun, karena integral mengikuti lintasan $y=y(x)$, integrand&#xA;$f[y(x),y&#39;(x), x]$ adalah fungsi dari satu variabel $x$.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Plotting Fresnel Equation</title>
-				<link>http://localhost:1313/posts/fresnel-plot-py/</link>
-				<pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/fresnel-plot-py/</guid>
-				<description>&lt;h2 id=&#34;introduction-simple-equation-derivation&#34;&gt;Introduction: Simple Equation Derivation&lt;/h2&gt;&#xA;&lt;p&gt;We start with Fresnel Equations&lt;/p&gt;&#xA;$$&#xD;&#xA;\tilde{E}_{0_R} &#xD;&#xA;= \left(\frac{\alpha-\beta}{\alpha+\beta}\right)\tilde{E}_{0_I}, ~~~~~~ \tilde{E}_{0_T} &#xD;&#xA;= \left(\frac{2}{\alpha + \beta}\right) \tilde{E}_{0_I}. \tag{1}&#xD;&#xA;$$&lt;p&gt;where&lt;/p&gt;&#xA;$$&#xD;&#xA;\alpha\equiv \frac{\cos\theta_T}{\cos\theta_I}, \tag{2}&#xD;&#xA;$$&lt;p&gt;and&lt;/p&gt;&#xA;$$&#xD;&#xA;\beta \equiv \frac{\mu_1 v_1}{\mu_2 v_2} = \frac{\mu_1 n_2}{\mu_2 n_1}. \tag{3}&#xD;&#xA;$$&lt;p&gt;If we assume the special case where $\mu_1 \cong \mu_2 \cong \mu_0$ then&lt;/p&gt;&#xA;$$&#xD;&#xA;\beta \cong \frac{n_2}{n_1}. \tag{4}&#xD;&#xA;$$&lt;p&gt;Based on Snell&amp;rsquo;s law we know that&lt;/p&gt;&#xA;$$&#xD;&#xA;\sin\theta_T = \frac{n_1}{n_2} \sin\theta_I. \tag{5}&#xD;&#xA;$$&lt;p&gt;Using identity $\cos^2\theta_T+\sin^2\theta_T = 1$ then the previous $ \alpha $ equation (2) becomes&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Neovim Setup with Lazy.nvim Plugin Manager</title>
-				<link>http://localhost:1313/posts/nvim-conf/</link>
-				<pubDate>Fri, 03 Nov 2023 09:03:55 +0700</pubDate>
-				<guid>http://localhost:1313/posts/nvim-conf/</guid>
-				<description>&lt;p&gt;I’ll write this soon, in the meantime please visit my nvim configuration repository, it was just updated.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/firman-qs/nvim/&#34;&gt;https://github.com/firman-qs/nvim/&lt;/a&gt;&lt;/p&gt;</description>
-			</item>
-	</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Firman Q. S.</title><link>https://firman-qs.github.io/posts/</link><description>Recent content in Posts on Firman Q. S.</description><generator>Hugo</generator><language>en</language><copyright>&amp;copy; 2026</copyright><lastBuildDate>Sun, 09 Nov 2025 09:03:55 +0700</lastBuildDate><atom:link href="https://firman-qs.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Learning the Subject or Learning the Exam?</title><link>https://firman-qs.github.io/posts/learning-exam/</link><pubDate>Sun, 09 Nov 2025 09:03:55 +0700</pubDate><guid>https://firman-qs.github.io/posts/learning-exam/</guid><description>&lt;p&gt;As a student, I have often wondered whether &lt;em&gt;getting good&lt;/em&gt; in education necessarily means learning. The question arose not from reading educational research, but from observing of my friends&amp;ndash;asking me on &lt;em&gt;how to prepare for examinations?&lt;/em&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TLDR:
+A realization that has stayed with me for years began with something surprisingly ordinary: studying with friends before an exam.
+I used to feel &lt;em&gt;*&lt;/em&gt; whenever a friend asked me to study together. I would happily agree, thinking we would spend time understanding the subject from the ground up. When discussing mathematics or physics, I preferred to start from the fundamental concepts and gradually build toward the formulas and procedures.
+Yet the conversation would often go differently.
+After a few minutes, they would interrupt and say something along the lines of, &amp;ldquo;Can we skip this part? Which section is likely to appear on the exam?&amp;rdquo; or &amp;ldquo;Just show me the steps needed to solve the question.&amp;rdquo;
+&lt;em&gt;I found this attitude disappointing&lt;/em&gt;. The goal is clear: maximize marks while minimizing unnecessary effort. From a strategic perspective, this behavior, i can understand it. They may have limited time (or, limited inlaziness), multiple responsibilities, and competitive environments.&lt;/p&gt;</description></item><item><title>Hacking on XMonad</title><link>https://firman-qs.github.io/posts/xmonad-conf/</link><pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate><guid>https://firman-qs.github.io/posts/xmonad-conf/</guid><description>&lt;p&gt;Haskell, i think, is the most artistic programming language among other i&amp;rsquo;ve
+learned. And, as window manager hoper, there is one written in Haskell, the name
+already show the signature, &amp;ldquo;Xmonad&amp;rdquo;. Originally, this was my old archlinux
+&lt;a href="https://distro.tube/dtos/"&gt;DTOS&lt;/a&gt; configuration, but now i am on fedora (update:
+i am back &lt;a href="https://archlinux.org/"&gt;home&lt;/a&gt;). I have tested on my fedora and it
+works fine. For other distributions it should be the same, just complete the
+necessary packages. I&amp;rsquo;ll try to give a little guidance.&lt;/p&gt;</description></item><item><title>Euler-Lagrange Equation</title><link>https://firman-qs.github.io/posts/euler-lagrange/</link><pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate><guid>https://firman-qs.github.io/posts/euler-lagrange/</guid><description>&lt;p&gt;Kita akan memulai dengan $S$ sebagai integral dari fungsional $f[...]$&lt;/p&gt;
+$$
+S = \int_{x_1}^{x_2} \mathrm{d}x~f[y(x), y'(x), x] \tag{1}
+$$&lt;p&gt;di mana $y(x)$ adalah kurva yang belum diketahui, yang menghubungkan ($x_1, y_1$) dan ($x_2, y_2$), sehingga&lt;/p&gt;
+$$
+y(x_1) = y_1 ~~~\text{and}~~~ y(x_2) = y_2\tag{2}
+$$&lt;p&gt;Di antara semua kemungkinan kurva yang memenuhi Persamaan (2), kita harus
+mencari satu kurva yang meminimumkan (atau memaksimumkan, atau setidaknya
+stasionar) integral $S$. Perhatikan bahwa fungsional $f[...]$ pada Persamaan
+(1) adalah fungsi dari tiga variabel (variabel dalam konteks fungsional bisa
+berupa fungsi). Namun, karena integral mengikuti lintasan $y=y(x)$, integrand
+$f[y(x),y'(x), x]$ adalah fungsi dari satu variabel $x$.&lt;/p&gt;</description></item><item><title>Plotting Fresnel Equation</title><link>https://firman-qs.github.io/posts/fresnel-plot-py/</link><pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate><guid>https://firman-qs.github.io/posts/fresnel-plot-py/</guid><description>&lt;h2 id="introduction-simple-equation-derivation"&gt;Introduction: Simple Equation Derivation&lt;/h2&gt;
+&lt;p&gt;We start with Fresnel Equations&lt;/p&gt;
+$$
+\tilde{E}_{0_R} 
+= \left(\frac{\alpha-\beta}{\alpha+\beta}\right)\tilde{E}_{0_I}, ~~~~~~ \tilde{E}_{0_T} 
+= \left(\frac{2}{\alpha + \beta}\right) \tilde{E}_{0_I}. \tag{1}
+$$&lt;p&gt;where&lt;/p&gt;
+$$
+\alpha\equiv \frac{\cos\theta_T}{\cos\theta_I}, \tag{2}
+$$&lt;p&gt;and&lt;/p&gt;
+$$
+\beta \equiv \frac{\mu_1 v_1}{\mu_2 v_2} = \frac{\mu_1 n_2}{\mu_2 n_1}. \tag{3}
+$$&lt;p&gt;If we assume the special case where $\mu_1 \cong \mu_2 \cong \mu_0$ then&lt;/p&gt;
+$$
+\beta \cong \frac{n_2}{n_1}. \tag{4}
+$$&lt;p&gt;Based on Snell&amp;rsquo;s law we know that&lt;/p&gt;
+$$
+\sin\theta_T = \frac{n_1}{n_2} \sin\theta_I. \tag{5}
+$$&lt;p&gt;Using identity $\cos^2\theta_T+\sin^2\theta_T = 1$ then the previous $ \alpha $ equation (2) becomes&lt;/p&gt;</description></item><item><title>Neovim Setup with Lazy.nvim Plugin Manager</title><link>https://firman-qs.github.io/posts/nvim-conf/</link><pubDate>Fri, 03 Nov 2023 09:03:55 +0700</pubDate><guid>https://firman-qs.github.io/posts/nvim-conf/</guid><description>&lt;p&gt;I’ll write this soon, in the meantime please visit my nvim configuration repository, it was just updated.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/firman-qs/nvim/"&gt;https://github.com/firman-qs/nvim/&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
