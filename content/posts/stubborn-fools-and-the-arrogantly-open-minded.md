@@ -46,7 +46,7 @@ Callahan considers the objection that refusing to engage already treats other pe
 
 ## Arrogance in changing one’s mind
 
-The second group of cases concerns belief revision itself. Sam has accepted since childhood that fluoride benefits teeth. She follows online material claiming otherwise and quickly adopts a conspiracy explanation. In Callahan’s vignette, Sam is attracted to the thought that she has independently uncovered something most people have missed. The claims about fluoride belong to the fictional sources Sam accepts; the example concerns her reasons for accepting them.
+In Callahan’s next case, Sam has accepted since childhood that fluoride benefits teeth. She follows online material claiming otherwise and quickly adopts a conspiracy explanation. She is attracted to the thought that she has independently uncovered something most people have missed.
 
 Gio was raised in a nonreligious household. At university, he wants to distinguish himself from the secular crowd and becomes a Christian. He presents his conversion as having escaped the errors of his upbringing and regards himself as especially capable of answering opponents (pp. 9–10).
 
@@ -54,7 +54,7 @@ Both characters abandon earlier beliefs. Their willingness to revise nevertheles
 
 The comparison becomes clearer in the alternative versions she gives. Another Sam inherits a conspiracy belief in childhood and avoids examining it. Another Gio retains the Christianity in which he was raised because it structures his life and he cannot imagine giving it up. These characters may also resist evidence. But their descriptions do not contain the same attempt to gain intellectual distinction through rejecting a previous outlook.
 
-The comparison is not intended to settle the truth of either religious or nonreligious belief. Nor does it establish that inherited beliefs are preferable to beliefs acquired through reflection. It concerns the difference between arriving at a position for reasons connected with status and retaining that position for other reasons.
+The resulting beliefs are the same in each pair. What differs is the importance the person attaches to having reached the conclusion independently.
 
 Callahan also qualifies the expression “open-minded.” Here it refers to readiness to abandon an existing belief. She does not commit herself to the claim that Sam and Gio possess open-mindedness as a genuine intellectual virtue (p. 9, note 16). A willingness to change a view is the behaviour being examined; whether that change is well motivated remains a separate question.
 
@@ -82,13 +82,11 @@ Callahan notes that their new positions still depend on testimony from other peo
 
 A contrarian position may also offer membership in a supposedly discerning minority. A story about escaping deception can make the change feel like a victory over those who remain mistaken. This helps explain why a concern with intellectual status sometimes encourages revision rather than resistance (pp. 13–15).
 
-The paper discusses psychological research connecting conspiracy beliefs with traits such as a desire for uniqueness, narcissism, and entitlement. Callahan treats these findings as support for the plausibility of some of her cases, while cautioning against relying heavily on individual studies. Some findings concern associations; only some bear on possible causal relationships. Her argument remains a philosophical analysis of the examples, not a new experiment or a claim about the motives of every person who accepts a conspiracy explanation.
+Callahan also discusses psychological research linking conspiracy beliefs with a desire for uniqueness, narcissism, and entitlement. These findings lend some support to her account of Sam, though she cautions against relying heavily on individual studies. Much of the evidence concerns associations; only some of it bears on causal relationships.
 
 ## The scope of the argument
 
-Callahan’s conclusion is that confidence and belief revision do not, on their own, determine intellectual humility or arrogance. The examples are hypothetical cases constructed to make differences in motivation visible. Their role is to test an account of arrogance, rather than to provide a quick method for classifying people from their outward behaviour.
-
-She retains the possibility that arrogant people are stubborn, as Bob is. She also retains the possibility that reconsidering a belief is intellectually admirable. The argument concerns the proposed link between these behaviours and arrogance: it is not strong enough to identify the character trait with either holding firm or changing one’s mind.
+Callahan’s conclusion is that confidence and belief revision do not, on their own, determine intellectual humility or arrogance. Bob’s stubbornness arises from his concern with intellectual standing. Sam and Gio pursue that standing by abandoning earlier beliefs. In each case, understanding the arrogance requires an account of why the person responds as they do.
 
 This leaves room for humility alongside firm commitments. In her conclusion, Callahan mentions the moral equality of persons as a belief one might have reason to retain resiliently. An account that equated humility with a general readiness to revise would have difficulty accommodating such commitments (p. 15).
 
@@ -97,5 +95,3 @@ Her proposed alternative examines how a person conducts inquiry, including their
 ## References
 
 Callahan, L. F. (2025). Stubborn fools and the arrogantly open-minded. *Canadian Journal of Philosophy*. Advance online publication. [https://doi.org/10.1017/can.2025.10018](https://doi.org/10.1017/can.2025.10018)
-
-Page citations refer to the supplied 17-page article. The named characters and their circumstances are Callahan’s hypothetical cases, retold here in abbreviated form.
