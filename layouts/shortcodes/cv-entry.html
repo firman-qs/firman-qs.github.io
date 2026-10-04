@@ -4,5 +4,5 @@
     {{ with .Get "date" }}<p class="cv-date">{{ . }}</p>{{ end }}
   </div>
   <p class="cv-context">{{ .Get "context" }}</p>
-  <div class="cv-description">{{ .Inner | markdownify }}</div>
+  <div class="cv-description">{{ .Page.RenderString (dict "display" "block") .Inner }}</div>
 </section>
