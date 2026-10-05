@@ -33,6 +33,10 @@ A one-dimensional TDEM inversion system for estimating subsurface resistivity an
 The dataset and software are available through RIN Dataverse, version 1, with repository identifier **20.500.12690/RIN/QGVULK**. The computer program was registered as intellectual property (HKI) on **16 April 2026**, under registration no. **001200219**.
 {{< /cv-entry >}}
 
+{{< cv-entry title="Elm: 3D Virtual Laboratory for Electromagnetism" context="Educational software · Universitas Negeri Malang" url="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CjFKELwAAAAJ&citation_for_view=CjFKELwAAAAJ:Tyk-4Ss8FVUC" >}}
+A 3D virtual laboratory supporting students’ conceptual understanding of electromagnetism through visualization and feedback on mistakes made during virtual experiments. Designed to match the physical apparatus used in UM’s Electromagnetism Laboratory.
+{{< /cv-entry >}}
+
 {{< cv-entry title="GEOQUAL (Geophysical Soil Quality Monitoring)" context="Computer program · HKI registration no. 000951695" >}}
 Software supporting soil-quality monitoring through geophysical methods, registered as intellectual property (HKI).
 {{< /cv-entry >}}
@@ -43,7 +47,7 @@ Software supporting soil-quality monitoring through geophysical methods, registe
 Supported laboratory sessions and helped students understand experimental procedures, data collection, result analysis, and the underlying physics.
 {{< /cv-entry >}}
 
-{{< cv-entry title="Asistensi Mengajar UM" context="Physics teaching placement · SMA Laboratorium UM" date="2024" >}}
+{{< cv-entry title="Asistensi Mengajar UM" context="Physics teaching placement · SMA Laboratorium UM" date="2024" url="https://www.instagram.com/am_mawangcatya/" >}}
 Taught physics to Grade X and XI students at SMA Laboratorium UM through the university’s *Asistensi Mengajar UM* program in 2024.
 {{< /cv-entry >}}
 
@@ -53,7 +57,7 @@ Supported practical sessions for *Praktikum Pemrograman Komputer Aplikatif* duri
 
 ## Community Service {#community}
 
-{{< cv-entry title="Applied Training of Geophysics" context="Development team member & contributing inventor · SMK Negeri 1 Kademangan, Blitar" date="5–6 August 2025" >}}
+{{< cv-entry title="Applied Training of Geophysics" context="Development team member & contributing inventor · SMK Negeri 1 Kademangan, Blitar" date="5–6 August 2025" url="https://www.kompasiana.com/mochamadkhoirulrifai3057/68957037ed641572507efad2/sinergi-um-dan-smkn-1-kademangan-hadirkan-geoqual-untuk-pertanian-cerdas-berkelanjutan" >}}
 Contributed to an Industry 5.0 applied-skills training program for prospective vocational-school graduates through geophysical methods and technology. Contributed to GEOQUAL, software for soil-quality monitoring using geophysical approaches.
 {{< /cv-entry >}}
 
@@ -81,7 +85,7 @@ Attended an international guest lecture on light phenomena and scientific perspe
 Attended a short course on scientific writing, manuscript preparation, and academic publication.
 {{< /cv-entry >}}
 
-{{< cv-entry title="Belajar Bareng Tim Soal (BaBaTS)" context="Tutor in Electromagnetism and Statistical Physics · Department of Physics, Universitas Negeri Malang" date="2024–2025" >}}
+{{< cv-entry title="Belajar Bareng Tim Soal (BaBaTS)" context="Tutor in Electromagnetism and Statistical Physics · Department of Physics, Universitas Negeri Malang" date="2024–2025" url="https://www.instagram.com/p/DPXfLNuE5MG/" >}}
 Served as a tutor in Electromagnetism and Statistical Physics during BaBaTS #7 (18 May 2024), #9 (22 March 2025), and #10 (24 May 2025).
 {{< /cv-entry >}}
 
