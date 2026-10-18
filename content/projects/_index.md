@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Projects & Publications"
 author: ["firmanqs"]
 date: 2026-03-08T22:50:00+08:00
 tags: ["projects", "publications"]
@@ -7,6 +7,7 @@ draft: false
 ---
 
 - [My lonely google scholar](https://scholar.google.com/citations?user=CjFKELwAAAAJ&hl=en)
+- [Nonlinear 1D time-domain electromagnetic inversion using adaptive differential evolution: application to volcanic-hydrothermal system](https://doi.org/10.1007/s12145-026-02279-4)
 - [Differential evolution algorithm for solving time domain electromagnetics (TDEM) optimization problem, written in Rust](https://data.brin.go.id/dataverse/BRIN_ID/?q=Ferron)
 - [Elm, The electricity and magnetism virtual laboratory](https://elm.sim/)
 

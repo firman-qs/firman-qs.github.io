@@ -9,7 +9,8 @@ copyright = "&copy; 2026"
     dir = ':cacheDir/images'
 
 [params]
-description = "A physics student currently pursuing a master’s degree at physics ed. Live at the intersection of physics and programming. Books without equations are rarely enjoyable reads."
+mainSections = ["posts"]
+description = "A master's student in physics education, doing side quests in geophysics, writing code, and pretending I understand any of it. I rarely enjoy books without equations."
 math = true
 toc = true
 

@@ -2,7 +2,9 @@
 // Once initialized, the reader can toggle the native details control freely.
 const contents = document.querySelector(".page-toc details");
 if (contents) {
-  const desktop = window.matchMedia("(min-width: 1100px)");
+  const desktop = window.matchMedia(
+    document.querySelector(".docs-layout") ? "(min-width: 1200px)" : "(min-width: 1100px)",
+  );
   const syncContents = () => { contents.open = desktop.matches; };
   syncContents();
   desktop.addEventListener("change", syncContents);

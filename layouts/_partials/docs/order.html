@@ -1,0 +1,10 @@
+{{/* Flatten the navigation tree so reading order matches the sidebar. */}}
+{{ $pages := slice }}
+{{ range .Pages.ByWeight }}
+  {{ if .IsSection }}
+    {{ range partial "docs/order.html" . }}{{ $pages = $pages | append . }}{{ end }}
+  {{ else }}
+    {{ $pages = $pages | append . }}
+  {{ end }}
+{{ end }}
+{{ return $pages }}

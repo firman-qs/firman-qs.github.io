@@ -1,0 +1,17 @@
+{{ define "main" }}
+  {{ $docs := partial "docs/context.html" . }}
+  {{ if $docs.project }}
+    {{ partial "docs/article.html" . }}
+  {{ else }}
+    <article>
+      <header class="article-heading"><h1>{{ .Title }}</h1></header>
+      {{ partial "headline-hash.html" .Content }}
+      {{ if .Pages }}
+        <section class="docs-directory" aria-label="Project documentation">
+          <h2>Project documentation</h2>
+          {{ partial "docs/cards.html" . }}
+        </section>
+      {{ end }}
+    </article>
+  {{ end }}
+{{ end }}

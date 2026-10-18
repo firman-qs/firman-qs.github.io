@@ -1,1 +1,6 @@
 <script defer src="{{ "js/toc.js" | relURL }}"></script>
+{{ if eq .Section "projects" }}
+<script defer src="{{ "js/docs.js" | relURL }}"></script>
+{{ end }}
+
+<script defer src="{{ "js/notebook.js" | relURL }}"></script>

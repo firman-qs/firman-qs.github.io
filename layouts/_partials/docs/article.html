@@ -1,0 +1,47 @@
+{{ $docs := partial "docs/context.html" . }}
+<article class="docs-article">
+  <nav class="docs-breadcrumbs" aria-label="Breadcrumbs">
+    <ol>
+      {{ range .Ancestors.Reverse }}
+        {{ if not .IsHome }}<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}
+      {{ end }}
+      <li aria-current="page">{{ .LinkTitle }}</li>
+    </ol>
+  </nav>
+  <header class="docs-heading">
+    <p class="docs-label">Project documentation</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="docs-description">{{ . }}</p>{{ end }}
+    {{ if .Draft }}<p class="docs-draft" role="status">Draft preview · Hidden from production builds</p>{{ end }}
+  </header>
+  <div class="docs-body">
+    {{/* Keep wide tables scrollable while retaining native table column sizing. */}}
+    {{ $content := replace .Content "<table>" `<div class="docs-table" role="region" aria-label="Scrollable table" tabindex="0"><table>` }}
+    {{ $content = replace $content "</table>" "</table></div>" }}
+    {{ partial "headline-hash.html" $content }}
+  </div>
+  {{ if .IsSection }}
+    {{ if .Pages }}
+      <section class="docs-directory" aria-label="{{ if $docs.version }}Pages{{ else }}Versions{{ end }}">
+        <h2>{{ if $docs.version }}In this section{{ else }}Versions{{ end }}</h2>
+        {{ partial "docs/cards.html" . }}
+      </section>
+    {{ end }}
+  {{ end }}
+</article>
+{{ if and .IsPage $docs.version }}
+  {{ $page := . }}
+  {{ $pages := partial "docs/order.html" $docs.version }}
+  <nav class="docs-pager" aria-label="Documentation pages">
+    {{ range $index, $entry := $pages }}
+      {{ if eq $entry.RelPermalink $page.RelPermalink }}
+        {{ if gt $index 0 }}
+          {{ with index $pages (sub $index 1) }}<a rel="prev" href="{{ .RelPermalink }}"><span>Previous</span>{{ .LinkTitle }}</a>{{ end }}
+        {{ end }}
+        {{ if lt (add $index 1) (len $pages) }}
+          {{ with index $pages (add $index 1) }}<a rel="next" href="{{ .RelPermalink }}"><span>Next</span>{{ .LinkTitle }}</a>{{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </nav>
+{{ end }}

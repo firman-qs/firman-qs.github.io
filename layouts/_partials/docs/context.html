@@ -1,0 +1,17 @@
+{{/* Resolve project and version by ancestry, including implicit Hugo sections. */}}
+{{ $project := false }}
+{{ $version := false }}
+{{ if eq .Section "projects" }}
+  {{ $root := .Site.GetPage "/projects" }}
+  {{ $lineage := slice }}
+  {{ range .Ancestors.Reverse }}{{ $lineage = $lineage | append . }}{{ end }}
+  {{ $lineage = $lineage | append . }}
+  {{ range $lineage }}
+    {{ if and .Parent (eq .Parent.RelPermalink $root.RelPermalink) }}
+      {{ $project = . }}
+    {{ else if and $project .Parent }}
+      {{ if eq .Parent.RelPermalink $project.RelPermalink }}{{ $version = . }}{{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return (dict "project" $project "version" $version) }}

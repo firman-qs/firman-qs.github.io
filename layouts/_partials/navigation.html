@@ -1,7 +1,11 @@
 {{ $page := . }}
 {{ range .Site.Sections.ByTitle }}
+  {{ if ne .Section "projects" }}
   <a href="{{ .RelPermalink }}"{{ if or (eq $page.RelPermalink .RelPermalink) ($page.IsDescendant .) }} aria-current="page"{{ end }}>{{ .Title }}</a>
+  {{ end }}
 {{ end }}
 {{ range .Site.Menus.main }}
-  <a href="{{ .URL }}"{{ if eq $page.RelPermalink .URL }} aria-current="page"{{ end }}>{{ .Name }}</a>
+  {{ $target := false }}
+  {{ with .PageRef }}{{ $target = $page.Site.GetPage . }}{{ end }}
+  <a href="{{ .URL }}"{{ if or (eq $page.RelPermalink .URL) (and $target ($page.IsDescendant $target)) }} aria-current="page"{{ end }}>{{ .Name }}</a>
 {{ end }}

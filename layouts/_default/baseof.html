@@ -3,14 +3,23 @@
   <head>
     {{ partial "head.html" . }}
   </head>
-  <body>
+  <body id="top"{{ if .IsHome }} class="home-page"{{ end }}>
     <header>{{ partial "header.html" . }}</header>
-    <img class="geometry-sketch" src="{{ "images/em-wave-sketch.svg" | relURL }}" alt="" aria-hidden="true" width="180" height="130" />
-    {{ $hasToc := and .IsPage (.Param "toc") (gt (len .Fragments.Identifiers) 0) }}
-    <main class="mt-10{{ if $hasToc }} reading-layout{{ end }}">
+    {{ partial "notebook-wave.html" . }}
+    {{ $docs := partial "docs/context.html" . }}
+    {{ $hasToc := and (or .IsPage $docs.project) (.Param "toc") (gt (len .Fragments.Identifiers) 0) }}
+    {{ $hasProgress := and .IsPage (eq .Section "posts") }}
+    {{ if and $hasProgress (not $hasToc) }}{{ partial "reading-progress.html" . }}{{ end }}
+    <main class="mt-10{{ if $hasToc }} reading-layout{{ end }}{{ if $docs.project }} docs-layout{{ end }}">
+      {{ if $docs.project }}
+        <aside class="docs-sidebar">
+          {{ partial "docs/sidebar.html" (dict "page" . "context" $docs) }}
+        </aside>
+      {{ end }}
       {{ if $hasToc }}
-        <aside class="page-toc" aria-label="Page contents">
+        <aside class="page-toc{{ if $hasProgress }} has-reading-progress{{ end }}" aria-label="Page contents">
           {{ partial "toc.html" . }}
+          {{ if $hasProgress }}{{ partial "reading-progress.html" . }}{{ end }}
         </aside>
       {{ end }}
       <div class="reading-content">

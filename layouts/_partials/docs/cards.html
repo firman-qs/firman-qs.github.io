@@ -1,0 +1,10 @@
+<ul class="docs-cards">
+  {{ $parentDraft := .Draft }}
+  {{ range .Pages.ByWeight }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      {{ with .Description }}<p>{{ . }}</p>{{ end }}
+      {{ if and .Draft (not $parentDraft) }}<span class="docs-draft">Draft preview</span>{{ end }}
+    </li>
+  {{ end }}
+</ul>

@@ -1,0 +1,19 @@
+<div class="flow-section">
+  <button type="button" class="flow-experiment" aria-label="Stir the fluid flow with the pointer, or press Enter to create a current" hidden>
+    <svg viewBox="0 0 1100 230" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="flow-vertical-fade" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="white" stop-opacity="0"/>
+          <stop offset="18%" stop-color="white"/>
+          <stop offset="78%" stop-color="white"/>
+          <stop offset="100%" stop-color="white" stop-opacity="0"/>
+        </linearGradient>
+        <mask id="flow-soft-edge" maskUnits="userSpaceOnUse" x="0" y="0" width="1100" height="230">
+          <rect width="1100" height="230" fill="url(#flow-vertical-fade)"/>
+        </mask>
+      </defs>
+      <g mask="url(#flow-soft-edge)" data-flow-lines fill="none"></g>
+    </svg>
+  </button>
+</div>
+<div class="footer-meta"><p>{{ .Site.Copyright | markdownify }} {{ .Site.Title }} <span class="footer-separator">/</span> Still curious.</p><a href="#top" class="back-to-top">Back to the beginning ↑</a></div>

@@ -46,12 +46,10 @@ $$
 
 For reflectance and transmittance
 
-<div>
 $$
 \newcommand{\rbrak}[1]{\left(#1 \right)}
 T\equiv\frac{I_T}{I_I}=\underbrace{\frac{\epsilon_2v_2}{\epsilon_1v_1}}_\beta\underbrace{\rbrak{\frac{E_{0_T}}{E_{0_I}}}}_\text{Eq. 1}\underbrace{\frac{\cos\theta_T}{\cos\theta_I}}_\alpha=\alpha\beta\rbrak{\frac{2}{\alpha+\beta}}^2.
 $$
-</div>
 
 ## Source Code
 [https://github.com/firman-qs/fresnel-equation-plot-python](https://github.com/firman-qs/fresnel-equation-plot-python).

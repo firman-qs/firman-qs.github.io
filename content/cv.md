@@ -23,7 +23,7 @@ Graduated with a GPA of **3.91 / 4.00** as part of the Physics Learning Innovati
 
 ## Research & Software {#research}
 
-{{< cv-entry title="Nonlinear 1D Time-Domain Electromagnetic Inversion using Adaptive Differential Evolution: Application to Volcanic-Hydrothermal System" context="Research preprint · Publication in progress" date="2026" url="https://scholar.google.com/citations?user=CjFKELwAAAAJ&hl=en" >}}
+{{< cv-entry title="Nonlinear 1D Time-Domain Electromagnetic Inversion using Adaptive Differential Evolution: Application to Volcanic-Hydrothermal System" context="Research preprint · Publication in progress" date="2026" url="https://doi.org/10.1007/s12145-026-02279-4" >}}
 One-dimensional TDEM inversion using adaptive differential evolution, applied to a volcanic-hydrothermal system.
 {{< /cv-entry >}}
 

@@ -1,0 +1,9 @@
+<ul>
+  {{ $current := .current }}
+  {{ range .root.Pages.ByWeight }}
+    <li>
+      <a href="{{ .RelPermalink }}"{{ if eq .RelPermalink $current.RelPermalink }} aria-current="page"{{ end }}>{{ .LinkTitle }}</a>
+      {{ if .IsSection }}{{ partial "docs/tree.html" (dict "root" . "current" $current) }}{{ end }}
+    </li>
+  {{ end }}
+</ul>

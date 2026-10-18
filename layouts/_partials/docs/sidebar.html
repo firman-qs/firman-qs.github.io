@@ -1,0 +1,24 @@
+{{ $page := .page }}
+{{ $project := .context.project }}
+{{ $version := .context.version }}
+<details class="docs-menu" open>
+  <summary>Documentation navigation</summary>
+  <nav aria-label="Documentation navigation">
+    <p class="docs-project"><a href="{{ $project.RelPermalink }}"{{ if eq $page.RelPermalink $project.RelPermalink }} aria-current="page"{{ end }}>{{ $project.Title }}</a></p>
+    {{ if $version }}
+      <details class="docs-versions">
+        <summary>Version: {{ $version.Title }}</summary>
+        <ul>
+          {{ range $project.Sections.ByWeight }}
+            <li><a href="{{ .RelPermalink }}"{{ if eq .RelPermalink $version.RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </details>
+      <a class="docs-overview" href="{{ $version.RelPermalink }}"{{ if eq $page.RelPermalink $version.RelPermalink }} aria-current="page"{{ end }}>Overview</a>
+      {{ partial "docs/tree.html" (dict "root" $version "current" $page) }}
+    {{ else }}
+      <p class="docs-label">Versions</p>
+      {{ partial "docs/tree.html" (dict "root" $project "current" $page) }}
+    {{ end }}
+  </nav>
+</details>

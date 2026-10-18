@@ -8,6 +8,7 @@ humanize)) .Site.Title -}} {{- end -}} {{- $description := "" -}} {{- with
 {{- end -}}
 
 <meta charset="utf-8" />
+<script src="{{ "js/theme.js" | relURL }}"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta
     name="theme-color"
@@ -36,14 +37,16 @@ fingerprint }}
 <link
     rel="stylesheet"
     href="{{ $operandi.RelPermalink }}"
-    media="(prefers-color-scheme: light)"
+    data-syntax-theme="light"
+    media="all"
 />
 {{ $vivendi := resources.Get "css/dist/vivendi-chroma-style.css" | minify |
 fingerprint }}
 <link
     rel="stylesheet"
     href="{{ $vivendi.RelPermalink }}"
-    media="(prefers-color-scheme: dark)"
+    data-syntax-theme="dark"
+    media="not all"
 />
 
 {{ with .OutputFormats.Get "rss" -}} {{ printf `<link
@@ -63,3 +66,5 @@ hugo.IsProduction }} {{ template "_internal/google_analytics.html" . }} {{ end
     rel="stylesheet"
     href="{{ "css/custom.css" | relURL }}"
 />
+
+<link rel="stylesheet" href="{{ "css/notebook.css" | relURL }}" />
