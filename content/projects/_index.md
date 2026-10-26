@@ -7,6 +7,7 @@ draft: false
 ---
 
 - [My lonely google scholar](https://scholar.google.com/citations?user=CjFKELwAAAAJ&hl=en)
+- [ATLAS, an adaptive formative assessment platform for conceptual learning](https://atlaslearn.web.id/) — [Release post]({{< relref "/posts/atlas-release" >}})
 - [Nonlinear 1D time-domain electromagnetic inversion using adaptive differential evolution: application to volcanic-hydrothermal system](https://doi.org/10.1007/s12145-026-02279-4)
 - [Differential evolution algorithm for solving time domain electromagnetics (TDEM) optimization problem, written in Rust](https://data.brin.go.id/dataverse/BRIN_ID/?q=Ferron)
 - [Elm, The electricity and magnetism virtual laboratory](https://elm.sim/)
